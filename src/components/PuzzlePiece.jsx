@@ -8,7 +8,7 @@ export const PuzzlePiece = ({letter, header, meaning, color, showTab, reverseOrd
         <p className="text-2xl uppercase tracking-widest">{header}</p>
         <p className="flex items-center gap-1">
           <span className="flex-1 border border-white "/>
-          {meaning}
+            {meaning}
           <span className="flex-1 border border-white "/>
         </p>
       </div>

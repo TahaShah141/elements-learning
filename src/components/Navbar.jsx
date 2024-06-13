@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom"
 import "../Styles/links.css"
 
 const navLinkClassName = ({isActive}) => {
-  return (isActive ? "font-bold underline" : "")
+  return (isActive ? "text-[#E7BA42]" : "")
 }
 
 export const Navbar = () => {
   return (
-    <nav className="flex w-full justify-center py-4 border-b-2 border-[#FABF23]">
+    <nav className="flex w-full justify-center py-4 px-20 border-b-2 border-[#FABF23]">
       <div className="container flex justify-between">
         <div className="flex gap-2">
           <div className="w-12 bg-neutral-100">

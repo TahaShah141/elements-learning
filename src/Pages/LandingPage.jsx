@@ -1,8 +1,10 @@
 import Carousel from "../components/Carousel"
+import { EventCard } from "../components/EventCard"
 import { Footer } from "../components/Footer"
 import { HexagonPlayButton } from "../components/HexagonPlayButton"
 import { PuzzlePiece } from "../components/PuzzlePiece"
 import { SlidingDiv } from "../components/SlidingDiv"
+import { TestimonialCard } from "../components/TestimonialCard"
 
 const RightArrow = ({className}) => {
   return (
@@ -48,18 +50,20 @@ export const LandingPage = () => {
     <div className="flex flex-col items-center">
       <section className="bg-[#F3EEE8] w-full flex justify-center gap-24">
         <div className="py-24 max-w-lg flex flex-col gap-8">
-          <div className="text-8xl text-neutral-800 font-bold">
+          {/* <SlidingDiv direction={"left"} px={10}> */}
+          <div className="text-8xl text-[#353535] font-bold">
             <h1>Life</h1>
             <h1>Long</h1>
             <h1>Learning.</h1>
           </div>
+          {/* </SlidingDiv> */}
           <p className="text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
           <div className="flex gap-4">
             <button className="p-4 bg-[#E7BA42] text-xl text-white font-bold flex items-center">
               <p>Trainings</p>
               <RightArrow className={"w-8"} />
             </button>
-            <button className="p-4 text-xl text-[#E7BA42] bg-neutral-800 font-bold flex items-center">
+            <button className="p-4 text-xl text-[#E7BA42] bg-[#353535] font-bold flex items-center">
               <p>Trainings</p>
               <RightArrow className={"w-8"} />
             </button>
@@ -149,7 +153,7 @@ export const LandingPage = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.
                   </p>
-                  <button className="p-4 text-lg text-[#E7BA42] bg-neutral-800 font-bold flex items-center w-fit">
+                  <button className="p-4 text-lg text-[#E7BA42] bg-[#353535] font-bold flex items-center w-fit">
                     <p>Trainings</p>
                     <RightArrow className={"w-8"} />
                   </button>
@@ -198,8 +202,74 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <section className="w-full">
-        <Carousel items={Array.from(Array(5)).map((_, i) => <div className="bg-red-500 h-96 w-full">{i+1}</div>)} />
+      <section className="flex gap-8 px-48 py-10">
+        <div className="h-48 aspect-video bg-neutral-200 rounded-lg"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
+      </section>
+
+      <section className="bg-[#F3EEE8] w-full gap-12 p-12 flex justify-center">
+        <div className="flex flex-col gap-4">
+          <div className="size-64 rounded-md bg-neutral-300" />
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold">10000+</p>
+            <p className="text-xl">Students</p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="size-64 rounded-md bg-neutral-300" />
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold">3000+</p>
+            <p className="text-xl">Teachers</p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="size-64 rounded-md bg-neutral-300" />
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold">1000+</p>
+            <p className="text-xl">Parents</p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="size-64 rounded-md bg-neutral-300" />
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-4xl font-bold">100+</p>
+            <p className="text-xl">Schools</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full p-2">
+
+      </section>
+
+      <section className="bg-[#F3EEE8] w-full flex justify-center">
+        <div className="container p-20 flex justify-center">
+          <Carousel items={Array.from(Array(5)).map((_, i) =>
+            <EventCard title={"Test Event "+(i+1)} date={"12-06-2024"}
+            content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit officia aut odit voluptas ullam omnis eveniet ipsa sequi recusandae perspiciatis culpa necessitatibus laudantium reprehenderit quo ab neque quaerat tempore ut vero error, voluptatibus ipsam itaque. Officia unde cumque dolorum quo nesciunt omnis asperiores, perferendis nulla soluta. Molestiae commodi perspiciatis sit saepe omnis porro mollitia natus, illo aliquid fuga reiciendis velit explicabo quam accusamus enim animi. Iusto quod, ipsam aut illum reprehenderit nam nulla sequi aperiam eligendi voluptatibus fugit magnam ut, totam architecto praesentium tempore, doloremque nisi at cupiditate ratione consequuntur natus. Nesciunt iusto illum cumque odit molestias expedita dolorem."} />
+            )} />
+        </div>
+      </section>
+
+      <section className="w-full p-20 flex justify-center gap-12">
+        <div className="flex flex-col gap-4">
+          <div className="size-96 bg-neutral-100">
+
+          </div>
+          <div className="flex flex-col text-5xl font-bold uppercase items-end">
+            <p>What</p>
+            <p>Others</p>
+            <p>Say About</p>
+            <p>Us</p>
+          </div>
+        </div>
+        <div className="relative flex flex-col justify-center">
+          <button className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 size-16">
+            <HexagonPlayButton outerColor="#FABB41" />
+          </button>
+          <TestimonialCard person={"Teacher Trainee - AJK"}
+          quote={"As an experienced educator, I thought I had seen it all, but this training opened my eyes to new possibilities and approaches in teaching. The sessions were well-structured, practical, and tailored to the needs of educators. I particularly appreciated the focus on student-centered learing, differentiated instructions, and the integration of tooks/technology in teaching Maths."} />
+        </div>
       </section>
 
       <Footer />
