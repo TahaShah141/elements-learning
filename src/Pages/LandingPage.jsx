@@ -202,7 +202,7 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <section className="flex gap-8 px-48 py-10">
+      <section className="flex gap-8 px-48 py-10 items-center">
         <div className="h-48 aspect-video bg-neutral-200 rounded-lg"></div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
       </section>
