@@ -1,3 +1,6 @@
+import Carousel from "../components/Carousel"
+import { Footer } from "../components/Footer"
+import { HexagonPlayButton } from "../components/HexagonPlayButton"
 import { PuzzlePiece } from "../components/PuzzlePiece"
 import { SlidingDiv } from "../components/SlidingDiv"
 
@@ -81,16 +84,8 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <section className="h-screen flex flex-col justify-center">
-        <SlidingDiv direction={"left"} px={100}>
-          <div className="p-16">
-            <div className="bg-neutral-200 rounded-xl p-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt corporis eius debitis impedit doloribus quas dolorum amet dolores praesentium, voluptate quam modi, possimus ducimus consectetur omnis eveniet quisquam soluta.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique, neque voluptatum veniam asperiores adipisci, corporis fuga modi omnis numquam atque voluptas illum perspiciatis laborum, unde porro a mollitia nisi.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique, neque voluptatum veniam asperiores adipisci, corporis fuga modi omnis numquam atque voluptas illum perspiciatis laborum, unde porro a mollitia nisi.
-            </div>
-          </div>
-        </SlidingDiv>
+      <section className="h-screen">
+
       </section>
 
       <section className="flex flex-row-reverse h-80 w-full bg-red-400">
@@ -98,6 +93,116 @@ export const LandingPage = () => {
           <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== 0} {...puzzle} />
         )}
       </section>
+
+      
+      <section className="flex container p-20 gap-8 flex-col justify-center">
+        <div className="flex gap-16 justify-center items-center">
+          <div className="flex flex-col items-end">
+            <h2 className="text-huge font-bold">4</h2>
+            <h3 className="text-8xl font-semibold uppercase">Pillars</h3>
+            <h5 className="text-7xl font-thin">of Education</h5>
+          </div>
+          <div className="bg-neutral-100 rounded-3xl size-[600px] p-2">
+            
+          </div>
+        </div>
+        <SlidingDiv direction="bottom" px={50}>
+        <div className="px-40">
+          <p className="text-lg">
+            Quality education rides on the sturdy foundation of four crucial components: well-crafted teaching materials to engage and enlighten, continuous teacher training to inspire and empower, rigorous assessments to measure progress and potential, and dynamic school leadership to steer towards excellence. These wheels form the backbone of a holistic educational journey.
+          </p>
+        </div>
+        </SlidingDiv>
+      </section>
+
+      <section className="bg-[#F3EEE8] p-20 w-full" >
+        <div className="flex gap-8">
+
+          <div className="flex-1 rounded-md flex flex-col justify-end items-end gap-8">
+            <div className="size-[500px] rounded-md bg-neutral-200" />
+            <div className="flex flex-col gap-2 w-[500px] text-right">
+              <h2 className="uppercase font-bold text-5xl">What we offer</h2>
+              <p className="text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
+            </div>
+          </div>
+          <div className="flex-1 flex flex-col gap-4">
+
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>Early Childhood Education (ECE) and Parenting</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="p-1 rounded-full rounded-br-none bg-[#FBBA41] font-bold text-xl flex items-center gap-2">
+                <div className="size-16">
+                  <HexagonPlayButton innerColor="#000000" outerColor="#FFFFFF" />
+                </div>
+                <p>Math</p>
+                
+              </div>
+              <div className="flex flex-1 gap-4 p-4">
+                <div className="size-72 rounded-md bg-neutral-300" />
+                <div className="flex flex-1 flex-col gap-2">
+                  <p className="text-lg">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.
+                  </p>
+                  <button className="p-4 text-lg text-[#E7BA42] bg-neutral-800 font-bold flex items-center w-fit">
+                    <p>Trainings</p>
+                    <RightArrow className={"w-8"} />
+                  </button>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>Language</p>
+            </div>
+            
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>Science</p>
+            </div>
+            
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>Social Science</p>
+            </div>
+            
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>STEAM (connected learning)</p>
+            </div>
+            
+            <div className="flex items-center font-bold gap-2 text-xl">
+              <div className="size-16">
+                <HexagonPlayButton outerColor="#FCBA42" />
+              </div>
+              <p>Ed Tech</p>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+      <section className="w-full">
+        <Carousel items={Array.from(Array(5)).map((_, i) => <div className="bg-red-500 h-96 w-full">{i+1}</div>)} />
+      </section>
+
+      <Footer />
     </div>
   )
 }
