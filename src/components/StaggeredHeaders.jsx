@@ -1,11 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const StaggeredHeaders = () => {
+export const StaggeredHeaders = ({headers, containerClass="", direction="left", px=100}) => {
+
+  const [x, y] = [
+    (direction === "left" ? -px : direction === "right" ? px : 0),
+    (direction === "top" ? -px : direction === "bottom" ? px : 0),
+  ] 
+
   const containerVariants = {
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x, y, opacity: 0 },
     visible: {
       x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         when: "beforeChildren",
@@ -15,9 +22,10 @@ export const StaggeredHeaders = () => {
   };
 
   const itemVariants = {
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x, y, opacity: 0 },
     visible: {
       x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         x: { type: "spring", stiffness: 80 },
@@ -27,23 +35,14 @@ export const StaggeredHeaders = () => {
   };
 
   return (
-    <div className="text-8xl text-[#353535] font-bold">    
       <motion.div
         initial="hidden"
         animate="visible"
         variants={containerVariants}
+        className={containerClass}
       >
-        <motion.h1 variants={itemVariants}>
-          Life
-        </motion.h1>
-        <motion.h1 variants={itemVariants}>
-          Long
-        </motion.h1>
-        <motion.h1 variants={itemVariants}>
-          Learning.
-        </motion.h1>
+        {headers.map(header => <motion.h2 key={header} variants={itemVariants}>{header}</motion.h2>)}
       </motion.div>
-    </div>
   );
 };
 

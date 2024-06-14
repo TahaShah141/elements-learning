@@ -2,8 +2,10 @@ import Carousel from "../../components/Carousel"
 import { EventCard } from "../../components/EventCard"
 import { Footer } from "../../components/Footer"
 import { HexagonPlayButton } from "../../components/HexagonPlayButton"
+import { LinkButton } from "../../components/LinkButton"
 import { PuzzlePieces } from "../../components/PuzzlePieces"
 import { SlidingDiv } from "../../components/SlidingDiv"
+import { StaggeredHeaders } from "../../components/StaggeredHeaders"
 import { StaggeredPillarHeader } from "../../components/StaggeredPillarHeader"
 import { TestimonialCard } from "../../components/TestimonialCard"
 import { Hero } from "./Hero"
@@ -26,7 +28,7 @@ export const LandingPage = () => {
       <section className="h-screen flex flex-col justify-center items-center">
       </section>
 
-      <section className="w-full">
+      <section className="w-full bg-[#F3EEE8]">
         <PuzzlePieces />
       </section>
 
@@ -34,9 +36,9 @@ export const LandingPage = () => {
       <section className="flex container p-20 gap-8 flex-col justify-center">
         <div className="flex gap-16 justify-center items-center">
           <StaggeredPillarHeader />
-          <div className="bg-neutral-100 rounded-3xl size-[600px] p-2">
-            
-          </div>
+          <SlidingDiv direction="right" px={50}>
+            <img src="/landingpage/pillars.png" className="h-[600px]" />
+          </SlidingDiv>
         </div>
         <SlidingDiv direction="bottom" px={50}>
         <div className="px-40">
@@ -51,13 +53,14 @@ export const LandingPage = () => {
         <div className="flex gap-8 px-12">
 
           <div className="rounded-md flex flex-col justify-end items-end gap-px">
-            <div className="size-[500px]">
-              <img src="/services.png" alt="" />
+            <div className="w-[500px]">
+              <img src="/landingpage/services.png" alt="" />
             </div>
-            <div className="flex flex-col gap-2 w-[500px] text-right">
+            
+            <SlidingDiv direction="bottom" repeat={true} className="flex flex-col gap-2 w-[500px] text-right">
               <h2 className="uppercase font-bold text-5xl">What we offer</h2>
               <p className="text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
-            </div>
+            </SlidingDiv>
           </div>
           <div className="flex-1 flex flex-col gap-4">
 
@@ -77,17 +80,14 @@ export const LandingPage = () => {
                 
               </div>
               <div className="flex flex-1 gap-4 p-4">
-                <img src="/math.png" className="size-72" />
-                <div className="flex flex-1 flex-col gap-2">
+                <img src="/landingpage/maths.png" className="w-72 h-fit" />
+                <div className="flex flex-1 flex-col gap-2 items-start">
                   <p className="text-lg">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.
                   </p>
-                  <button className="p-4 text-lg text-[#E7BA42] bg-[#353535] font-bold flex items-center w-fit">
-                    <p>Trainings</p>
-                    <RightArrow className={"w-8"} />
-                  </button>
 
+                  <LinkButton text="More Info" textColor="#FBBA41" bgColor="#353535" />
                 </div>
               </div>
             </div>
@@ -133,11 +133,13 @@ export const LandingPage = () => {
       </section>
 
       <section className="flex gap-8 px-48 py-10 items-center">
-        <div className="h-48 aspect-video bg-neutral-200 rounded-lg"></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
+        <SlidingDiv direction="left" px={50} className="h-48 aspect-video bg-neutral-200 rounded-lg"></SlidingDiv>
+        <SlidingDiv direction="right" px={50}>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
+        </SlidingDiv>
       </section>
 
-      <section className="bg-[#F3EEE8] w-full gap-8 p-10 flex justify-center">
+      <section className="bg-[#F3EEE8] w-full gap-16 p-10 px-44 flex justify-around">
         <Stats />
       </section>
 
@@ -156,22 +158,23 @@ export const LandingPage = () => {
 
       <section className="w-full p-20 flex justify-center gap-12">
         <div className="flex flex-col gap-4">
-          <div className="size-96">
-            <img src="/testimonial.png" alt="" />
+          <div className="w-96">
+            <img src="landingpage/testimonials.png" alt="" />
           </div>
-          <div className="flex flex-col text-5xl font-bold uppercase items-end">
-            <p>What</p>
-            <p>Others</p>
-            <p>Say About</p>
-            <p>Us</p>
-          </div>
+          <StaggeredHeaders headers={["What", "Others", "Say About", "Us"]} direction="bottom" px={20} containerClass="flex flex-col text-5xl font-bold uppercase items-end" />
         </div>
         <div className="relative flex flex-col justify-center">
-          <button className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 size-16">
-            <HexagonPlayButton outerColor="#FABB41" />
-          </button>
+          <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 size-16 z-10">
+            <SlidingDiv direction="right" px={50} threshold={0.7}>
+              <button className="size-full">
+                <HexagonPlayButton outerColor="#FABB41" />
+              </button>
+            </SlidingDiv>
+          </div>
+          <SlidingDiv direction="top" px={50} threshold={0.7}>
           <TestimonialCard person={"Teacher Trainee - AJK"}
           quote={"As an experienced educator, I thought I had seen it all, but this training opened my eyes to new possibilities and approaches in teaching. The sessions were well-structured, practical, and tailored to the needs of educators. I particularly appreciated the focus on student-centered learing, differentiated instructions, and the integration of tooks/technology in teaching Maths."} />
+          </SlidingDiv>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import "../Styles/links.css"
 
 const navLinkClassName = ({isActive}) => {
-  return (isActive ? "text-[#E7BA42]" : "")
+  return (isActive ? "text-[#FBBA41]" : "")
 }
 
 export const Navbar = () => {
@@ -10,13 +10,7 @@ export const Navbar = () => {
     <nav className="flex w-full justify-center py-4 px-20 border-b-2 border-[#FABF23]">
       <div className="container flex justify-between">
         <div className="flex gap-2">
-          <div className="w-12 bg-neutral-100">
-            <img src="/logo.png"/>
-          </div>
-          <div className="flex flex-col font-bold tracking-widest justify-center">
-            <p>ELEMENTS</p>
-            <p>LEARNING</p>
-          </div>
+          <img src="/logo.png" className="h-12" alt="" />
         </div>
         <div className="flex gap-10 items-center navlinks">
           <NavLink to="/" className={navLinkClassName}>About Us</NavLink>

@@ -86,18 +86,13 @@ export const Footer = () => {
             <div className="p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
             <div className="flex-1 px-12 flex flex-col gap-4 text-white">
               <div className="flex gap-2">
-                <div className="w-12 bg-neutral-700 rounded-md">
-                </div>
-                <div className="flex flex-col font-bold tracking-widest justify-center">
-                  <p>ELEMENTS</p>
-                  <p>LEARNING</p>
-                </div>
+                <img src="/logo-white-text.png" className="h-10" />
               </div>
               <div className="flex flex-col gap-2">
                 <p className="">Subscribe to our Newsletters and stuff.</p>
                 <div className="flex gap-2">
                   <input type="text" className="flex-1 text-black px-2"/>
-                  <button className="p-2 px-4 bg-[#E7BA42] text-xl text-white font-bold flex items-center">
+                  <button className="p-2 px-4 bg-[#FBBA41] text-xl text-white font-bold flex items-center">
                     <p>Subscribe</p>
                     <svg className="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" fill="currentColor"/></svg>
                   </button>
