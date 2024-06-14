@@ -1,9 +1,12 @@
 import Carousel from "../components/Carousel"
+import { CountUp } from "../components/CountUp"
 import { EventCard } from "../components/EventCard"
 import { Footer } from "../components/Footer"
 import { HexagonPlayButton } from "../components/HexagonPlayButton"
-import { PuzzlePiece } from "../components/PuzzlePiece"
+import { PuzzlePieces } from "../components/PuzzlePieces"
 import { SlidingDiv } from "../components/SlidingDiv"
+import { StaggeredHeaders } from "../components/StaggeredHeaders"
+import { StaggeredPillarHeader } from "../components/StaggeredPillarHeader"
 import { TestimonialCard } from "../components/TestimonialCard"
 
 const RightArrow = ({className}) => {
@@ -12,52 +15,15 @@ const RightArrow = ({className}) => {
   )
 }
 
-const puzzles = [
-  {
-    letter: "T",
-    header: "Transfer",
-    meaning: "knowledge",
-    color: "#E03697"
-  },
-  {
-    letter: "S",
-    header: "Storytelling",
-    meaning: "immersive",
-    color: "#6C3A94"
-  },
-  {
-    letter: "R",
-    header: "Reflective",
-    meaning: "practice",
-    color: "#75BF44"
-  },
-  {
-    letter: "Q",
-    header: "Questioning",
-    meaning: "thoughtful",
-    color: "#02AEEE"
-  },
-  {
-    letter: "P",
-    header: "Playful",
-    meaning: "exploration",
-    color: "#FBBA42"
-  },
-]
-
 export const LandingPage = () => {
   return (
     <div className="flex flex-col items-center">
       <section className="bg-[#F3EEE8] w-full flex justify-center gap-24">
         <div className="py-24 max-w-lg flex flex-col gap-8">
-          {/* <SlidingDiv direction={"left"} px={10}> */}
-          <div className="text-8xl text-[#353535] font-bold">
-            <h1>Life</h1>
-            <h1>Long</h1>
-            <h1>Learning.</h1>
-          </div>
-          {/* </SlidingDiv> */}
-          <p className="text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
+          <StaggeredHeaders />
+          <SlidingDiv direction={"bottom"} px={10} delay={1}>
+            <p className="text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
+          </SlidingDiv>
           <div className="flex gap-4">
             <button className="p-4 bg-[#E7BA42] text-xl text-white font-bold flex items-center">
               <p>Trainings</p>
@@ -88,24 +54,17 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <section className="h-screen">
-
+      <section className="h-screen flex flex-col justify-center items-center">
       </section>
 
-      <section className="flex flex-row-reverse h-80 w-full bg-red-400">
-        {puzzles.map((puzzle, i) => 
-          <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== 0} {...puzzle} />
-        )}
+      <section className="w-full">
+        <PuzzlePieces />
       </section>
 
       
       <section className="flex container p-20 gap-8 flex-col justify-center">
         <div className="flex gap-16 justify-center items-center">
-          <div className="flex flex-col items-end">
-            <h2 className="text-huge font-bold">4</h2>
-            <h3 className="text-8xl font-semibold uppercase">Pillars</h3>
-            <h5 className="text-7xl font-thin">of Education</h5>
-          </div>
+          <StaggeredPillarHeader />
           <div className="bg-neutral-100 rounded-3xl size-[600px] p-2">
             
           </div>
@@ -213,28 +172,28 @@ export const LandingPage = () => {
         <div className="flex flex-col gap-2">
           <img src="/students.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
-            <p className="text-4xl font-bold">10000+</p>
+            <CountUp className="text-4xl font-bold" start={0} end={10000} increment={200} delay={20} suffix="+"/>
             <p className="text-xl">Students</p>
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <img src="/teachers.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
-            <p className="text-4xl font-bold">3000+</p>
+            <CountUp className="text-4xl font-bold" start={0} end={3000} increment={60} delay={20} suffix="+"/>
             <p className="text-xl">Teachers</p>
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <img src="/parents.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
-            <p className="text-4xl font-bold">1000+</p>
+            <CountUp className="text-4xl font-bold" start={0} end={1000} increment={20} delay={20} suffix="+"/>
             <p className="text-xl">Parents</p>
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <img src="/schools.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
-            <p className="text-4xl font-bold">100+</p>
+            <CountUp className="text-4xl font-bold" start={0} end={100} increment={2} delay={20} suffix="+"/>
             <p className="text-xl">Schools</p>
           </div>
         </div>
