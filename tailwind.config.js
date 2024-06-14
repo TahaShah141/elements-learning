@@ -10,6 +10,9 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['"Poppins"', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        'foreground': "#353535"
       }
     },
   },
