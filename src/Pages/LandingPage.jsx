@@ -120,10 +120,12 @@ export const LandingPage = () => {
       </section>
 
       <section className="bg-[#F3EEE8] p-20 w-full" >
-        <div className="flex gap-8">
+        <div className="flex gap-8 px-12">
 
-          <div className="flex-1 rounded-md flex flex-col justify-end items-end gap-8">
-            <div className="size-[500px] rounded-md bg-neutral-200" />
+          <div className="rounded-md flex flex-col justify-end items-end gap-px">
+            <div className="size-[500px]">
+              <img src="/services.png" alt="" />
+            </div>
             <div className="flex flex-col gap-2 w-[500px] text-right">
               <h2 className="uppercase font-bold text-5xl">What we offer</h2>
               <p className="text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
@@ -147,7 +149,7 @@ export const LandingPage = () => {
                 
               </div>
               <div className="flex flex-1 gap-4 p-4">
-                <div className="size-72 rounded-md bg-neutral-300" />
+                <img src="/math.png" className="size-72" />
                 <div className="flex flex-1 flex-col gap-2">
                   <p className="text-lg">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.
@@ -207,30 +209,30 @@ export const LandingPage = () => {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
       </section>
 
-      <section className="bg-[#F3EEE8] w-full gap-12 p-12 flex justify-center">
-        <div className="flex flex-col gap-4">
-          <div className="size-64 rounded-md bg-neutral-300" />
+      <section className="bg-[#F3EEE8] w-full gap-8 p-10 flex justify-center">
+        <div className="flex flex-col gap-2">
+          <img src="/students.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
             <p className="text-4xl font-bold">10000+</p>
             <p className="text-xl">Students</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="size-64 rounded-md bg-neutral-300" />
+        <div className="flex flex-col gap-2">
+          <img src="/teachers.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
             <p className="text-4xl font-bold">3000+</p>
             <p className="text-xl">Teachers</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="size-64 rounded-md bg-neutral-300" />
+        <div className="flex flex-col gap-2">
+          <img src="/parents.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
             <p className="text-4xl font-bold">1000+</p>
             <p className="text-xl">Parents</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="size-64 rounded-md bg-neutral-300" />
+        <div className="flex flex-col gap-2">
+          <img src="/schools.png" className="size-56" />
           <div className="flex flex-col justify-center items-center">
             <p className="text-4xl font-bold">100+</p>
             <p className="text-xl">Schools</p>
@@ -253,8 +255,8 @@ export const LandingPage = () => {
 
       <section className="w-full p-20 flex justify-center gap-12">
         <div className="flex flex-col gap-4">
-          <div className="size-96 bg-neutral-100">
-
+          <div className="size-96">
+            <img src="/testimonial.png" alt="" />
           </div>
           <div className="flex flex-col text-5xl font-bold uppercase items-end">
             <p>What</p>
