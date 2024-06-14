@@ -1,17 +1,18 @@
-import Carousel from "../components/Carousel"
-import { CountUp } from "../components/CountUp"
-import { EventCard } from "../components/EventCard"
-import { Footer } from "../components/Footer"
-import { HexagonPlayButton } from "../components/HexagonPlayButton"
-import { PuzzlePieces } from "../components/PuzzlePieces"
-import { SlidingDiv } from "../components/SlidingDiv"
-import { StaggeredHeaders } from "../components/StaggeredHeaders"
-import { StaggeredPillarHeader } from "../components/StaggeredPillarHeader"
-import { TestimonialCard } from "../components/TestimonialCard"
+import Carousel from "../../components/Carousel"
+import { EventCard } from "../../components/EventCard"
+import { Footer } from "../../components/Footer"
+import { HexagonPlayButton } from "../../components/HexagonPlayButton"
+import { PuzzlePieces } from "../../components/PuzzlePieces"
+import { SlidingDiv } from "../../components/SlidingDiv"
+import { StaggeredPillarHeader } from "../../components/StaggeredPillarHeader"
+import { TestimonialCard } from "../../components/TestimonialCard"
+import { Hero } from "./Hero"
+import { Stats } from "./Stats"
 
 const RightArrow = ({className}) => {
   return (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" fill="currentColor"/></svg>
+    
   )
 }
 
@@ -19,39 +20,7 @@ export const LandingPage = () => {
   return (
     <div className="flex flex-col items-center">
       <section className="bg-[#F3EEE8] w-full flex justify-center gap-24">
-        <div className="py-24 max-w-lg flex flex-col gap-8">
-          <StaggeredHeaders />
-          <SlidingDiv direction={"bottom"} px={10} delay={1}>
-            <p className="text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
-          </SlidingDiv>
-          <div className="flex gap-4">
-            <button className="p-4 bg-[#E7BA42] text-xl text-white font-bold flex items-center">
-              <p>Trainings</p>
-              <RightArrow className={"w-8"} />
-            </button>
-            <button className="p-4 text-xl text-[#E7BA42] bg-[#353535] font-bold flex items-center">
-              <p>Trainings</p>
-              <RightArrow className={"w-8"} />
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col w-2/5 gap-4">
-          <div className="h-24 flex gap-4">
-            <div className="flex-1 bg-[#74BE43] rounded-bl-[72px]"></div>
-            <div className="flex-1"></div>
-          </div>
-          <div className="flex flex-[2_0_0] gap-4">
-            <div className="flex-1 bg-[#F8EA01] rounded-[72px] rounded-br-none"></div>
-            <div className="flex flex-1 flex-col gap-4">
-              <div className="flex-1 bg-[#F67E1F] rounded-[72px] rounded-bl-none"></div>
-              <div className="flex-1 bg-[#02AEEE] rounded-[72px] rounded-tr-none"></div>
-            </div>
-          </div>
-          <div className="h-24 flex gap-4">
-            <div className="flex-1"></div>
-            <div className="flex-1 bg-[#FBBB40] rounded-tr-[72px]"></div>
-          </div>
-        </div>
+        <Hero />
       </section>
 
       <section className="h-screen flex flex-col justify-center items-center">
@@ -169,34 +138,7 @@ export const LandingPage = () => {
       </section>
 
       <section className="bg-[#F3EEE8] w-full gap-8 p-10 flex justify-center">
-        <div className="flex flex-col gap-2">
-          <img src="/students.png" className="size-56" />
-          <div className="flex flex-col justify-center items-center">
-            <CountUp className="text-4xl font-bold" start={0} end={10000} increment={200} delay={20} suffix="+"/>
-            <p className="text-xl">Students</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-2">
-          <img src="/teachers.png" className="size-56" />
-          <div className="flex flex-col justify-center items-center">
-            <CountUp className="text-4xl font-bold" start={0} end={3000} increment={60} delay={20} suffix="+"/>
-            <p className="text-xl">Teachers</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-2">
-          <img src="/parents.png" className="size-56" />
-          <div className="flex flex-col justify-center items-center">
-            <CountUp className="text-4xl font-bold" start={0} end={1000} increment={20} delay={20} suffix="+"/>
-            <p className="text-xl">Parents</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-2">
-          <img src="/schools.png" className="size-56" />
-          <div className="flex flex-col justify-center items-center">
-            <CountUp className="text-4xl font-bold" start={0} end={100} increment={2} delay={20} suffix="+"/>
-            <p className="text-xl">Schools</p>
-          </div>
-        </div>
+        <Stats />
       </section>
 
       <section className="w-full p-2">

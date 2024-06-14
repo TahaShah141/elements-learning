@@ -1,5 +1,5 @@
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
-import { LandingPage } from "./Pages/LandingPage"
+import { LandingPage } from "./Pages/LandingPage/LandingPage"
 import { Navbar } from "./components/Navbar"
 import { ContactPage } from "./Pages/ContactPage"
 import { AboutPage } from "./Pages/AboutPage"
