@@ -60,8 +60,8 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
   return (
     <>
       <div className="flex flex-col gap-2 flex-1">
-        <div onClick={onClick} className={`p-1 rounded-full rounded-br-none font-bold text-xl flex items-center gap-2 group transition-colors ${open ? "bg-[#FBBA41] delay-300 duration-700" : "bg-transparent delay-0 duration-0"}`}>
-          <div className="size-16 relative">
+        <div onClick={onClick} className={`p-1 rounded-full rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${open ? "bg-[#FBBA41] delay-300 duration-700" : "bg-transparent delay-0 duration-0"}`}>
+          <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
             {!open ? 
             <>
             <div className="absolute inset-0 transition-opacity duration-700 size-full opacity-100 group-hover:opacity-0">
@@ -71,17 +71,17 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
               <HexagonPlayButton outerColor="#FFFFFF" innerColor="#000000" />
             </div>
             </>:
-            <div className="size-16">
+            <div className="size-full">
               <HexagonPlayButton innerColor="#000000" outerColor="#FFFFFF" />
             </div>}
           </div>
-          <p>{title}</p>
+          <p className="flex-1">{title}</p>
         </div>
 
-        <div className={`flex gap-4 duration-700 transition-all ${open ? "h-96 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
-          <img src={illustrationSrc} className="w-72 h-fit" />
+        <div className={`flex gap-2 duration-700 transition-all ${open ? "h-72 xs:h-60 sm:h-72 lg:h-[400px] xl:h-[500p  opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
           <div className="flex flex-1 flex-col gap-2 items-start">
-            <p className="text-lg">
+            <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-lg">
+              <img src={illustrationSrc} className="w-24 p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
               {content}
             </p>
 
@@ -100,19 +100,19 @@ export const WhatWeOffer = () => {
 
   return (
     <>
-      <div className="flex gap-8 px-12">
+      <div className="flex flex-col lg:flex-row gap-8">
 
-        <div className="rounded-md flex flex-col justify-end items-end gap-px">
-          <div className="w-[500px]">
+        <div className="rounded-md flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
+          <div className="max-w-[500px]">
             <img src="/landingpage/services.png" alt="" />
           </div>
           
-          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col gap-2 w-[500px] text-right">
-            <h2 className="uppercase font-bold text-5xl">What we offer</h2>
-            <p className="text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
+          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
+            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl">What we offer</h2>
+            <p className="text-base sm:text-md md:text-xl lg:text-xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col xl:gap-2">
 
           {services.map((service, index) => (
             <ServiceTab

@@ -29,7 +29,7 @@ export const LandingPage = () => {
         <Pillars />
       </section>
 
-      <section className="bg-[#F3EEE8] p-20 w-full" >
+      <section className="bg-[#F3EEE8] p-8 sm:p-12 lg:p-20 lg:px-32 xl:px-40 w-full" >
         <WhatWeOffer />
       </section> 
 
