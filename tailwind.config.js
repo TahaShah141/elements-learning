@@ -13,6 +13,9 @@ export default {
       },
       colors: {
         'foreground': "#353535"
+      },
+      screens: {
+        'xs': "350px"
       }
     },
   },
