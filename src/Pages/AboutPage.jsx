@@ -1,6 +1,6 @@
 
 export const AboutPage = () => {
   return (
-    <div>About Page</div>
+    <div>This is the About page</div>
   )
 }
