@@ -15,8 +15,8 @@ export default {
         'foreground': "#353535"
       },
       screens: {
-        'xs': '350px'
-      },
+        'xs': "350px"
+      }
     },
   },
   plugins: [],
