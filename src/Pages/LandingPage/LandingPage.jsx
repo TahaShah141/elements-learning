@@ -20,7 +20,7 @@ export const LandingPage = () => {
       <section className="h-screen flex flex-col justify-center items-center">
       </section>
 
-      <section className="w-full bg-[#F3EEE8]">
+      <section className="w-full bg-[#F3EEE8] min-[300px]:block hidden">
         <PuzzlePieces />
       </section>
 
