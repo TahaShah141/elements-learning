@@ -39,7 +39,7 @@ const puzzles = [
   },
 ]
 
-const PuzzlePiece = ({letter, header, meaning, color, showTab, reverseOrder}) => {
+const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseOrder}) => {
   const itemVariants = {
     hidden: { x: -50, opacity: 0 },
     visible: {
@@ -53,10 +53,10 @@ const PuzzlePiece = ({letter, header, meaning, color, showTab, reverseOrder}) =>
   };
 
   return (
-    <motion.div variants={itemVariants} className="relative group flipping-card text-white flex-1 h-full" style={{backgroundColor: color}}>
+    <motion.div variants={itemVariants} className="relative flipping-card-parent group text-white flex-1 h-full" style={{backgroundColor: color}}>
       {showTab && <div className="absolute size-20 rounded-tr-lg bg-white right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 z-10" style={{backgroundColor: color}}/>}
-      <div className='w-full h-full flipping-card'>
-        <div className='flex flex-col justify-center items-center gap-2'>
+      <div className='w-full h-full flipping-card group'>
+        <div className='size-full group-hover:hidden flex flex-col justify-center items-center gap-2'>
           <p className="font-bold text-7xl">{letter}</p>
           <div className={`flex ${reverseOrder ? "flex-col-reverse" : "flex-col"}`}>
             <p className="text-2xl uppercase tracking-widest">{header}</p>
@@ -66,6 +66,9 @@ const PuzzlePiece = ({letter, header, meaning, color, showTab, reverseOrder}) =>
               <span className="flex-1 border border-white "/>
             </p>
           </div>
+        </div>
+        <div className='size-full group-hover:flex flipped-content hidden flex-col justify-center items-center gap-2'>
+          {content}
         </div>
       </div>
     </motion.div>
