@@ -20,7 +20,7 @@ const NavOption = ({text, link, children, clamp="left"}) => {
           <NavLink to={link} className={navLinkClassName}>{text}</NavLink>
           <svg className="size-5 group-hover:rotate-90 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,17L15,12L10,7V17Z" fill="currentColor"/></svg>
         </div>
-        <div className={`absolute flex flex-col gap-2 translate-y-full overflow-clip text-nowrap ${clamp}-0 bottom-0 h-0 w-0 group-hover:w-48 group-hover:h-fit group-hover:p-4 bg-white  transition-all duration-300 shadow-md rounded-lg border`}>
+        <div className={`absolute flex flex-col items-start gap-2 translate-y-full overflow-clip text-nowrap ${clamp}-0 bottom-0 h-0 w-0 group-hover:w-48 group-hover:h-fit group-hover:p-4 bg-white  transition-all duration-300 shadow-md rounded-lg border`}>
           {children}
         </div>
       </div>
@@ -35,7 +35,7 @@ export const Navbar = () => {
         <Link to={"/"} className="flex gap-2">
           <img src="/logo.png" className="h-12" alt="" />
         </Link>
-        <div className="flex gap-10 items-center">
+        <div className="flex gap-10 items-center navlinks">
           <NavOption text="About Us" link="/about">
             <NavLink to="/about" className={navLinkClassName}>Mission & Vision</NavLink>
             <NavLink to="/about" className={navLinkClassName}>Our Team</NavLink>
@@ -51,12 +51,6 @@ export const Navbar = () => {
           </NavOption>
           <NavOption text="News & Blogs" link="/blogs" />
           <NavOption text="Contact Us" link="/contact" />
-          {/* 
-          <NavLink to="/" className={navLinkClassName}>About Us</NavLink>
-          <NavLink to="/services" className={navLinkClassName}>Services</NavLink>
-          <NavLink to="/products" className={navLinkClassName}>Products</NavLink>
-          <NavLink to="/blogs" className={navLinkClassName}>News & Blogs</NavLink>
-          <NavLink to="/contact" className={navLinkClassName}>Contact Us</NavLink> */}
         </div>
       </div>
     </nav>
