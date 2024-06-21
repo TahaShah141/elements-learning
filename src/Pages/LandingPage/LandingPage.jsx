@@ -13,7 +13,7 @@ import { WhatWeOffer } from "./WhatWeOffer"
 export const LandingPage = () => {
   return (
     <div className="flex flex-col items-center">
-       <section className="bg-[#F3EEE8] w-full flex justify-center gap-24">
+      <section className="bg-[#F3EEE8] w-full flex justify-center gap-24">
         <Hero />
       </section>
 
