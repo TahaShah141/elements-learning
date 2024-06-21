@@ -16,15 +16,16 @@ export const Hero = () => {
           <LinkButton text="Contact Us" bgColor={"#353535"} textColor={"#FBBA41"} />
         </div>
       </div>
-      <div className="w-2/5 flex gap-4">
-        <div className="flex flex-col gap-4 flex-1">
+      <div className="w-2/5 flex gap-4 overflow-hidden">
+        <SlidingDiv className="flex flex-col gap-4 flex-1" direction={"top"} px={100} delay={0.5}>
           <div className="h-24 bg-[#74BE43] rounded-bl-[120px]"></div>
           <div className="flex-1 bg-[#F8EA01] flex items-end overflow-hidden rounded-[120px] rounded-br-none">
             <img src="/landingpage/pic01.png" className="w-full" alt="" />
           </div>
           <div className="h-24"></div>
-        </div>
-        <div className="flex flex-col gap-4 flex-1">
+        </SlidingDiv>
+
+        <SlidingDiv className="flex flex-col gap-4 flex-1" direction={"bottom"} px={100} delay={0.6}>
           <div className="h-24"></div>
             <div className="flex-1 bg-[#F67E1F] rounded-[120px] overflow-hidden rounded-bl-none">
               <img src="/landingpage/pic02.png" className="h-full" alt="" />
@@ -33,7 +34,7 @@ export const Hero = () => {
               <img src="/landingpage/pic03.png" className="h-full" alt="" />
             </div>
           <div className="h-24 bg-[#FBBB40] rounded-tr-[120px]"></div>
-        </div>
+        </SlidingDiv>
       </div>
     </>
   )
