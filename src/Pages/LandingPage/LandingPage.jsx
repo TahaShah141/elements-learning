@@ -60,7 +60,7 @@ export const LandingPage = () => {
         </div>
       </section> */}
 
-      <section className="w-full p-20 flex justify-center gap-12">
+      <section className="w-full p-6 sm:p-10 flex flex-col justify-center xs:items-start min-[550px]:flex-row min-[550px]:items-center sm:gap-8 gap-4">
         <Testimonials />
       </section>
 

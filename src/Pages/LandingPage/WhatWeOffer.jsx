@@ -109,7 +109,7 @@ export const WhatWeOffer = () => {
           
           <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
             <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl">What we offer</h2>
-            <p className="text-base sm:text-md md:text-xl lg:text-xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
+            <p className="text-base md:text-xl lg:text-xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
         <div className="flex-1 flex flex-col xl:gap-2">
