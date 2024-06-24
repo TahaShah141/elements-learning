@@ -15,10 +15,10 @@ export const ContactPage = () => {
         <p className="text-center text-lg px-44 py-1">Got question or feedback? We're here to help! Reach out to us through the contact form below, and our team will get back to you as soon as possible</p>
         <div className="bg-gray-300 w-full h-96 p-32"></div>
         </div>
-        <div className="grid grid-cols-2 gap-6 py-16 px-36">
-          <div className="space-y-4 col-span-1">
+        <div className="flex flex-wrap py-16 px-36 space-x-6">
+          <div className=" w-1/2 space-y-4">
             <form action="">
-              <div className="grid grid-cols-1 gap-6">
+              <div className="flex flex-col gap-6">
                 <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3" />
                 <input type="email" placeholder="Enter Your Email" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3" />
                 <textarea name="comments" id="comments" placeholder="Your Message" rows="6" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3"></textarea>
@@ -26,8 +26,8 @@ export const ContactPage = () => {
               </div>
              </form>
           </div>
-          <div className="col-span-1">
-            <div className="bg-[#F3EEE8] rounded mb-6 p-2.5">
+          <div className="w-[47%] space-y-6">
+            <div className="bg-[#F3EEE8] rounded mb-6 p-2.5 ">
             <svg className="h-8 w-12 pt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
             <h1 className="text-xl font-bold px-8">Address</h1>
             <p className="px-8 ">IAEC, NUST, H-12, Islamabad</p>
