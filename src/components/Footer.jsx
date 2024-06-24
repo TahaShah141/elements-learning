@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-[#353535] p-4">
       <div className="border-b border-white w-full flex flex-col py-4 gap-4 justify-center">
         
-        <div className="flex xl:flex-1 gap-12 flex-col">
+        <div className="flex xl:flex-1 gap-12 flex-col xl:flex-row">
           
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">FAQs</div>
@@ -90,7 +90,7 @@ export const Footer = () => {
         
         </div>
         
-        <div className="flex flex-col flex-1 gap-4 xl:gap-8">
+        <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-8">
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Subscribe</div>
@@ -108,7 +108,7 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-1 flex-col gap-4">
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Links</div>
             <div className="flex-1 grid text-sm grid-cols-2 sm:grid-cols-4 gap-2 gap-y-4 text-white">
               <div className="flex-1 flex flex-col gap-2">
