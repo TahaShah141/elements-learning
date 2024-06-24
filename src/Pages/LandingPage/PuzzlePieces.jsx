@@ -39,7 +39,7 @@ const puzzles = [
   },
 ]
 
-const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseOrder}) => {
+const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseOrder, order}) => {
   const itemVariants = {
     hidden: { x: -50, opacity: 0 },
     visible: {
@@ -52,8 +52,8 @@ const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseO
   };
 
   return (
-    <motion.div variants={itemVariants} className="relative flipping-card-parent group text-white flex-1 h-full" style={{backgroundColor: color}}>
-      {showTab && <div className="absolute size-4 xs:size-6 sm:size-8 md:size-10 lg:size-14 xl:size-16 rounded-tr-sm bg-white right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 z-10" style={{backgroundColor: color}}/>}
+    <motion.div variants={itemVariants} className="relative flipping-card-parent group text-white flex-1 h-full" style={{backgroundColor: color, zIndex: order}}>
+      {showTab && <div className="absolute size-4 xs:size-6 sm:size-8 md:size-10 lg:size-14 xl:size-16 rounded-tr-sm bg-white right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45" style={{backgroundColor: color}}/>}
       <div className='w-full h-full flipping-card group text-[8px] sm:text-sm md:text-base lg:text-xl xl:text-2xl'>
         <div className='size-full min-[400px]:group-hover:hidden flex flex-col justify-center items-center gap-px md:gap-1 lg:gap-2'>
           <p className="font-bold text-sm xs:text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl">{letter}</p>
@@ -102,7 +102,7 @@ export const PuzzlePieces = () => {
     variants={containerVariants}
     >
     {puzzles.map((puzzle, i) => 
-      <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== puzzles.length - 1} {...puzzle} />
+      <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== puzzles.length - 1} {...puzzle} order={puzzles.length - i} />
     )}
     </motion.div>
   )
