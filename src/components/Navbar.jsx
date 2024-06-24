@@ -35,7 +35,7 @@ export const Navbar = () => {
         <Link to={"/"} className="flex gap-2">
           <img src="/logo.png" className="h-12" alt="" />
         </Link>
-        <div className="flex gap-10 items-center navlinks">
+        <div className="flex gap-10 items-center">
           <NavOption text="About Us" link="/about">
             <NavLink to="/about" className={navLinkClassName}>Mission & Vision</NavLink>
             <NavLink to="/about" className={navLinkClassName}>Our Team</NavLink>

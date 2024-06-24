@@ -3,6 +3,7 @@ import { Footer } from "../../components/Footer"
 import { SlidingDiv } from "../../components/SlidingDiv"
 import { EventCard } from "./EventCard"
 import { Hero } from "./Hero"
+import { OurJourneySection } from "./OurJourney/OurJourneySection"
 import { Pillars } from "./Pillars"
 import { PuzzlePieces } from "./PuzzlePieces"
 import { Stats } from "./Stats"
@@ -17,7 +18,8 @@ export const LandingPage = () => {
         <Hero />
       </section>
 
-      <section className="h-screen flex flex-col justify-center items-center">
+      <section className="flex flex-col w-full gap-4 py-10 px-20">
+        <OurJourneySection />
       </section>
 
       <section className="w-full bg-[#F3EEE8] min-[300px]:block hidden">

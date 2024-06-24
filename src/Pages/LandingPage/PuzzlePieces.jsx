@@ -46,8 +46,7 @@ const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseO
       x: 0,
       opacity: 1,
       transition: {
-        x: { type: "spring", stiffness: 80 },
-        duration: 0.25,
+        duration: 0.2,
       }
     }
   };

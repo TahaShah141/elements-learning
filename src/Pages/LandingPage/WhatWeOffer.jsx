@@ -78,13 +78,10 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
           <p className="flex-1">{title}</p>
         </div>
 
-        <div className={`flex gap-2 duration-700 transition-all ${open ? "h-fit slide-up opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
-          <div className="flex flex-1 flex-col gap-2 items-start">
-            <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-lg">
-              <img src={illustrationSrc} className="w-24 p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
-              {content}
-            </p>
-
+        <div className={`flex gap-2 duration-700 transition-all ${open ? "h-64 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
+          <div className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-lg">
+            <img src={illustrationSrc} className="w-24 p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
+            {content}
             <LinkButton to={link} text={linkText} textColor="#FBBA41" bgColor="#353535" />
           </div>
         </div>
