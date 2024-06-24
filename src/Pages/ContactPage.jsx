@@ -1,11 +1,12 @@
 import { Footer } from "../components/Footer"
 
+
 export const ContactPage = () => {
   return (
     <div className="flex flex-col grid-cols-2">
       <section className="bg-[#F3EEE8] w-full p-4">
         <div className="flex grid-cols-1">
-          <h1 className="sm:text-4xl md:text-6xl lg:text-8xl font-bold py-36 px-20 md:px-28">Contact <br /> US </h1>
+          <h1 className="sm:text-4xl md:text-6xl lg:text-8xl font-bold py-36 px-20 md:px-28">Contact <br /> Us </h1>
           <div className="bg-gray-300 w-[600px] h-[75vh] pl-10"></div>
         </div>
       </section>
@@ -15,30 +16,38 @@ export const ContactPage = () => {
         <p className="text-center text-lg px-44 py-1">Got question or feedback? We're here to help! Reach out to us through the contact form below, and our team will get back to you as soon as possible</p>
         <div className="bg-gray-300 w-full h-96 p-32"></div>
         </div>
-        <div className="flex flex-wrap py-16 px-36 space-x-6">
+        <div className="flex py-16 px-36 space-x-6">
           <div className=" w-1/2 space-y-4">
             <form action="">
               <div className="flex flex-col gap-6">
-                <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3" />
-                <input type="email" placeholder="Enter Your Email" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3" />
-                <textarea name="comments" id="comments" placeholder="Your Message" rows="6" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:border-[#FBBA41] block w-full p-3"></textarea>
+                <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3" />
+                <input type="email" placeholder="Enter Your Email" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3" />
+                <textarea name="comments" id="comments" placeholder="Your Message" rows="6" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3"></textarea>
                 <button className="bg-[#FBBA41] rounded p-3">Submit</button>
               </div>
              </form>
           </div>
-          <div className="w-[47%] space-y-6">
-            <div className="bg-[#F3EEE8] rounded mb-6 p-2.5 ">
-            <svg className="h-8 w-12 pt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+          <div className="grid pt-5">
+            <div className="w-12">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+            </div>
+            <div className="w-12">
+            <svg version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M20,3H4C1.8,3,0,4.8,0,7v10c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V7C24,4.8,22.2,3,20,3z M21.6,8.8l-7.9,5.3   c-0.5,0.3-1.1,0.5-1.7,0.5s-1.2-0.2-1.7-0.5L2.4,8.8C2,8.5,1.9,7.9,2.2,7.4C2.5,7,3.1,6.9,3.6,7.2l7.9,5.3c0.3,0.2,0.8,0.2,1.1,0   l7.9-5.3c0.5-0.3,1.1-0.2,1.4,0.3C22.1,7.9,22,8.5,21.6,8.8z" id="email"/></g></svg>
+            </div>
+            <div className="w-12 ">
+            <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M22.19,15.3,19.3,12.42a2,2,0,0,0-1.73-.56,2,2,0,0,0-1.42,1l-.62.8a.53.53,0,0,1-.38.2.5.5,0,0,1-.39-.15L10.32,9.24a.54.54,0,0,1-.15-.4.53.53,0,0,1,.2-.37l.8-.62a2,2,0,0,0,1-1.42,2,2,0,0,0-.56-1.74L8.7,1.81a2.85,2.85,0,0,0-3.93,0L1.66,4.93c-.87.86-.88,2.33,0,4.38a12.2,12.2,0,0,0,2.21,3.6l7.26,7.26a12.2,12.2,0,0,0,3.6,2.21,7.17,7.17,0,0,0,2.6.62,2.38,2.38,0,0,0,1.78-.66l3.12-3.11A2.79,2.79,0,0,0,22.19,15.3Zm-1.45,2.48-3.12,3.11c-.59.43-3.88-1-5.08-2.17L5.28,11.46C4.08,10.25,2.68,7,3.11,6.38L6.22,3.26a.74.74,0,0,1,1,0L10.1,6.09l-1,.76a2.62,2.62,0,0,0-1,1.87,2.59,2.59,0,0,0,.75,2l4.44,4.44a2.55,2.55,0,0,0,2,.75,2.62,2.62,0,0,0,1.87-1l.67-.86V14l0-.09,2.89,2.88A.74.74,0,0,1,20.74,17.78Z"/></svg>
+            </div>
+          </div>
+          <div className="w-2/5 space-y-6">
+            <div className="bg-[#F3EEE8] rounded mb-6 p-6 ">
             <h1 className="text-xl font-bold px-8">Address</h1>
             <p className="px-8 ">IAEC, NUST, H-12, Islamabad</p>
             </div>
-            <div className="bg-[#F3EEE8] rounded mb-6 p-2.5">
-            <svg className="h-8 w-12 pt-4" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="#fbba41" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-            <h1 className="text-xl font-bold px-8">Mail US</h1>
+            <div className="bg-[#F3EEE8] rounded mb-6 p-6 ">
+            <h1 className="text-xl font-bold px-8">Mail Us</h1>
             <p className="px-8 ">Info@Elements-learning.com</p>
             </div>
-            <div className="bg-[#F3EEE8] rounded p-2.5">
-            <svg className="h-8 w-12 pt-4" xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 512 512"><path fill="#fbba41" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            <div className="bg-[#F3EEE8] rounded p-6 ">
             <h1 className="text-xl font-bold px-8">Telephone</h1>
             <p className="px-8">+92 327 8898770</p>
             </div>
