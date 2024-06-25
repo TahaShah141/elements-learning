@@ -13,10 +13,10 @@ import { WhatWeOffer } from "./WhatWeOffer"
 
 export const LandingPage = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-screen overflow-hidden">
 
-      <p>{window.innerHeight}</p>
-      <p>{window.innerWidth}</p>
+      {/* <p>{window.innerHeight}</p>
+      <p>{window.innerWidth}</p> */}
 
       <section className="bg-[#F3EEE8] w-full flex md:justify-center lg:px-10 lg:gap-12 xl:gap-20">
         <Hero />
