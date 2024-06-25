@@ -2,13 +2,12 @@ import { Link, NavLink } from "react-router-dom"
 import "../Styles/links.css"
 
 const navLinkClassName = ({isActive}) => {
-  return (isActive ? "text-[#FBBA41]" : "")
+  return `transition-all duration-500 p-2 hover:bg-[#FBBA41] ${(isActive ? "bg-[#FBBA41]" : "bg-transparent")}`
 }
 
 const tailwindClasses = ["top-0", "right-0", "bottom-0", "left-0"]
 
 const NavOption = ({text, link, children, clamp="left"}) => {
-  console.log(children)
   if (!children) {
     return (
       <NavLink to={link} className={navLinkClassName}>{text}</NavLink>
@@ -16,7 +15,7 @@ const NavOption = ({text, link, children, clamp="left"}) => {
   } else {
     return (
       <div className="relative group p-1">
-        <div className="flex items-center">
+        <div className="flex items-center group-hover:bg-[#FBBA41]">
           <NavLink to={link} className={navLinkClassName}>{text}</NavLink>
           <svg className="size-5 group-hover:rotate-90 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,17L15,12L10,7V17Z" fill="currentColor"/></svg>
         </div>
@@ -37,17 +36,17 @@ export const Navbar = () => {
         </Link>
         <div className="flex gap-10 items-center">
           <NavOption text="About Us" link="/about">
-            <NavLink to="/about" className={navLinkClassName}>Mission & Vision</NavLink>
-            <NavLink to="/about" className={navLinkClassName}>Our Team</NavLink>
+            <NavLink to="/about" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Mission & Vision</NavLink>
+            <NavLink to="/about" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Our Team</NavLink>
           </NavOption>
           <NavOption text="What We Offer" link="/services">
-            <NavLink to="/services" className={navLinkClassName}>ECE</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>Maths</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>Language</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>Social Science</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>Science</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>STEAM</NavLink>
-            <NavLink to="/services" className={navLinkClassName}>Ed Tech</NavLink>
+            <NavLink to="/services#ece" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>ECE</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Maths</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Language</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Social Science</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Science</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>STEAM</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Ed Tech</NavLink>
           </NavOption>
           <NavOption text="News & Blogs" link="/blogs" />
           <NavOption text="Contact Us" link="/contact" />
