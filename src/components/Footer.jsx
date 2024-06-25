@@ -4,18 +4,18 @@ import { LinkButton } from "./LinkButton"
 export const Footer = () => {
   return (
     <footer className="bg-[#353535] p-4">
-      <div className="border-b border-white w-full flex flex-col py-4 gap-4 justify-center">
+      <div className="border-b border-white w-full flex flex-col py-4 gap-4 sm:gap-12 sm:p-10 justify-center">
         
         <div className="flex xl:flex-1 gap-12 flex-col xl:flex-row">
           
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">FAQs</div>
-            <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">FAQs</div>
+            <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white text-lg">FAQs</div>
             <div className="flex-1 flex flex-col gap-4 xl:gap-8 text-white">
-              <p className="text-xs xl:text-sm">
+              <p className="text-xs md:text-base">
                 Got questions? We've got answers. Explore our frequently asked questions to find everything you need to know about Elements Learning and our educational offerings. Whether it's about out products, services, or educational philosophy, we're here to provide clarity and support your learning journey. 
               </p>
-              <div className="flex flex-col text-sm gap-2 xl:px-8">
+              <div className="flex flex-col text-sm md:text-bas md:px-4 gap-2 xl:px-8">
                 <div className="flex items-center gap-2">
                   <div className="size-10">
                     <HexagonPlayButton outerColor="#FABB41" />
@@ -52,20 +52,20 @@ export const Footer = () => {
           
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Location</div>
-            <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Location</div>
+            <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white text-lg">Location</div>
             <div className="flex-1 xl:px-12 flex gap-2 flex-col sm:flex-row xl:gap-8 text-white">
-              <div className="flex-1 flex-col text-sm flex gap-6">
+              <div className="flex-1 flex-col text-sm md:text-base flex gap-6">
                 <p className="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magnam quasi quisquam earum exercitationem. Nulla qui, culpa sit eaque cupiditate cumque sapiente, quo quam, odio nobis laborum. Totam, obcaecati velit.
                 </p>
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-2 items-center xl:px-4">
                     <svg className="size-4 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" fill="currentColor"/></svg>
-                    <p className="xl:text-lg">0300 0000000</p>
+                    <p className="md:text-lg">0300 0000000</p>
                   </div>
                   <div className="flex gap-2 items-center xl:px-4">
                     <svg className="size-4 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" fill="currentColor"/></svg>
-                    <p className="xl:text-lg">info@elementslearning.com</p>
+                    <p className="md:text-lg">info@elementslearning.com</p>
                   </div>
 
                 </div>
@@ -94,7 +94,7 @@ export const Footer = () => {
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Subscribe</div>
-            <div className="flex-1 xl:px-12 flex flex-col text-sm gap-4 text-white">
+            <div className="flex-1 xl:px-12 flex flex-col text-sm md:text-base gap-4 text-white">
               <div className="flex gap-2">
                 <img src="/logo-white-text.png" className="h-10" />
               </div>
@@ -110,40 +110,41 @@ export const Footer = () => {
           
           <div className="flex flex-1 flex-col gap-4">
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Links</div>
-            <div className="flex-1 grid text-sm grid-cols-2 sm:grid-cols-4 gap-2 gap-y-4 text-white">
-              <div className="flex-1 flex flex-col gap-2">
+            <div className="flex-1 grid text-sm md:text-base grid-cols-2 sm:grid-cols-4 gap-2 gap-y-4 text-white">
+              <div className="flex-1 flex flex-col gap-2 justify-between">
                 <h3 className="font-bold text-lg underline">About Us</h3>
                 <p>Our Vision</p>
                 <p>Our Mission</p>
                 <p>Our Goals</p>
                 <p>Our Team</p>
               </div>
-              <div className="flex-1 flex flex-col gap-2">
+              <div className="flex-1 flex flex-col gap-2 justify-between">
                 <h3 className="font-bold text-lg underline">Services</h3>
                 <p>Trainings</p>
                 <p>Curriculum Review</p>
                 <p>Environment Design</p>
                 <p>Lorem Ipsum</p>
               </div>
-              <div className="flex-1 flex flex-col gap-2">
+              <div className="flex-1 flex flex-col gap-2 justify-between">
                 <h3 className="font-bold text-lg underline">Products</h3>
                 <p>Mathematics</p>
                 <p>Maths Lab</p>
                 <p>Olympiad</p>
                 <p>E Tutor</p>
               </div>
-              <div className="flex-1 flex flex-col gap-2">
+              <div className="flex-1 flex flex-col gap-2 justify-between">
                 <h3 className="font-bold text-lg underline">Contact Us</h3>
                 <p>Details</p>
                 <p>Contact Form</p>
                 <p>Location</p>
+                <p> </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="text-white font-bold flex justify-between py-2 xl:p-4 text-xs xl:text-lg">
+      <div className="text-white font-bold flex justify-between py-2 xl:p-4 text-xs sm:text-sm md:text-base xl:text-lg">
         <p>© Elements Learning 2024</p>
         <p>Provicy Policy</p>
       </div>

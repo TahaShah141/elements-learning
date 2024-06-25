@@ -78,12 +78,12 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
           <p className="flex-1">{title}</p>
         </div>
 
-        <div className={`flex gap-2 duration-700 transition-all ${open ? "h-64 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
-          <div className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-lg">
+        <div className={`flex gap-2 duration-700 transition-all ${open ? "h-72 xs:h-64 min-[500px]:h-48 sm:h-72 xl:h-96 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
+          <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
             <img src={illustrationSrc} className="w-24 p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
             {content}
             <LinkButton to={link} text={linkText} textColor="#FBBA41" bgColor="#353535" />
-          </div>
+          </p>
         </div>
       </div>
     </>
@@ -92,15 +92,15 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
 
 export const WhatWeOffer = () => {
 
-  const [openedIndex, setOpenedIndex] = useState(0);
+  const [openedIndex, setOpenedIndex] = useState(-1);
   const [opened, setOpened] = useState([false, false, false, false, false, false, false]);
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row items-start gap-8">
 
-        <div className="rounded-md flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
-          <div className="max-w-[500px]">
+        <div className="rounded-md flex-1 flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
+          <div className="max-w-[400px]">
             <img src="/landingpage/services.png" alt="" />
           </div>
           
@@ -122,7 +122,7 @@ export const WhatWeOffer = () => {
               // open={opened[index]}
               // onClick={() => setOpened(o => o.map((o, i) => i === index ? !o : o))}
               open={index===openedIndex}
-              onClick={() => setOpenedIndex(index)}
+              onClick={() => openedIndex === index ? setOpenedIndex(-1) : setOpenedIndex(index)}
             />
           ))}
           
