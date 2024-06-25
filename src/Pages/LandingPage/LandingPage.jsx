@@ -14,22 +14,26 @@ import { WhatWeOffer } from "./WhatWeOffer"
 export const LandingPage = () => {
   return (
     <div className="flex flex-col items-center">
+
+      <p>{window.innerHeight}</p>
+      <p>{window.innerWidth}</p>
+
       <section className="bg-[#F3EEE8] w-full flex md:justify-center lg:px-10 lg:gap-12 xl:gap-20">
         <Hero />
       </section>
 
-      <section className="flex flex-col w-full gap-4 py-10 px-20">
+      {/* <section className="flex flex-col w-full gap-4 py-10 px-20">
         <OurJourneySection />
-      </section>
+      </section> */}
 
       <section className="w-full bg-[#F3EEE8] min-[300px]:block hidden">
         <PuzzlePieces />
       </section>
 
       
-      <section className="flex container p-20 gap-16 flex-col justify-center">
+      {/* <section className="flex container p-20 gap-16 flex-col justify-center">
         <Pillars />
-      </section>
+      </section> */}
 
       <section className="bg-[#F3EEE8] p-8 sm:p-12 lg:p-20 lg:px-32 xl:px-40 w-full" >
         <WhatWeOffer />
