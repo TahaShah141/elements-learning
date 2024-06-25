@@ -1,8 +1,8 @@
+import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import "../Styles/links.css"
 
 const navLinkClassName = ({isActive}) => {
-  return `transition-all duration-500 p-2 hover:bg-[#FBBA41] ${(isActive ? "bg-[#FBBA41]" : "bg-transparent")}`
+  return `transition-all duration-500 border-b-2 hover:border-[#FBBA41] ${(isActive ? "border-[#FBBA41]" : "border-transparent")}`
 }
 
 const tailwindClasses = ["top-0", "right-0", "bottom-0", "left-0"]
@@ -15,7 +15,7 @@ const NavOption = ({text, link, children, clamp="left"}) => {
   } else {
     return (
       <div className="relative group p-1">
-        <div className="flex items-center group-hover:bg-[#FBBA41]">
+        <div className="flex items-center">
           <NavLink to={link} className={navLinkClassName}>{text}</NavLink>
           <svg className="size-5 group-hover:rotate-90 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,17L15,12L10,7V17Z" fill="currentColor"/></svg>
         </div>
@@ -28,30 +28,57 @@ const NavOption = ({text, link, children, clamp="left"}) => {
 }
 
 export const Navbar = () => {
+
+  const [opened, setOpened] = useState(false)
+
   return (
-    <nav className="flex w-full justify-center py-4 px-20 border-b-2 border-[#FABF23]">
-      <div className="container flex justify-between">
+    <>
+    <nav className="hidden min-[700px]:flex w-full justify-center py-4 px-10 xl:px-20 border-b-2 border-[#FABF23]">
+      <div className="w-full flex justify-between items-center text-sm lg:text-base ">
         <Link to={"/"} className="flex gap-2">
-          <img src="/logo.png" className="h-12" alt="" />
+          <img src="/logo.png" className="h-12 sm:h-8 md:h-12" alt="" />
         </Link>
-        <div className="flex gap-10 items-center">
+        <div className="flex gap-2 xl:gap-10 items-center">
           <NavOption text="About Us" link="/about">
-            <NavLink to="/about" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Mission & Vision</NavLink>
-            <NavLink to="/about" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Our Team</NavLink>
+            <NavLink to="/about" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Mission & Vision</NavLink>
+            <NavLink to="/about" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Our Team</NavLink>
           </NavOption>
           <NavOption text="What We Offer" link="/services">
-            <NavLink to="/services#ece" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>ECE</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Maths</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Language</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Social Science</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Science</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>STEAM</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 p-2 hover:bg-[#FBBA41] w-full`}>Ed Tech</NavLink>
+            <NavLink to="/services#ece" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>ECE</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Maths</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Language</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Social Science</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Science</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>STEAM</NavLink>
+            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Ed Tech</NavLink>
           </NavOption>
           <NavOption text="News & Blogs" link="/blogs" />
           <NavOption text="Contact Us" link="/contact" />
         </div>
       </div>
     </nav>
+    <nav className="flex min-[700px]:hidden flex-col gap-2 w-full justify-center py-4 px-10 xl:px-20 border-b-2 border-[#FABF23]">
+      <div className="w-full flex justify-between items-center text-sm lg:text-base ">
+        <Link to={"/"} className="flex gap-2">
+          <img src="/logo.png" className="h-8 md:h-12" alt="" />
+        </Link>
+        <div className="relative group">
+          <button className="size-6 flex flex-col justify-around" onClick={() => setOpened(!opened)}>
+            <span className={`w-full transition-all duration-200 p-px bg-black ${opened ? "rotate-45 translate-y-2" : "transform-none"}`}></span>
+            <span className={`w-full p-px bg-black ${opened ? "opacity-0" : "opacity-100"}`}></span>
+            <span className={`w-full transition-all duration-200 p-px bg-black ${opened ? "-rotate-45 -translate-y-2" : "transform-none"}`}></span>
+          </button>
+        </div>
+      </div>
+      <div className={`w-full transition-all duration-300 overflow-hidden ${opened ? "h-48" : "h-0"}`}>
+        <div className="flex flex-col h-full text-xl gap-4 xl:gap-10 justify-center items-center">
+          <NavOption text="About Us" link="/about" />
+          <NavOption text="What We Offer" link="/services" />
+          <NavOption text="News & Blogs" link="/blogs" />
+          <NavOption text="Contact Us" link="/contact" />
+        </div>
+      </div>
+    </nav>
+    </>
   )
 }
