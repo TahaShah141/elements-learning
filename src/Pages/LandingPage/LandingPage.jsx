@@ -13,7 +13,7 @@ import { WhatWeOffer } from "./WhatWeOffer"
 
 export const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col">
 
       <p>{window.innerHeight}</p>
       <p>{window.innerWidth}</p>
