@@ -1,57 +1,56 @@
+import { FadeIn } from "../components/FadeIn"
 import { Footer } from "../components/Footer"
+import { SlidingDiv } from "../components/SlidingDiv"
+import { StaggeredHeaders } from "../components/StaggeredHeaders"
 
 
 export const ContactPage = () => {
   return (
-    <div className="flex flex-col grid-cols-2">
-      <section className="bg-[#F3EEE8] w-full p-4">
-        <div className="flex grid-cols-1">
-          <h1 className="sm:text-4xl md:text-6xl lg:text-8xl font-bold py-36 px-20 md:px-28">Contact <br /> Us </h1>
-          <div className="bg-gray-300 w-[600px] h-[75vh] pl-10"></div>
+    <div className="flex flex-col">
+      <section className="bg-[#F3EEE8] p-8 w-full flex gap-20 justify-center items-center">
+        <StaggeredHeaders headers={["Contact", "Us."]} containerClass="text-9xl font-bold" direction="left" />
+        <div className="max-w-[600px]">
+          <img src="/landingpage/services.png" alt="" />
         </div>
       </section>
-      <section className="w-full p-12 ">
-        <div>
-        <h1 className="text-center text-2xl p-3 font-bold text-[#FBBA41]">Get In touch</h1>
-        <p className="text-center text-lg px-44 py-1">Got question or feedback? We're here to help! Reach out to us through the contact form below, and our team will get back to you as soon as possible</p>
-        <div className="bg-gray-300 w-full h-96 p-32"></div>
-        </div>
-        <div className="flex py-16 px-36 space-x-6">
-          <div className=" w-1/2 space-y-4">
-            <form action="">
-              <div className="flex flex-col gap-6">
-                <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3" />
-                <input type="email" placeholder="Enter Your Email" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3" />
-                <textarea name="comments" id="comments" placeholder="Your Message" rows="6" className="bg-[#F3EEE8] border boeder-gray-300 text-sm rounded focus:ring-0  focus:outline-[#FBBA41] block w-full p-3"></textarea>
-                <button className="bg-[#FBBA41] rounded p-3">Submit</button>
+      <section className="flex flex-col gap-4">
+        <SlidingDiv direction={"top"} className="flex flex-col p-8 gap-2 justify-center">
+          <h3 className="text-[#FBBB40] font-bold text-4xl text-center">Get in touch</h3>
+          <p className="text-center text-xl px-20">Got questions or feedback? We're here to help! Reach out to us through the contact form below and our team will get back to you as soon as possible.</p>
+        </SlidingDiv>
+
+        <FadeIn className="w-full h-[400px] bg-neutral-100" />
+
+        <div className="flex p-16 px-48 gap-4 justify-center">
+          <SlidingDiv direction={"left"} className="flex flex-col flex-[2_0_0] gap-4">
+            <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-4 w-full"/>
+            <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-4 w-full"/>
+            <textarea type="text" placeholder="Your Message" className="flex-1 bg-[#F3EEE8] rounded-md p-4 w-full"/>
+            <button className="bg-[#FBBA41] rounded-md p-4 font-bold">Submit</button>
+          </SlidingDiv>
+          <SlidingDiv direction={"right"} className="flex-[1.5_0_0] flex flex-col gap-4">
+            <div className="flex gap-2 p-8 rounded-md bg-[#F3EEE8]">
+              <svg xmlns="http://www.w3.org/2000/svg" className="size-10" viewBox="0 0 24 24"><title>map-marker</title><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" fill="currentColor"/></svg>
+              <div className="flex flex-col gap-2">
+                <p className="text-2xl font-bold">Address</p>
+                <p>IAEC, NUST H-12 Islamabad</p>
               </div>
-             </form>
-          </div>
-          <div className="grid pt-5">
-            <div className="w-12">
-              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
             </div>
-            <div className="w-12">
-            <svg version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M20,3H4C1.8,3,0,4.8,0,7v10c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V7C24,4.8,22.2,3,20,3z M21.6,8.8l-7.9,5.3   c-0.5,0.3-1.1,0.5-1.7,0.5s-1.2-0.2-1.7-0.5L2.4,8.8C2,8.5,1.9,7.9,2.2,7.4C2.5,7,3.1,6.9,3.6,7.2l7.9,5.3c0.3,0.2,0.8,0.2,1.1,0   l7.9-5.3c0.5-0.3,1.1-0.2,1.4,0.3C22.1,7.9,22,8.5,21.6,8.8z" id="email"/></g></svg>
+            <div className="flex gap-2 p-8 rounded-md bg-[#F3EEE8]">
+              <svg className="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" fill="currentColor"/></svg>
+              <div className="flex flex-col gap-2">
+                <p className="text-2xl font-bold">Mail Us</p>
+                <p>info@elements-learning.com</p>
+              </div>
             </div>
-            <div className="w-12 ">
-            <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M22.19,15.3,19.3,12.42a2,2,0,0,0-1.73-.56,2,2,0,0,0-1.42,1l-.62.8a.53.53,0,0,1-.38.2.5.5,0,0,1-.39-.15L10.32,9.24a.54.54,0,0,1-.15-.4.53.53,0,0,1,.2-.37l.8-.62a2,2,0,0,0,1-1.42,2,2,0,0,0-.56-1.74L8.7,1.81a2.85,2.85,0,0,0-3.93,0L1.66,4.93c-.87.86-.88,2.33,0,4.38a12.2,12.2,0,0,0,2.21,3.6l7.26,7.26a12.2,12.2,0,0,0,3.6,2.21,7.17,7.17,0,0,0,2.6.62,2.38,2.38,0,0,0,1.78-.66l3.12-3.11A2.79,2.79,0,0,0,22.19,15.3Zm-1.45,2.48-3.12,3.11c-.59.43-3.88-1-5.08-2.17L5.28,11.46C4.08,10.25,2.68,7,3.11,6.38L6.22,3.26a.74.74,0,0,1,1,0L10.1,6.09l-1,.76a2.62,2.62,0,0,0-1,1.87,2.59,2.59,0,0,0,.75,2l4.44,4.44a2.55,2.55,0,0,0,2,.75,2.62,2.62,0,0,0,1.87-1l.67-.86V14l0-.09,2.89,2.88A.74.74,0,0,1,20.74,17.78Z"/></svg>
+            <div className="flex gap-2 p-8 rounded-md bg-[#F3EEE8]">
+              <svg className="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" fill="currentColor"/></svg>
+              <div className="flex flex-col gap-2">
+                <p className="text-2xl font-bold">Telephone</p>
+                <p>+92 327 8698770</p>
+              </div>
             </div>
-          </div>
-          <div className="w-2/5 space-y-6">
-            <div className="bg-[#F3EEE8] rounded mb-6 p-6 ">
-            <h1 className="text-xl font-bold px-8">Address</h1>
-            <p className="px-8 ">IAEC, NUST, H-12, Islamabad</p>
-            </div>
-            <div className="bg-[#F3EEE8] rounded mb-6 p-6 ">
-            <h1 className="text-xl font-bold px-8">Mail Us</h1>
-            <p className="px-8 ">Info@Elements-learning.com</p>
-            </div>
-            <div className="bg-[#F3EEE8] rounded p-6 ">
-            <h1 className="text-xl font-bold px-8">Telephone</h1>
-            <p className="px-8">+92 327 8898770</p>
-            </div>
-          </div>
+          </SlidingDiv>
         </div>
       </section>
       <Footer />
