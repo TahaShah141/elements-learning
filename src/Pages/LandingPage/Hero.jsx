@@ -6,8 +6,8 @@ export const Hero = () => {
   return (
     <>
       <div className="py-10 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
-        <StaggeredHeaders containerClass="px-6 xs:px-10 md:px-0 text-4xl xs:text-6xl sm:text-8xl md:text-7xl lg:text-8xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
-        <SlidingDiv className="px-6 xs:px-10 md:px-0" direction={"bottom"} px={10} delay={1}>
+        <StaggeredHeaders containerClass="px-6 xs:px-10 md:px-4 text-4xl xs:text-6xl sm:text-8xl md:text-7xl lg:text-8xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
+        <SlidingDiv className="px-6 xs:px-10 md:px-4" direction={"bottom"} px={10} delay={1}>
           <p className="text-xs xs:text-sm lg:text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
         </SlidingDiv>
 
@@ -28,7 +28,7 @@ export const Hero = () => {
             </div>
           </SlidingDiv>
         </div>
-        <div className="flex gap-4 px-6 xs:px-10 md:px-0">
+        <div className="flex gap-4 px-6 xs:px-10 md:px-4">
 
           <LinkButton text="Training" textColor={"#FFFFFF"} bgColor={"#FBBA41"} />
           <LinkButton text="Contact Us" bgColor={"#353535"} textColor={"#FBBA41"} />

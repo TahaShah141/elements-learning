@@ -26,7 +26,7 @@ export const LandingPage = () => {
         <OurJourneySection />
       </section> */}
 
-      <section className="w-full bg-[#F3EEE8] min-[300px]:block hidden">
+      <section className="w-full bg-[#F3EEE8]">
         <PuzzlePieces />
       </section>
 
