@@ -4,7 +4,7 @@ import { FadeIn } from '../../../components/FadeIn'
 import { SlidingDiv } from '../../../components/SlidingDiv'
 import { Bullet } from './Bullet'
 import { Jahaaz } from './Jahaaz'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const animationTime = 3
 
@@ -12,8 +12,8 @@ const JourneyMarker = ({color, content, header, reverse=false, index}) => {
   return (
     <SlidingDiv direction={reverse ? "bottom" : "top"} delay={index*animationTime/5} className={`relative w-full`} >
       <div className={`relative w-full flex justify-center -translate-y-1/2`} >
-        <div className={`absolute flex flex-col gap-2 items-center text-md text-center p-4 ${reverse ? "top-0 -translate-y-full" : "bottom-0 translate-y-full"}`}>
-          <h4 className='font-semibold text-4xl'>{header}</h4>
+        <div className={`absolute flex flex-col lg:gap-2 items-center w-[120%] min-[1400px]:w-full md:text-xs lg:text-sm xl:text-base text-center p-4 ${reverse ? "top-0 -translate-y-full" : "bottom-0 translate-y-full"}`}>
+          <h4 className='font-semibold md:text-2xl xl:text-4xl'>{header}</h4>
           <p>{content}</p>
         </div>
         <Bullet color={color} />
@@ -89,8 +89,15 @@ export const OurJourneySection = () => {
     triggerOnce: true
   })
 
+  const [inc, setInc] = useState(0)
+
+  useEffect(() => {
+    const width = window.innerWidth
+    setInc(width > 1400 ? 0.01 : width > 950 ? 0.02 : 0.03)
+  })
+
   return (
-    <div className='flex flex-col w-full gap-4 py-10 px-20'>
+    <div className='min-[900px]:flex hidden flex-col w-full gap-2 lg:gap-4 py-10 px-10 lg:px-20'>
       <h3 className="text-5xl text-center font-bold uppercase">Our Journey</h3>
       <div ref={ref} className={"relative aspect-video flex"}>
         {inView && 
@@ -101,8 +108,8 @@ export const OurJourneySection = () => {
             <JourneyMarker index={i} offset={0} color={color} header={header} content={content} reverse={!contentBelow} />
           </div>
         ))}
-        <Dots />
-        <div className='absolute w-48 z-20 jahaaz' style={{left:`99%`, top: `${getPercentageY(99/100)}%`, transform: `translate(-50%, -50%) rotate(-${getTangentAngle(99/100)}rad)`}}>
+        <Dots inc={inc} />
+        <div className='absolute w-32 lg:w-40 xl:w-48 z-20 jahaaz' style={{left:`99%`, top: `${getPercentageY(99/100)}%`, transform: `translate(-50%, -50%) rotate(-${getTangentAngle(99/100)}rad)`}}>
           <Jahaaz />
         </div>
         </>}
