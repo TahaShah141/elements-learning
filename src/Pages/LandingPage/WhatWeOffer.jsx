@@ -6,49 +6,49 @@ import { SlidingDiv } from "../../components/SlidingDiv"
 const services = [
   {
     title: "Early Childhood Education (ECE) and Parenting",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/ece.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "Maths",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/maths.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "Language",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/language.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "Science",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/science.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "Social Science",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/socialscience.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "STEAM (connected learning)",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/steam.png",
     link: "/",
     linkText: "Learn more"
   },
   {
     title: "Ed Tech",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, animi quae quam magnam facere eos modi natus, ipsum temporibus perferendis officiis ex laboriosam distinctio molestiae nisi rerum a dolorem qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos adipisci vero deleniti, incidunt qui omnis et est aspernatur a mollitia architecto ab debitis corrupti rerum accusantium. Sapiente laborum reiciendis labore.",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/edtech.png",
     link: "/",
     linkText: "Learn more"
@@ -78,12 +78,15 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
           <p className="flex-1">{title}</p>
         </div>
 
-        <div className={`flex flex-col items-start gap-2 duration-700 transition-all ${open ? "h-72 xs:h-64 min-[500px]:h-48 sm:h-72 xl:h-96 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
+        <div className={`flex justify-start gap-2 duration-700 transition-all ${open ? "h-48 xs:h-36 md:h-48 xl:h-72 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
+          
+          <img src={illustrationSrc} className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
+          <div className="flex flex-col gap-4 items-start">
           <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
-            <img src={illustrationSrc} className="w-24 p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
             {content}
           </p>
           <LinkButton to={link} text={linkText} textColor="#FBBA41" bgColor="#353535" />
+          </div>
         </div>
       </div>
     </>
@@ -105,8 +108,8 @@ export const WhatWeOffer = () => {
           </div>
           
           <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
-            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl">What we offer</h2>
-            <p className="text-base md:text-xl lg:text-xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
+            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl">What we offer</h2>
+            <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
         <div className="flex-1 flex flex-col xl:gap-2">
