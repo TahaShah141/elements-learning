@@ -7,6 +7,10 @@
   line-height: 1;
 }
 
+.line-height-1 {
+  line-height: 1;
+}
+
 .bullet-shadow {
   box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
   -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);

@@ -13,7 +13,7 @@ import { WhatWeOffer } from "./WhatWeOffer"
 
 export const LandingPage = () => {
   return (
-    <div className="flex flex-col w-screen overflow-hidden">
+    <div className="flex flex-col w-screen overflow-hidden items-center">
 
       {/* <p>{window.innerHeight}</p>
       <p>{window.innerWidth}</p> */}
@@ -31,9 +31,9 @@ export const LandingPage = () => {
       </section>
 
       
-      {/* <section className="flex container p-20 gap-16 flex-col justify-center">
+      <section className="flex p-4 xs:p-10 sm:p-20 gap-12 md:gap-16 flex-col justify-center">
         <Pillars />
-      </section> */}
+      </section>
 
       <section className="bg-[#F3EEE8] p-8 sm:p-12 lg:p-20 lg:px-32 xl:px-40 w-full" >
         <WhatWeOffer />

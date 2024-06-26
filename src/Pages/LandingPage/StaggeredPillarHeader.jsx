@@ -38,17 +38,19 @@ export const StaggeredPillarHeader = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}
-        className="flex flex-col items-end"
+        className="flex sm:flex-col sm:items-end "
       >
-        <motion.h2 className="text-huge font-bold" variants={itemVariants}>
+        <motion.h2 className="text-8xl xs:text-[10rem] md:text-[12rem] line-height-1 lg:text-huge font-bold" variants={itemVariants}>
           4
         </motion.h2>
-        <motion.h3 className="text-8xl font-semibold uppercase" variants={itemVariants}>
-          Pillars
-        </motion.h3>
-        <motion.h5 className="text-7xl font-thin" variants={itemVariants}>
-          of Education
-        </motion.h5>
+        <div className='flex flex-col justify-center sm:items-end'>
+          <motion.h3 className="text-5xl xs:text-6xl lg:text-8xl font-semibold uppercase" variants={itemVariants}>
+            Pillars
+          </motion.h3>
+          <motion.h5 className="text-3xl xs:text-4xl md:text-5xl lg:text-7xl font-thin" variants={itemVariants}>
+            of Education
+          </motion.h5>
+        </div>
       </motion.div>
   );
 };
