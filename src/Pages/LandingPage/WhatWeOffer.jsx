@@ -78,7 +78,7 @@ const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onCl
           <p className="flex-1">{title}</p>
         </div>
 
-        <div className={`flex justify-start gap-2 duration-700 transition-all ${open ? "h-48 xs:h-36 md:h-48 xl:h-72 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
+        <div className={`flex justify-start gap-2 duration-700 transition-all ${open ? "h-48 xl:h-72 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
           
           <img src={illustrationSrc} className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
           <div className="flex flex-col gap-4 items-start">
