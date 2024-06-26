@@ -36,7 +36,7 @@ const getTangentAngle = (xPercent) => {
   return angle
 }
 
-const journeySteps = [
+export const journeySteps = [
   {
     color: "#EB008B",
     header: "2017-2019",

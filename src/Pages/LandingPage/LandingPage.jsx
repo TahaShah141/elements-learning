@@ -3,6 +3,7 @@ import { Footer } from "../../components/Footer"
 import { SlidingDiv } from "../../components/SlidingDiv"
 import { EventCard } from "./EventCard"
 import { Hero } from "./Hero"
+import { OurJourneyMobile } from "./OurJourney/OurJourneyMobile"
 import { OurJourneySection } from "./OurJourney/OurJourneySection"
 import { Pillars } from "./Pillars"
 import { PuzzlePieces } from "./PuzzlePieces"
@@ -24,6 +25,7 @@ export const LandingPage = () => {
 
       <section className="w-full">
         <OurJourneySection />
+        <OurJourneyMobile />
       </section>
 
       <section className="w-full bg-[#F3EEE8]">
