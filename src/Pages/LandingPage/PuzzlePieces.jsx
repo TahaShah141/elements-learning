@@ -98,7 +98,7 @@ export const PuzzlePieces = () => {
     <>
     <motion.div
     ref={ref}
-    className='hidden min-w-[450px]:flex h-16 xs:h-24 sm:h-36 md:h-48 lg:h-64 xl:h-80'
+    className='hidden min-[450px]:flex h-16 xs:h-24 sm:h-36 md:h-48 lg:h-64 xl:h-80'
     initial="hidden"
     animate={inView ? "visible" : "hidden"}
     variants={containerVariants}
@@ -107,7 +107,7 @@ export const PuzzlePieces = () => {
       <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== puzzles.length - 1} {...puzzle} order={puzzles.length - i} />
     )}
     </motion.div>
-    <div className='flex min-w-[450px]:hidden flex-col text-white'>
+    <div className='flex min-[450px]:hidden flex-col text-white'>
       <div className="grid grid-cols-2 grid-rows-3 ">
         <SlidingDiv direction={"left"} className="aspect-square relative" style={{backgroundColor: puzzles[0].color, zIndex: puzzles.length - 0}}>
           <div className="absolute size-10 rounded-md right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45" style={{backgroundColor: puzzles[0].color}}/>
