@@ -3,7 +3,7 @@ import { LinkButton } from "./LinkButton"
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#353535] p-4">
+    <footer className="bg-[#353535] w-full p-4">
       <div className="border-b border-white w-full flex flex-col py-4 px-2 gap-4 sm:gap-12 sm:p-10 justify-center">
         
         <div className="flex xl:flex-1 gap-12 flex-col xl:flex-row">
