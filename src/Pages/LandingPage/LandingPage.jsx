@@ -23,7 +23,10 @@ export const LandingPage = () => {
         <Hero />
       </section>
 
-      <section className="w-full">
+      <section className="w-full py-4">
+        <SlidingDiv direction={"right"} px={75}>
+          <h3 className="px-4 text-3xl min-[900px]:text-5xl min-[900px]:text-center font-bold uppercase">Our Journey</h3>
+        </SlidingDiv>
         <OurJourneySection />
         <OurJourneyMobile />
       </section>

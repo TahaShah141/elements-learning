@@ -98,7 +98,6 @@ export const OurJourneySection = () => {
 
   return (
     <div className='min-[900px]:flex hidden flex-col w-full gap-2 lg:gap-4 py-10 px-10 lg:px-20'>
-      <h3 className="text-5xl text-center font-bold uppercase">Our Journey</h3>
       <div ref={ref} className={"relative aspect-video flex"}>
         {inView && 
         <>
