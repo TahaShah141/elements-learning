@@ -93,7 +93,7 @@ export const OurJourneySection = () => {
     <div className='flex flex-col w-full gap-4 py-10 px-20'>
       <h3 className="text-5xl text-center font-bold uppercase">Our Journey</h3>
       <div ref={ref} className={"relative aspect-video flex"}>
-        {true && 
+        {inView && 
         <>
         {journeySteps.map(({color, header, content, contentBelow}, i) => (
           <div className="flex flex-col h-full flex-1 items-center z-10">
