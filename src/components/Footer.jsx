@@ -90,7 +90,7 @@ export const Footer = () => {
         
         </div>
         
-        <div className="flex flex-col xl:flex-row flex-1 gap-4 xl:gap-8">
+        <div className="flex flex-col-reverse xl:flex-row flex-1 gap-4 xl:gap-8">
           <div className="flex-1 flex flex-col gap-4">
             <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Subscribe</div>
