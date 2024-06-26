@@ -22,9 +22,9 @@ export const LandingPage = () => {
         <Hero />
       </section>
 
-      {/* <section className="flex flex-col w-full gap-4 py-10 px-20">
+      <section className="w-full">
         <OurJourneySection />
-      </section> */}
+      </section>
 
       <section className="w-full bg-[#F3EEE8]">
         <PuzzlePieces />

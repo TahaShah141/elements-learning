@@ -1,8 +1,8 @@
-export const Bullet = ({color="#000000", strokeWidth="10px"}) => {
+export const Bullet = ({color="#000000"}) => {
   return (
-    <div className="aspect-square w-fit rounded-full" style={{backgroundColor: color, padding: strokeWidth}}>
-      <div className="bg-white rounded-full w-full aspect-square" style={{padding: strokeWidth}}>
-        <div className="aspect-square rounded-full bullet-shadow" style={{backgroundColor: color, width: `calc(4*${strokeWidth})`}}></div>
+    <div className="aspect-square w-fit rounded-full p-2" style={{backgroundColor: color}}>
+      <div className="bg-white rounded-full w-full aspect-square p-2">
+        <div className="aspect-square rounded-full bullet-shadow w-10" style={{backgroundColor: color}}></div>
       </div>
     </div>
   )
