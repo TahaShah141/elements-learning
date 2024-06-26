@@ -10,7 +10,7 @@ export const ContactPage = () => {
       <section className="bg-[#F3EEE8] p-8 w-full flex gap-20 justify-center items-center">
         <StaggeredHeaders headers={["Contact", "Us."]} containerClass="text-9xl font-bold" direction="left" />
         <div className="max-w-[600px]">
-          <img src="/landingpage/services.png" alt="" />
+          <img src="/contactpage/contactus.png" alt="" />
         </div>
       </section>
       <section className="flex flex-col gap-4">
