@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,56 +84,43 @@
   body {
     @apply bg-background text-foreground;
   }
-}
 
-.text-huge {
-  font-size: 16rem;
-  line-height: 1;
-}
-
-.line-height-1 {
-  line-height: 1;
-}
-
-.bullet-shadow {
-  box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
-  -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
-  -moz-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
-}
-
-.flipping-card-parent .flipping-card {
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease-in-out;
-}
-
-.flipping-card-parent:hover .flipping-card {
-  transform: rotateY(180deg);
-}
-
-.flipped-content {
-  transform: rotateY(-180deg);
-}
-
-/* Disable flipping on screens below 768px */
-@media (max-width: 400px) {
+  .line-height-1 {
+    line-height: 1;
+  }
+  
+  .bullet-shadow {
+    box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.8);
+  }
+  
+  .flipping-card-parent .flipping-card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
   .flipping-card-parent:hover .flipping-card {
-    transform: none;
+    transform: rotateY(180deg);
   }
-
+  
   .flipped-content {
-    transform: none;
+    transform: rotateY(-180deg);
+  }
+  
+  /* Disable flipping on screens below 768px */
+  @media (max-width: 400px) {
+    .flipping-card-parent:hover .flipping-card {
+      transform: none;
+    }
+  
+    .flipped-content {
+      transform: none;
+    }
+  }
+  
+  .slide-up {
+    animation: slide-up 0.5s ease-in-out;
   }
 }
 
-.slide-up {
-  animation: slide-up 0.5s ease-in-out;
-}
-
-@keyframes slide-up {
-  0% {
-    transform: translateY(50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
