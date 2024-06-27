@@ -1,7 +1,6 @@
-import { useState } from "react"
-import { HexagonPlayButton } from "../../components/HexagonPlayButton"
 import { LinkButton } from "../../components/LinkButton"
 import { SlidingDiv } from "../../components/SlidingDiv"
+import { CustomAccordion } from "@/components/custom/CustomAccordion"
 
 const services = [
   {
@@ -55,48 +54,7 @@ const services = [
   }
 ]
 
-const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onClick, index}) => {
-
-  return (
-    <>
-      <div className="flex flex-col gap-2 flex-1" style={{zIndex: index}}>
-        <div onClick={onClick} className={`p-1 rounded-full rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${open ? "bg-[#FBBA41] delay-300 duration-700" : "bg-transparent delay-0 duration-0"}`}>
-          <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
-            {!open ? 
-            <>
-            <div className="absolute inset-0 transition-opacity duration-700 size-full opacity-100 group-hover:opacity-0">
-              <HexagonPlayButton outerColor="#FCBA42" />
-            </div>
-            <div className="absolute inset-0 transition-opacity duration-700 size-full opacity-0 group-hover:opacity-100">
-              <HexagonPlayButton outerColor="#FFFFFF" innerColor="#000000" />
-            </div>
-            </>:
-            <div className="size-full">
-              <HexagonPlayButton innerColor="#000000" outerColor="#FFFFFF" />
-            </div>}
-          </div>
-          <p className="flex-1">{title}</p>
-        </div>
-
-        <div className={`flex justify-start gap-2 duration-700 transition-all ${open ? "h-48 xl:h-72 opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
-          
-          <img src={illustrationSrc} className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
-          <div className="flex flex-col gap-4 items-start">
-          <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
-            {content}
-          </p>
-          <LinkButton to={link} text={linkText} textColor="#FBBA41" bgColor="#353535" />
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
-
 export const WhatWeOffer = () => {
-
-  const [openedIndex, setOpenedIndex] = useState(-1);
-  const [opened, setOpened] = useState([false, false, false, false, false, false, false]);
 
   return (
     <>
@@ -112,25 +70,21 @@ export const WhatWeOffer = () => {
             <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
-        <div className="flex-1 flex flex-col xl:gap-2">
-
-          {services.map((service, index) => (
-            <ServiceTab
-              key={service.title}
-              title={service.title}
-              content={service.content}
-              illustrationSrc={service.illustrationSrc}
-              link={service.link}
-              linkText={service.linkText}
-              index={index}
-              // open={opened[index]}
-              // onClick={() => setOpened(o => o.map((o, i) => i === index ? !o : o))}
-              open={index===openedIndex}
-              onClick={() => openedIndex === index ? setOpenedIndex(-1) : setOpenedIndex(index)}
-            />
-          ))}
-          
-        </div>
+        <CustomAccordion containerClass={"flex-1"} items={services.map(service => ({
+          title: service.title,
+          id: service.title,
+          content: (
+            <div className={`flex justify-start gap-2 p-2`}>
+              <img src={service.illustrationSrc} className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
+              <div className="flex flex-col gap-4 items-start">
+              <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
+                {service.content}
+              </p>
+              <LinkButton to={service.link} text={service.linkText} textColor="#FBBA41" bgColor="#353535" />
+              </div>
+            </div>
+          )
+        }))} />
       </div>
     </>
   )
