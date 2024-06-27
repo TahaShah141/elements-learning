@@ -61,7 +61,7 @@ export const AboutPage = () => {
         </div>
       </section>
       <section className="relative w-full">
-        <img src="/aboutpage/hero.png" alt="" className="w-full"/>
+        <img src="/aboutpage/hero.jpg" alt="" className="w-full"/>
         <div className="absolute grid p-20 text-white grid-cols-2 grid-rows-2 inset-0 bg-black/75">
           <SlidingDiv direction={"right"} className="flex flex-col gap-4 text-right text-2xl col-start-2 justify-center size-full">
             <h2 className="text-7xl uppercase font-bold" >Our Mission</h2>
