@@ -23,15 +23,29 @@ const goals = [
   },
 ]
 
-const GoalCard = ({color, innerBg, src, title, content}) => {
+const GoalCard = ({color, innerBg, src, title, content, index}) => {
   return (
-    <div className="flex flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
+    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
       <div className="flex items-center p-8 justify-center rounded-full size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
         {/* <img src={src} alt="" className="size-full" /> */}
       </div>
       <div className="flex flex-col text-lg gap-1 p-10">
         <h4 className="font-bold text-4xl">{title}</h4>
         <p>{content}</p>
+      </div>
+    </SlidingDiv>
+  )
+}
+
+const TeamCard = ({name, designation, extra, src, corner}) => {
+
+  const cornerClass = `rounded-${corner}-none`
+
+  return (
+    <div className={`relative group overflow-hidden rounded-[50px] border border-black w-full aspect-[4/3] ${cornerClass} bg-orange-50`}>
+      <img src={src} className="w-full" />
+      <div className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-all duration-500 flex-col justify-end gap-1 items-end bg-black/40">
+
       </div>
     </div>
   )
@@ -62,10 +76,10 @@ export const AboutPage = () => {
       <section className="flex flex-col p-8 gap-8 px-40">
         <h3 className="px-4 text-3xl min-[900px]:text-5xl min-[900px]:text-cente font-bold uppercase">Our Goals</h3>
         <div className="flex gap-8 justify-center">
-          {goals.map(goal => <GoalCard key={goal.title} {...goal} />)}
+          {goals.map((goal, index) => <GoalCard key={goal.title} {...goal} index={index} />)}
         </div>
       </section>
-      <section className="bg-[#F3EEE8] p-10 flex gap-8 justify-center">
+      <section className="bg-[#F3EEE8] p-16 flex gap-8 justify-center items-start">
         <div className="rounded-md flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
           <div className="max-w-[400px]">
             <img src="/landingpage/services.png" alt="" />
@@ -76,8 +90,20 @@ export const AboutPage = () => {
             <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Meet our dedicated team of education experts and innovators, committed to revolutionizing K-12 education through research-based practices and accessible resources.</p>
           </SlidingDiv>
         </div>
-        <div className="flex-1 p-3">
+        <div className="flex-1 p-3 grid grid-cols-3 gap-4">
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
 
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
+          <TeamCard corner={"tl"}/>
         </div>
       </section>
       <Footer />
