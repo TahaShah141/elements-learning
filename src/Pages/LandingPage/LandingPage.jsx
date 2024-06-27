@@ -1,7 +1,5 @@
-import Carousel from "../../components/Carousel"
 import { Footer } from "../../components/Footer"
 import { SlidingDiv } from "../../components/SlidingDiv"
-import { EventCard } from "./EventCard"
 import { Hero } from "./Hero"
 import { OurJourneyMobile } from "./OurJourney/OurJourneyMobile"
 import { OurJourneySection } from "./OurJourney/OurJourneySection"
@@ -48,7 +46,7 @@ export const LandingPage = () => {
        <section className="flex gap-2 md:gap-8 lg:px-32 xl:px-40 md:p-10 p-4 xs:p-6 items-center flex-col md:flex-row">
         <SlidingDiv direction="left" px={50} className="w-full md:w-auto md:h-48 aspect-video bg-neutral-200 rounded-lg"></SlidingDiv>
         <SlidingDiv direction="right" px={50}>
-          <p className="text-xs xs:text-sm sm:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur alias optio maxime eveniet, officia ipsum! Optio cum sequi, ipsam quo est debitis enim officia, doloribus non dignissimos iusto fuga commodi error obcaecati quidem consectetur dolores dolor ad aliquam amet cumque maxime. Minima beatae possimus veniam optio a ullam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor facilis, porro illo harum deleniti provident voluptas magni praesentium distinctio? Explicabo, quas ab! Praesentium, sint.</p>
+          <p className="text-xs xs:text-sm sm:text-base">Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.</p>
         </SlidingDiv>
       </section> 
 
