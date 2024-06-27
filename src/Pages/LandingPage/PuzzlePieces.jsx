@@ -60,7 +60,7 @@ const PuzzlePiece = ({letter, header, meaning, color, showTab, content, reverseO
           <p className="font-bold text-sm xs:text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl">{letter}</p>
           <div className={`flex ${reverseOrder ? "flex-col-reverse" : "flex-col"}`}>
             <p className="uppercase text-center sm:tracking-wider md:tracking-widest">{header}</p>
-            <p className="flex justify-center items-center gap-1 w-full">
+            <p className="flex justify-center items-center gap-1 w-full text-sm">
               <span className="flex-1 hidden lg:block h-0 border border-white "/>
                 {meaning}
               <span className="flex-1 hidden lg:block h-0 border border-white "/>
