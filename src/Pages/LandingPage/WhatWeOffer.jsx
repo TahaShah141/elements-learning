@@ -55,11 +55,11 @@ const services = [
   }
 ]
 
-const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onClick}) => {
+const ServiceTab = ({title, content, illustrationSrc, link, linkText, open, onClick, index}) => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 flex-1">
+      <div className="flex flex-col gap-2 flex-1" style={{zIndex: index}}>
         <div onClick={onClick} className={`p-1 rounded-full rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${open ? "bg-[#FBBA41] delay-300 duration-700" : "bg-transparent delay-0 duration-0"}`}>
           <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
             {!open ? 
@@ -122,6 +122,7 @@ export const WhatWeOffer = () => {
               illustrationSrc={service.illustrationSrc}
               link={service.link}
               linkText={service.linkText}
+              index={index}
               // open={opened[index]}
               // onClick={() => setOpened(o => o.map((o, i) => i === index ? !o : o))}
               open={index===openedIndex}
