@@ -3,6 +3,7 @@ import { LandingPage } from "./Pages/LandingPage/LandingPage"
 import { Navbar } from "./components/Navbar"
 import { ContactPage } from "./Pages/ContactPage"
 import { AboutPage } from "./Pages/AboutPage"
+import { BlogPage } from "./Pages/BlogPage"
 
 const RootLayout = () => {
   return (
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route index element={<LandingPage />} />
       <Route path="contact" element={<ContactPage />} />
       <Route path="about" element={<AboutPage />} />
+      <Route path="blogs" element={<BlogPage />} />
     </Route>
   )
 )
