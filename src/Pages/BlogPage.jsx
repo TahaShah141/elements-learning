@@ -3,6 +3,7 @@ import { LinkButton } from "../components/LinkButton"
 import { SlidingDiv } from "../components/SlidingDiv"
 import { StaggeredHeaders } from "../components/StaggeredHeaders"
 
+
 const news = [
   {
     content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
@@ -110,7 +111,7 @@ export const BlogPage = () => {
         </div>
       </section>
       <section className="bg-[#F3EEE8] p-16 lg:p-20 flex flex-col gap-8">
-        <h3 className="px-4 text-3xl min-[900px]:text-5xl min-[900px]:text-cente font-bold uppercase">Blogs</h3>
+        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">Blogs</h3>
         {blogs.map(blog => <BlogCard {...blog} />)}        
       </section>
       <section className="flex flex-col items-center">
