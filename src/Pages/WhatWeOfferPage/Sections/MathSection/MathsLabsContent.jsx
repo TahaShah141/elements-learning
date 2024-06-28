@@ -40,14 +40,14 @@ export const MathsLabsContent = () => {
   return (
     <FadeIn className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-4 text-xl p-20 px-32">
+        <div className="flex flex-col gap-4 text-xl p-10 px-32">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repudiandae ea! Dicta cumque possimus ullam quisquam consequatur quos perferendis, voluptates porro inventore id rem incidunt at beatae necessitatibus asperiores esse. Debitis sapiente amet aspernatur eveniet velit nemo nesciunt earum, officiis ducimus totam dicta quibusdam optio illum voluptatum placeat animi fugit.</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius laudantium tenetur repellat nulla ipsum? Aut praesentium veniam aliquam porro? Qui repudiandae voluptatum pariatur non vitae adipisci tenetur distinctio aperiam aliquid?</p>
         </div>
         <section className="p-16 bg-[#F3EEE8]">
           Carousel
         </section>
-        <CustomAccordion containerClass={"w-full p-20 px-32"} type="multiple"
+        <CustomAccordion containerClass={"w-full p-10 px-32"} type="multiple"
         items={[
           {
             title: "Packages",

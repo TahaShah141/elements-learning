@@ -2,6 +2,53 @@ import { FadeIn } from "@/components/FadeIn"
 import { BulletList } from "../BulletList"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 
+const manipulatives = [
+  {
+    name: "Fraction Board",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, sapiente! Nihil accusamus consequuntur error facilis voluptatum quam quisquam quidem a corrupti sint deserunt ab tempora eaque qui alias repellat nostrum nesciunt non, sunt iure est minus eius. Repellendus, quisquam blanditiis.",
+    color: "#CFE8BE",
+    innerColor: "#B1DA94",
+    src: "#"
+  },
+  {
+    name: "Base-10 Blocks",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, sapiente! Nihil accusamus consequuntur error facilis voluptatum quam quisquam quidem a corrupti sint deserunt ab tempora eaque qui alias repellat nostrum nesciunt non, sunt iure est minus eius. Repellendus, quisquam blanditiis.",
+    color: "#CAB9DB",
+    innerColor: "#A98CC2",
+    src: "#"
+  },
+  {
+    name: "Tangram",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, sapiente! Nihil accusamus consequuntur error facilis voluptatum quam quisquam quidem a corrupti sint deserunt ab tempora eaque qui alias repellat nostrum nesciunt non, sunt iure est minus eius. Repellendus, quisquam blanditiis.",
+    color: "#A7E4F9",
+    innerColor: "#6DD1F5",
+    src: "#"
+  },
+  {
+    name: "Geoboard",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, sapiente! Nihil accusamus consequuntur error facilis voluptatum quam quisquam quidem a corrupti sint deserunt ab tempora eaque qui alias repellat nostrum nesciunt non, sunt iure est minus eius. Repellendus, quisquam blanditiis.",
+    color: "#FEE7BD",
+    innerColor: "#FED792",
+    src: "#"
+  },
+  {
+    name: "Circular Geoboard",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, sapiente! Nihil accusamus consequuntur error facilis voluptatum quam quisquam quidem a corrupti sint deserunt ab tempora eaque qui alias repellat nostrum nesciunt non, sunt iure est minus eius. Repellendus, quisquam blanditiis.",
+    color: "#F8A6D6",
+    innerColor: "#F46CBE",
+    src: "#"
+  },
+]
+
+const ManipulativeCard = ({name, src, color, innerColor, text}) => {
+  return (
+    <div className="flex gap-4 items-center rounded-3xl rounded-bl-[96px] text-2xl rounded-tl-none" style={{backgroundColor: color}}>
+      <div className="size-48 rounded-full rounded-tl-none" style={{backgroundColor: innerColor}}></div>
+      <p className="flex-1 pr-20"><strong>{name+": "}</strong>{text}</p>
+    </div>
+  )
+}
+
 export const MathsManipulativesContent = () => {
   return (
     <FadeIn className="flex flex-col w-full p-20 px-32">
@@ -24,19 +71,8 @@ export const MathsManipulativesContent = () => {
             title: "Manipulatives",
             id: "Manipulatives",
             content: 
-            <div className="p-8">
-              <div className="flex gap-2">
-                <div className="flex-1 flex flex-col text-right p-12 gap-8 bg-[#F3EEE8]">
-                  <h3 className="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt quos molestiae, maxime dolor, odit amet nobis iusto autem dolorem recusandae doloremque, animi ratione laboriosam soluta commodi. Ad deserunt possimus voluptatum suscipit veniam dolorum illum fugiat quia molestias, doloribus error!</h3>
-                  <p className="text-base md:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime architecto voluptates animi beatae maiores exercitationem optio, harum delectus incidunt recusandae minima molestias corrupti qui sapiente ea illum reprehenderit earum magnam alias ullam illo a. Corrupti, expedita in. Architecto, distinctio vero.</p>
-                  <div className="flex gap-2 mt-auto justify-end">
-                    <button className="px-6 py-4 font-bold text-lg text-white bg-[#FBBA42]">Teacher Guide</button>
-                    <button className="px-6 py-4 font-bold text-lg text-white bg-[#353535]">Student Workbooks</button>
-                  </div>
-                </div>
-                <div className="h-[600px] w-[450px] bg-neutral-400">
-                </div>
-              </div>
+            <div className="p-8 flex flex-col gap-4">
+              {manipulatives.map(man => <ManipulativeCard {...man} />)}
             </div>
 
           },

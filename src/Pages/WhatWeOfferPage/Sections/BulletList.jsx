@@ -10,7 +10,7 @@ export const BulletList = ({list, contentClass="text-lg"}) => {
           </div>
           <div className={contentClass+ " py-1 w-full"} style={{borderBottomColor: "#FCBA42", borderBottomWidth: "2px"}}>
             {/* <p>{`${title}: ${content}`}</p> */}
-            <p><strong>{title+(content ? ":" : "")}</strong>{content}</p>
+            <p><strong>{title+(content ? ": " : "")}</strong>{content}</p>
           </div>
         </div>
       )}
