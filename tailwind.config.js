@@ -60,7 +60,7 @@ module.exports = {
         'sans': ['"Poppins"', ...defaultTheme.fontFamily.sans],
       },
       screens: {
-        'xs': "320px"
+        'xs': "400px"
       },
       borderRadius: {
         lg: "var(--radius)",
