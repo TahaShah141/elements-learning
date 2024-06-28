@@ -1,3 +1,4 @@
+import { AssessmentsContent } from "./MathSection/AssessmentsContent";
 import { MathsLabsContent } from "./MathSection/MathsLabsContent";
 import { MathsManipulativesContent } from "./MathSection/MathsManipulativesContent";
 import { PublicationsContent } from "./MathSection/PublicationsContent";
@@ -31,6 +32,7 @@ export const sections =
       {
         name: "Assessments",
         src: "/whatweofferpage/maths/assessments.png",
+        content: <AssessmentsContent />
       },
     ]
   }

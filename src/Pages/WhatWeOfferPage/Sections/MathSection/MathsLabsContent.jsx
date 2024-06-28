@@ -46,7 +46,7 @@ export const MathsLabsContent = () => {
         <section className="p-16 bg-[#F3EEE8]">
           Carousel
         </section>
-        <CustomAccordion containerClass={"w-full p-20 px-32"} type="multiple"
+        <CustomAccordion containerClass={"w-full p-10 px-32"} type="multiple"
         items={[
           {
             title: "Packages",
