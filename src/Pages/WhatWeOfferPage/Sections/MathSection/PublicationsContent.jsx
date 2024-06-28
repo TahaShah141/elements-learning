@@ -1,14 +1,14 @@
 import { FadeIn } from "@/components/FadeIn"
-import { BulletList } from "../BulletList"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
+import { BulletList } from "../BulletList"
 
 export const PublicationsContent = () => {
   return (
     <FadeIn className="flex flex-col w-full p-20 px-32">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-xl">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repudiandae ea! Dicta cumque possimus ullam quisquam consequatur quos perferendis, voluptates porro inventore id rem incidunt at beatae necessitatibus asperiores esse. Debitis sapiente amet aspernatur eveniet velit nemo nesciunt earum, officiis ducimus totam dicta quibusdam optio illum voluptatum placeat animi fugit.</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius laudantium tenetur repellat nulla ipsum? Aut praesentium veniam aliquam porro? Qui repudiandae voluptatum pariatur non vitae adipisci tenetur distinctio aperiam aliquid?</p>
+          <p>At Elements Learning (EL), we are dedicated to producing high-quality educational materials that cater to the diverse needs of educators and students. Our comprehensive range of textbooks and popular Maths resources is designed to enhance the learning experience and foster a deep understanding of Mathematical concepts.</p>
+          <p>Central to our approach is the CPA (Concrete-Pictorial-Abstract) Methodology, which underpins all our publications. This approach ensures that students develop a deep and robust understanding of Mathematical concepts by:</p>
         </div>
         <div className="pl-52 py-4">
           <BulletList contentClass="text-xl break-all"

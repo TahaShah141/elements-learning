@@ -7,31 +7,30 @@ const packages = [
     headers: ["Basic", "Maths Lab"],
     color: "#75BF46",
     content: [
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!"
+      "Perfect for schools new to hands-on math learning",
+      "Includes five fundamental tools and manipulatives.",
+      "Designed to cover key math concepts.",      "Initiates interactive math learning.","Improves understanding through concrete and pictorial representations."
+
     ]
   },
   {
     headers: ["Standard", "Maths Lab"],
     color: "#02AEEE",
     content: [
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
+      "Builds on the Basic package.",
+      "Offers a wider range of tools and resources.","Includes all items in the Basic package.","Additional manipulatives and activities for complex math topics.",
+      "Supports a more comprehensive math curriculum.",
     ]
   },
   {
     headers: ["Premium", "Maths Lab"],
     color: "#6C3694",
     content: [
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
-      "Repellat minus expedita amet error architecto quod!",
+      "Ideal for schools aiming to provide an enriched math learning experience.",
+      "Includes everything in the Standard package.",
+      "Premium tools, technology integration, and advanced activity tools.",
+      "Furniture designed around math learning.",
+
     ]
   },
 ]
@@ -41,8 +40,8 @@ export const MathsLabsContent = () => {
     <FadeIn className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-xl p-20 px-32">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repudiandae ea! Dicta cumque possimus ullam quisquam consequatur quos perferendis, voluptates porro inventore id rem incidunt at beatae necessitatibus asperiores esse. Debitis sapiente amet aspernatur eveniet velit nemo nesciunt earum, officiis ducimus totam dicta quibusdam optio illum voluptatum placeat animi fugit.</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius laudantium tenetur repellat nulla ipsum? Aut praesentium veniam aliquam porro? Qui repudiandae voluptatum pariatur non vitae adipisci tenetur distinctio aperiam aliquid?</p>
+          <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
+
         </div>
         <section className="p-16 bg-[#F3EEE8]">
           Carousel
@@ -55,7 +54,7 @@ export const MathsLabsContent = () => {
             content: 
             
             <div className="flex flex-col gap-4 p-8 text-lg">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim officiis aliquid quibusdam excepturi praesentium eum rem neque sit dolore laborum natus, explicabo dolorem delectus molestias. Alias voluptatibus officiis id. Consequatur!</p>    
+              <p>We offer three packages in our Maths Labs. Each package is tailored to meet the diverse needs of schools and educators. </p>    
               <div className="flex gap-6">
                 {packages.map(pkg => <ContentCard {...pkg} />)}
               </div>
@@ -71,9 +70,11 @@ export const MathsLabsContent = () => {
                 <div className="h-[600px] w-[450px] bg-neutral-400">
                 </div>
                 <div className="flex-1 flex flex-col p-12 gap-8 text-base md:text-lg">
-                  <h3 className="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt quos molestiae, maxime dolor, odit amet nobis iusto autem dolorem recusandae doloremque, animi ratione laboriosam soluta commodi. Ad deserunt possimus voluptatum suscipit veniam dolorum illum fugiat quia molestias, doloribus error!</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime architecto voluptates animi beatae maiores exercitationem optio, harum delectus incidunt recusandae minima molestias corrupti qui sapiente ea illum reprehenderit earum magnam alias ullam illo a. Corrupti, expedita in. Architecto, distinctio vero.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro, illum impedit laborum dignissimos assumenda deleniti voluptatum similique cupiditate exercitationem?</p>
+                  {/* <h3 className="text-3xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages. These manuals are crafted to provide clear, step-by-step instructions on teaching specific math concepts through hands-on activities, ensuring that both teachers and students get the most out of their math learning experience.
+                  Each Math Lab Manual is grade-specific and aligned with the National Curriculum (NC) to fulfill defined SLO’s.</h3> */}
+                  <p>Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages. These manuals are crafted to provide clear, step-by-step instructions on teaching specific math concepts through hands-on activities, ensuring that both teachers and students get the most out of their math learning experience.
+                  Each Math Lab Manual is grade-specific and aligned with the National Curriculum (NC) to fulfill defined SLO’s.</p>
+                  {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro, illum impedit laborum dignissimos assumenda deleniti voluptatum similique cupiditate exercitationem?</p> */}
                 </div>
               </div>
             </div>
