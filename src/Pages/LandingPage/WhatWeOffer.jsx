@@ -1,6 +1,6 @@
+import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { LinkButton } from "../../components/LinkButton"
 import { SlidingDiv } from "../../components/SlidingDiv"
-import { CustomAccordion } from "@/components/custom/CustomAccordion"
 
 const services = [
   {
