@@ -1,7 +1,6 @@
 import { FadeIn } from "@/components/FadeIn"
 import { BulletList } from "../BulletList"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
-import { CarouselSingle } from "@/components/custom/CarouselSingle"
 
 export const PublicationsContent = () => {
   return (
