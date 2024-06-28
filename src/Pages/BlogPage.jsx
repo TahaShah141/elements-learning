@@ -1,7 +1,9 @@
+import { CarouselSingle } from "@/components/custom/CarouselSingle"
 import { Footer } from "../components/Footer"
 import { LinkButton } from "../components/LinkButton"
 import { SlidingDiv } from "../components/SlidingDiv"
 import { StaggeredHeaders } from "../components/StaggeredHeaders"
+import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
 
 
 const news = [
@@ -48,11 +50,11 @@ const blogs = [
 
 const NewsCard = ({src, content, link, index}) => {
   return (
-    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 max-w-md bg-[#F3EEE8]">
-      <div className="w-full xs:h-48 sm:h-52 md:h-80 lg:h-[350px] xl:h-96 aspect-square  bg-neutral-400">
+    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 max-w-md bg-[#F3EEE8]">
+      <div className="w-full md:h-64 lg:h-72 xl:h-96 aspect-square bg-neutral-400">
         {/* <img src={src} alt="" className="size-full" /> */}
       </div>
-      <div className="flex flex-col text-xs xs:text-sm sm:text-base md:text-lg gap-4 py-4 px-2 md:p-5 lg:p-8 xl:p-10 items-start">
+      <div className="flex flex-col flex-1 text-xs xs:text-base md:text-sm lg:text-base xl:text-xl gap-4 p-8 md:p-6 lg:p-6 xl:p-10 items-start">
         <p>{content}</p>
         <LinkButton textColor={"#FFFFFF"} bgColor="#FBBA41" text={"More Info"} />
       </div>
@@ -62,15 +64,15 @@ const NewsCard = ({src, content, link, index}) => {
 
 const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
   return (
-    <div className="w-full p-10 rounded-[50px] rounded-br-none flex justify-center items-center gap-10 shadow-md bg-white border">
+    <div className="w-full p-6 lg:p-10 rounded-[50px] md:flex-row-reverse lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center gap-4 lg:gap-10 shadow-md bg-white border">
       <div className="flex flex-col gap-4 flex-1">
-        <div className="flex flex-col">
-          <h4 className="font-bold text-3xl">{title}</h4>
+        <div className="flex flex-col text-xs xs:text-sm md:text-base">
+          <h4 className="font-bold text-xl xs:text-2xl sm:text-3xl">{title}</h4>
           <p>{author}</p>
           <p>{date}</p>
         </div>
         
-        <p>{desc}</p>
+        <p className="text-xs xs:text-sm md:text-base">{desc}</p>
         
         <div className="flex font-semibold gap-4">
           <div className="flex gap-1 items-center">
@@ -87,7 +89,7 @@ const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
           </div>
         </div>
       </div>
-      <div className="size-64 rounded-[30px] rounded-br-none bg-neutral-300">
+      <div className="w-full h-64 md:size-48 lg:size-64 rounded-[30px] rounded-br-none bg-neutral-300">
 
       </div>
     </div>
@@ -104,13 +106,18 @@ export const BlogPage = () => {
           <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
-      <section className="flex flex-col py-16 gap-8 px-2 md:px-6 lg:p-12 xl:p-20">
+      <section className="flex flex-col p-4 md:px-8 lg:p-12 xl:p-20">
         <h3 className="px-4 text-3xl min-[900px]:text-5xl text-center font-bold uppercase">News</h3>
-        <div className="flex flex-col md:flex-row gap-4 lg:gap-6 xl:gap-8 items-center justify-center">
-          {news.map((goal, index) => <NewsCard key={goal.title} {...goal} index={index} />)}
+        <div className="p-8 lg:p-4">
+          <CarouselWithIndicators 
+          itemClassName="sm:basis-1/2 lg:basis-1/3 flex justify-center" 
+          contentClassName="" 
+          indicatorClassName="md:hidden"
+          items={news.map((goal, index) => <NewsCard key={goal.title} {...goal} index={index} />)}
+          />
         </div>
       </section>
-      <section className="bg-[#F3EEE8] p-16 lg:p-20 flex flex-col gap-8">
+      <section className="bg-[#F3EEE8] p-6 xs:p-8 md:p-16 lg:p-20 flex flex-col gap-8">
         <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">Blogs</h3>
         {blogs.map(blog => <BlogCard {...blog} />)}        
       </section>
