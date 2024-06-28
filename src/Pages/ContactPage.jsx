@@ -8,7 +8,7 @@ export const ContactPage = () => {
   return (
     <div className="flex flex-col">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center ">
-        <StaggeredHeaders headers={["Contact", "Us."]} containerClass="text-2xl  hidden min-[400px]:flex flex-col min-[400px]:text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
+        <StaggeredHeaders headers={["Contact", "Us."]} containerClass="hidden min-[400px]:flex flex-col text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <StaggeredHeaders headers={["Contact Us."]} containerClass="min-[400px]:hidden text-3xl font-bold" direction="left" />
         <div className="max-w-[400px] sm:max-w-[600px]">
           <img src="/contactpage/contactus.png" alt="" />
@@ -27,10 +27,11 @@ export const ContactPage = () => {
           <h1 className=" font-bold text-3xl text-center sm:hidden">Fill out the Form</h1>
             <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base w-full"/>
             <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base  w-full"/>
-            <textarea type="text" placeholder="Your Message" className="md:flex-1 bg-[#F3EEE8] rounded-md p-3 sm:p-4 h-32 text-xs sm:text-base  w-full"/>
+            <textarea type="text" placeholder="Your Message" className="sm:flex-1 bg-[#F3EEE8] rounded-md p-3 sm:p-4 h-32 text-xs sm:text-base  w-full"/>
             <button className="bg-[#FBBA41] rounded-md p-2 sm:text-base text-sm sm:p-4 font-bold">Submit</button>
           </SlidingDiv>
           <SlidingDiv direction={"right"} className="flex-[1.5_0_0] flex flex-col gap-4">
+          <h1 className=" font-bold text-3xl text-center sm:hidden">Our Info</h1>
             <div className="flex gap-2 p-4 md:p-6 rounded-md bg-[#F3EEE8]">
               <svg xmlns="http://www.w3.org/2000/svg" className="size-8" viewBox="0 0 24 24"><title>map-marker</title><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" fill="currentColor"/></svg>
               <div className="flex flex-col gap-2">
