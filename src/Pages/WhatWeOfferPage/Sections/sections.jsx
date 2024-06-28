@@ -1,3 +1,4 @@
+import { MathsLabsContent } from "./MathSection/MathsLabsContent";
 import { PublicationsContent } from "./MathSection/PublicationsContent";
 
 export const sections = 
@@ -19,6 +20,7 @@ export const sections =
       {
         name: "Maths Lab",
         src: "/whatweofferpage/maths/maths-lab.png",
+        content: <MathsLabsContent />
       },
       {
         name: "Manipulatives",
