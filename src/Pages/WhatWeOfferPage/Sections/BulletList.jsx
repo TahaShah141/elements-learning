@@ -8,10 +8,10 @@ export const BulletList = ({list, contentClass="text-lg"}) => {
           <div className="size-8 mt-1">
             <HexagonPlayButton outerColor="#FCBA42" />
           </div>
-          <p className={contentClass+ " py-1 flex gap-2 w-full"} style={{borderBottomColor: "#FCBA42", borderBottomWidth: "2px"}}>
-            <span className="font-bold break-keep">{title+":"}</span>
-            {content}
-          </p>
+          <div className={contentClass+ " py-1 w-full"} style={{borderBottomColor: "#FCBA42", borderBottomWidth: "2px"}}>
+            {/* <p>{`${title}: ${content}`}</p> */}
+            <p><strong>{title+(content ? ":" : "")}</strong>{content}</p>
+          </div>
         </div>
       )}
     </div>
