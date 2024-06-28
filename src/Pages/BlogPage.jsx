@@ -100,7 +100,7 @@ export const BlogPage = () => {
       <section className="bg-[#F3EEE8] p-8 w-full flex gap-20 justify-center items-center">
         <StaggeredHeaders headers={["News and", "Blogs"]} containerClass="text-8xl font-bold" direction="left" />
         <div className="max-w-[600px]">
-          <img src="/contactpage/contactus.png" alt="" />
+          <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
       <section className="flex flex-col p-16 gap-8 px-40">

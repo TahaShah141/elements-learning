@@ -28,11 +28,11 @@ export const Hero = () => {
             </div>
           </SlidingDiv>
         </div>
-        <div className="flex gap-4 px-6 xs:px-10 md:px-4">
+        <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-6 xs:px-10 md:px-4">
 
           <LinkButton text="Training" textColor={"#FFFFFF"} bgColor={"#FBBA41"} />
           <LinkButton text="Contact Us" bgColor={"#353535"} textColor={"#FBBA41"} />
-        </div>
+        </SlidingDiv>
       </div>
       <div className="w-full xl:w-2/5 gap-4 hidden md:flex overflow-hidden">
         <SlidingDiv className="flex flex-col gap-4 flex-1" direction={"top"} px={100} delay={0.5}>

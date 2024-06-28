@@ -4,6 +4,9 @@ import { Navbar } from "./components/Navbar"
 import { ContactPage } from "./Pages/ContactPage"
 import { AboutPage } from "./Pages/AboutPage"
 import { BlogPage } from "./Pages/BlogPage"
+import { WhatWeOfferPage } from "./Pages/WhatWeOfferPage/WhatWeOfferPage"
+import { TabView } from "./Pages/WhatWeOfferPage/Sections/TabView"
+import { sections } from "./Pages/WhatWeOfferPage/Sections/sections"
 
 const RootLayout = () => {
   return (
@@ -21,6 +24,8 @@ const router = createBrowserRouter(
       <Route path="contact" element={<ContactPage />} />
       <Route path="about" element={<AboutPage />} />
       <Route path="blogs" element={<BlogPage />} />
+      <Route path="services" element={<WhatWeOfferPage />}/>
+      <Route path="services/maths" element={<TabView {...(sections[0])} />} />
     </Route>
   )
 )

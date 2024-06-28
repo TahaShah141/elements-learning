@@ -40,7 +40,7 @@ export const StaggeredPillarHeader = () => {
         variants={containerVariants}
         className="flex sm:flex-col sm:items-end "
       >
-        <motion.h2 className="text-8xl xs:text-[10rem] md:text-[12rem] line-height-1 lg:text-huge font-bold" variants={itemVariants}>
+        <motion.h2 className="text-8xl xs:text-[10rem] md:text-[12rem] line-height-1 lg:text-[16rem] font-bold" variants={itemVariants}>
           4
         </motion.h2>
         <div className='flex flex-col justify-center sm:items-end'>
