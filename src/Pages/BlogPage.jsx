@@ -126,7 +126,7 @@ export const BlogPage = () => {
             <button className="p-2 bg-[#404040] text-white font-bold px-4">Submit</button>
           </div>
         </div>
-        <div className="bg-[#353535] h-10 w-full"></div>
+        <div className="bg-[#353535] h-16 w-full"></div>
       </section>
       <Footer />
     </div>

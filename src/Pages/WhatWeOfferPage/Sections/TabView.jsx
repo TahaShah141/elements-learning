@@ -13,7 +13,7 @@ const TabHeader = ({tab, isOpen, onClick}) => {
 
 export const TabView = ({name, color, src, tabs}) => {
 
-  const [opened, setOpened] = useState(tabs[0].name)
+  const [opened, setOpened] = useState(tabs[0])
 
   return (
     <div className="flex flex-col w-full">
@@ -24,9 +24,10 @@ export const TabView = ({name, color, src, tabs}) => {
         </div>
 
         <div className="flex gap-4 justify-center">
-          {tabs.map(tab => <TabHeader tab={tab} onClick={() => setOpened(tab.name)} isOpen={opened === tab.name} />)}
+          {tabs.map(tab => <TabHeader tab={tab} onClick={() => setOpened(tab)} isOpen={opened.name === tab.name} />)}
         </div>
       </div>
+      {opened.content}
     </div>
   )
 }

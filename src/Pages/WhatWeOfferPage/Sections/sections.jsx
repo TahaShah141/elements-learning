@@ -1,3 +1,5 @@
+import { PublicationsContent } from "./MathSection/PublicationsContent";
+
 export const sections = 
 [
   {
@@ -8,6 +10,7 @@ export const sections =
       {
         name: "Publications",
         src: "/whatweofferpage/maths/publication.png",
+        content: <PublicationsContent />
       },
       {
         name: "Trainings",
@@ -18,7 +21,7 @@ export const sections =
         src: "/whatweofferpage/maths/maths-lab.png",
       },
       {
-        name: "Manipulative",
+        name: "Manipulatives",
         src: "/whatweofferpage/maths/maths-manipulatives.png",
       },
       {

@@ -2,15 +2,15 @@ import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion"
 import { HexagonPlayButton } from "../HexagonPlayButton"
 
-export const CustomAccordion = ({containerClass, items}) => {
+export const CustomAccordion = ({containerClass, items, type="single", changeHeaders=false}) => {
 
   const [opened, setOpened] = useState("")
 
   return (
-    <Accordion onValueChange={(value) => setOpened(value)} className={containerClass} type="single" collapsible>
+    <Accordion onValueChange={(value) => setOpened(value)} className={containerClass} type={type} collapsible>
       {items.map(item => 
         <AccordionItem value={item.id}>
-          <AccordionTrigger className={`p-1 rounded-full hover:no-underline rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${item.id === opened ? "bg-[#FBBA41] duration-200" : "bg-transparent delay-0 duration-0"}`}>
+          <AccordionTrigger className={`p-1 rounded-full hover:no-underline rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${item.id !== opened && changeHeaders ? "bg-transparent delay-0 duration-0" : "bg-[#FBBA41] duration-200"}`}>
             <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
               {!(item.id === opened) ? 
               <>

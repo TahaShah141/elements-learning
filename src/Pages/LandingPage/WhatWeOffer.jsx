@@ -70,7 +70,7 @@ export const WhatWeOffer = () => {
             <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
-        <CustomAccordion containerClass={"flex-1"} items={services.map(service => ({
+        <CustomAccordion changeHeaders={true} containerClass={"flex-1"} items={services.map(service => ({
           title: service.title,
           id: service.title,
           content: (

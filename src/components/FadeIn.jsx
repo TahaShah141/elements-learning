@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-export const FadeIn = ({ children, delay = 0, duration = 0.5, allowed=true, ...props }) => {
+export const FadeIn = ({ children, delay = 0, duration = 0.5, threshold=0.1, allowed=true, ...props }) => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Only trigger once
-    threshold: 0.1 // Trigger when 10% of the component is in view
+    threshold: threshold // Trigger when 10% of the component is in view
   });
 
   const fadeInVariants = {
