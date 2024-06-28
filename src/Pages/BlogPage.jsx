@@ -1,4 +1,3 @@
-import { FadeIn } from "../components/FadeIn"
 import { Footer } from "../components/Footer"
 import { LinkButton } from "../components/LinkButton"
 import { SlidingDiv } from "../components/SlidingDiv"
@@ -48,11 +47,11 @@ const blogs = [
 
 const NewsCard = ({src, content, link, index}) => {
   return (
-    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 max-w-md bg-[#F3EEE8]">
-      <div className="w-full h-96 bg-neutral-200">
+    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 max-w-md bg-[#F3EEE8]">
+      <div className="w-full xs:h-48 sm:h-52 md:h-80 lg:h-[350px] xl:h-96 aspect-square  bg-neutral-400">
         {/* <img src={src} alt="" className="size-full" /> */}
       </div>
-      <div className="flex flex-col text-lg gap-4 p-10 items-start">
+      <div className="flex flex-col text-xs xs:text-sm sm:text-base md:text-lg gap-4 py-4 px-2 md:p-5 lg:p-8 xl:p-10 items-start">
         <p>{content}</p>
         <LinkButton textColor={"#FFFFFF"} bgColor="#FBBA41" text={"More Info"} />
       </div>
@@ -97,15 +96,16 @@ const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
 export const BlogPage = () => {
   return (
     <div className="flex flex-col">
-      <section className="bg-[#F3EEE8] p-8 w-full flex gap-20 justify-center items-center">
-        <StaggeredHeaders headers={["News and", "Blogs"]} containerClass="text-8xl font-bold" direction="left" />
-        <div className="max-w-[600px]">
+      <section className=" bg[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse xs:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center ">
+        <StaggeredHeaders headers={["News and", "Blogs"]} containerClass="hidden xs:flex flex-col text-3xl sm:text-5xl lg:text-8xl font-bold" direction="left" />
+        <StaggeredHeaders headers={["News and Blogs"]} containerClass="min-[400px]:hidden text-2xl font-bold" direction="left" />
+        <div className="max-w-[300px] sm:max-w-[600px]">
           <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
-      <section className="flex flex-col p-16 gap-8 px-40">
-        <h3 className="px-4 text-3xl min-[900px]:text-5xl min-[900px]:text-cente font-bold uppercase">News</h3>
-        <div className="flex gap-8 justify-center">
+      <section className="flex flex-col py-16 gap-8 px-2 md:px-6 lg:p-12 xl:p-20">
+        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-center font-bold uppercase">News</h3>
+        <div className="flex flex-col md:flex-row gap-4 lg:gap-6 xl:gap-8 items-center justify-center">
           {news.map((goal, index) => <NewsCard key={goal.title} {...goal} index={index} />)}
         </div>
       </section>
@@ -114,19 +114,18 @@ export const BlogPage = () => {
         {blogs.map(blog => <BlogCard {...blog} />)}        
       </section>
       <section className="flex flex-col items-center">
-        <div className="flex bg-[#FBBA42] translate-y-1/4 w-4/5 flex-col p-12 justify-center items-center gap-8">
+        <div className="flex bg-[#FBBA42] translate-y-1/4 w-4/5 flex-col p-5 lg:p-12 justify-center items-center gap-8">
           <div className="flex flex-col text-lg gap-1 items-center">
-            <h4 className="font-bold text-4xl">Join Our Community</h4>
-            <p>Sign up for our newsletter and get fresh articles, freebies, advice and more 3 times a week.</p>
+            <h4 className="font-bold text-lg md:text-2xl lg:text-4xl">Join Our Community</h4>
+            <p className="text-sm md:text-base" >Sign up for our newsletter and get fresh articles, freebies, advice and more 3 times a week.</p>
           </div>
-          <div className="flex gap-4 justify-center p-2 px-16 w-full">
-            <input type="text" placeholder="Full Name" className="flex-1 px-2" />
-            <input type="text" placeholder="Email" className="flex-1 px-2" />
-            {/* <LinkButton text="Submit" bgColor={"#404040"} textColor={"#FFFFFF"} /> */}
-            <button className="p-2 bg-[#404040] text-white font-bold px-4">Submit</button>
+          <div className="flex flex-col md:flex-row gap-2 lg:gap-4 justify-center lg:p-2 lg:px-16 w-full">
+            <input type="text" placeholder="Full Name" className="flex-1 px-2 p-2 text-sm" />
+            <input type="text" placeholder="Email" className="flex-1 px-2 p-2 text-sm" />
+            <button className="p-2 lg:p-2 bg-[#404040] text-white font-bold px-4 text-sm">Submit</button>
           </div>
         </div>
-        <div className="bg-[#353535] h-16 w-full"></div>
+        <div className="bg-[#353535] h-20 md:h-16 lg:h-20 w-full"></div>
       </section>
       <Footer />
     </div>
