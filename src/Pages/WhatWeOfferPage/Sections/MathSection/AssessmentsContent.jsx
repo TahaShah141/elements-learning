@@ -93,9 +93,9 @@ export const AssessmentsContent = () => {
           <BulletList contentClass="text-xl break-all"
           list={[
             {title: "Inform Instructional Planning", content: " Assessments provide valuable data that informs instructional planning and decision-making, allowing educators to tailor their teaching strategies to address students' learning needs effectively."},
-            {title: "Monitor Progress:", content: "Assessments help educators and students monitor progress over time, identifying areas of strength and areas requiring additional support or intervention."},
-            {title: "Promote Mastery Learning:", content: "By providing opportunities for feedback and reflection, assessments support the principles of mastery learning, encouraging students to persist and succeed in their learning journey."},
-            {title: "Guide Differentiation:", content: "Assessments inform differentiation strategies, allowing educators to customize instruction based on individual students' readiness, interests, and learning profiles."},
+            {title: "Monitor Progress", content: "Assessments help educators and students monitor progress over time, identifying areas of strength and areas requiring additional support or intervention."},
+            {title: "Promote Mastery Learning", content: "By providing opportunities for feedback and reflection, assessments support the principles of mastery learning, encouraging students to persist and succeed in their learning journey."},
+            {title: "Guide Differentiation", content: "Assessments inform differentiation strategies, allowing educators to customize instruction based on individual students' readiness, interests, and learning profiles."},
           ]} />
         </div>
       </div>
