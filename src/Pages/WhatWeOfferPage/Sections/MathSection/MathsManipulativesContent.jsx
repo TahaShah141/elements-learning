@@ -6,12 +6,14 @@ const manipulatives = [
   {
     name: "Fraction Board",
     text: "The fraction board provides a tangible representation of fractional concepts through a board divided into equal parts. By playing with the fraction pieces on the board, learners gain a visual understanding of fractions relationships, addition, subtraction, and equivalency.",
+    color: "#CFE8BE",
     innerColor: "#B1DA94",
     src: "#"
   },
   {
     name: "Base-10 Blocks",
     text: " Understand numbers better by using blocks for ones, tens, and hundreds Count easily and see how multiplication and division work. Move the blocks around to show adding and taking away. making it easier to know what's happening with numbers",
+    color: "#CAB9DB",
     innerColor: "#A98CC2",
     src: "#"
   },
