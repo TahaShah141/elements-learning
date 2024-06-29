@@ -93,7 +93,7 @@ export const LandingPage = () => {
 
       </section>
 
-      <section className="bg-[#F3EEE8] w-full p-12">
+      <section className="bg-[#F3EEE8] w-full p-4 sm:p-8 lg:p-12">
         <MultiCarousel items={events} />
       </section>
 
