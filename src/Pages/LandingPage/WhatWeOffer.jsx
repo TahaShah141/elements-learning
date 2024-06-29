@@ -75,8 +75,10 @@ export const WhatWeOffer = () => {
           id: service.title,
           content: (
             <div className={`flex justify-start gap-2 p-2`}>
-              <img src={service.illustrationSrc} className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64 h-fit float-start" />
-              <div className="flex flex-col gap-4 items-start">
+              <div className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64">
+                <img src={service.illustrationSrc} className="w-full h-fit float-start" />
+              </div>
+              <div className="flex flex-1 flex-col gap-4 items-start">
               <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
                 {service.content}
               </p>
