@@ -2,7 +2,7 @@ import { useState } from "react"
 
 const TabHeader = ({tab, isOpen, onClick}) => {
   return (
-    <div onClick={onClick} className={`flex-1 h-64 shadow-lg p-6 flex flex-col gap-2 justify-end transition-all duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
+    <div onClick={onClick} className={`size-72 shadow-lg p-6 flex flex-col gap-2 justify-end transition-all duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
       <div className="h-3/5">
         <img src={tab.src} alt="" className="h-full"/>
       </div>
