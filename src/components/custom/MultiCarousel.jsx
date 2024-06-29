@@ -1,10 +1,26 @@
 import { useEffect, useState } from "react"
 
-export const MultiCarousel = ({items, autoScroll=true, size=500, gapSize=20, delay=3000}) => {
+export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
   const [index, setIndex] = useState(0)
   const [intervalID, setIntervalID] = useState()
+  const [size, setSize] = useState(200)
+  const [gapSize, setGapSize] = useState(5)
   const smallerSize = size * 0.8
+
+  useEffect(() => {
+    const windowWidth = window.innerWidth
+    if (windowWidth >= 1024) {
+      setSize(400)
+      setGapSize(15)
+    } else if (windowWidth >= 768) {
+      setSize(350)
+      setGapSize(12)
+    } else if (windowWidth >= 640) {
+      setSize(300)
+      setGapSize(10)
+    }
+  }, [])
 
   useEffect(() => {
     if (!autoScroll) clearInterval(intervalID);
