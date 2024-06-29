@@ -38,8 +38,8 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
       <div className="absolute transition-all duration-500" style={{backgroundColor: items[index].color, width: size, height: size}} />
       <div className="relative z-10 h-3/5" style={{width: smallerSize}}>
         {items.map((item, i) => (
-          <div className={`absolute transition-all duration-700 bottom-0 ${i === index ? "h-full w-full" : "h-1/2 w-1/2"}`} 
-          style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(100% + ${(index-i) * (smallerSize/2 + gapSize)}px))` : `translateX(${(index-i) * (smallerSize/2 + gapSize) }px)`}`}}
+          <div className={`absolute transition-all duration-700 bottom-0 ${i === index ? "h-full w-full" : "h-2/3 w-2/3"}`} 
+          style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
           onClick={() => setIndex(i)}
           >
 
