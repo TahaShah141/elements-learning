@@ -1,3 +1,4 @@
+import { MultiCarousel } from "@/components/custom/MultiCarousel"
 import { Footer } from "../../components/Footer"
 import { SlidingDiv } from "../../components/SlidingDiv"
 import { Hero } from "./Hero"
@@ -9,13 +10,47 @@ import { Stats } from "./Stats"
 import { Testimonials } from "./Testimonials"
 import { WhatWeOffer } from "./WhatWeOffer"
 
+const events = [
+  {
+    name: "Fraction Board",
+    text: "The fraction board provides ",
+    color: "#CFE8BE",
+    innerColor: "#B1DA94",
+    src: "#"
+  },
+  {
+    name: "Base-10 Blocks",
+    text: " Understand numbers better by using blocks for",
+    color: "#CAB9DB",
+    innerColor: "#A98CC2",
+    src: "#"
+  },
+  {
+    name: "Tangram",
+    text: "The Tangram, an ancient Chinese puzzle Involves seven tans,",
+    color: "#A7E4F9",
+    innerColor: "#6DD1F5",
+    src: "#"
+  },
+  {
+    name: "Geoboard",
+    text: "A geoboard is a board with",
+    color: "#FEE7BD",
+    innerColor: "#FED792",
+    src: "#"
+  },
+  {
+    name: "Circular Geoboard",
+    text: "A circular geoboard consists of 12",
+    color: "#F8A6D6",
+    innerColor: "#F46CBE",
+    src: "#"
+  },
+]
 
 export const LandingPage = () => {
   return (
-    <div className="flex flex-col w-screen overflow-hidden items-center">
-
-      {/* <p>{window.innerHeight}</p>
-      <p>{window.innerWidth}</p> */}
+    <div className="flex flex-col overflow-hidden items-center">
 
       <section className="bg-[#F3EEE8] w-full flex md:justify-center lg:px-10 lg:gap-12 xl:gap-20">
         <Hero />
@@ -59,15 +94,9 @@ export const LandingPage = () => {
 
       </section>
 
-      {/* Events Carousel */}
-      {/* <section className="bg-[#F3EEE8] w-full flex justify-center">
-        <div className="container p-20 flex justify-center">
-          <Carousel items={Array.from(Array(5)).map((_, i) =>
-            <EventCard title={"Test Event "+(i+1)} date={"12-06-2024"}
-            content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit officia aut odit voluptas ullam omnis eveniet ipsa sequi recusandae perspiciatis culpa necessitatibus laudantium reprehenderit quo ab neque quaerat tempore ut vero error, voluptatibus ipsam itaque. Officia unde cumque dolorum quo nesciunt omnis asperiores, perferendis nulla soluta. Molestiae commodi perspiciatis sit saepe omnis porro mollitia natus, illo aliquid fuga reiciendis velit explicabo quam accusamus enim animi. Iusto quod, ipsam aut illum reprehenderit nam nulla sequi aperiam eligendi voluptatibus fugit magnam ut, totam architecto praesentium tempore, doloremque nisi at cupiditate ratione consequuntur natus. Nesciunt iusto illum cumque odit molestias expedita dolorem."} />
-            )} />
-        </div>
-      </section> */}
+      <section className="bg-[#F3EEE8] w-full p-12">
+        <MultiCarousel items={events} />
+      </section>
 
       <section className="w-full p-6 sm:p-10 flex flex-col justify-center xs:items-start min-[550px]:flex-row min-[550px]:items-center sm:gap-8 gap-4">
         <Testimonials />

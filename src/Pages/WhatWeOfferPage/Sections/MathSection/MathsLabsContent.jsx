@@ -1,6 +1,7 @@
 import { FadeIn } from "@/components/FadeIn"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { ContentCard } from "../ContentCard"
+import { MultiCarousel } from "@/components/custom/MultiCarousel"
 
 const packages = [
   {
@@ -40,6 +41,44 @@ const packages = [
   },
 ]
 
+const events = [
+  {
+    name: "Fraction Board",
+    text: "The fraction board provides ",
+    color: "#CFE8BE",
+    innerColor: "#B1DA94",
+    src: "#"
+  },
+  {
+    name: "Base-10 Blocks",
+    text: " Understand numbers better by using blocks for",
+    color: "#CAB9DB",
+    innerColor: "#A98CC2",
+    src: "#"
+  },
+  {
+    name: "Tangram",
+    text: "The Tangram, an ancient Chinese puzzle Involves seven tans,",
+    color: "#A7E4F9",
+    innerColor: "#6DD1F5",
+    src: "#"
+  },
+  {
+    name: "Geoboard",
+    text: "A geoboard is a board with",
+    color: "#FEE7BD",
+    innerColor: "#FED792",
+    src: "#"
+  },
+  {
+    name: "Circular Geoboard",
+    text: "A circular geoboard consists of 12",
+    color: "#F8A6D6",
+    innerColor: "#F46CBE",
+    src: "#"
+  },
+]
+
 export const MathsLabsContent = () => {
   return (
     <FadeIn className="flex flex-col w-full">
@@ -48,7 +87,7 @@ export const MathsLabsContent = () => {
           <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
         </div>
         <section className="p-16 bg-[#F3EEE8]">
-          Carousel
+          <MultiCarousel items={events} />
         </section>
         <CustomAccordion containerClass={"w-full p-10 px-32"} type="multiple"
         items={[
