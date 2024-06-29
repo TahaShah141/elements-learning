@@ -1,14 +1,16 @@
+import { IconButton } from "@/components/custom/IconButton"
 import { LinkButton } from "../../components/LinkButton"
 import { SlidingDiv } from "../../components/SlidingDiv"
 import { StaggeredHeaders } from "../../components/StaggeredHeaders"
+import { ArrowRight, ArrowRightIcon } from "lucide-react"
 
 export const Hero = () => {
   return (
     <>
-      <div className="py-10 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
-        <StaggeredHeaders containerClass="px-6 xs:px-10 md:px-4 text-4xl xs:text-6xl sm:text-8xl md:text-7xl lg:text-8xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
-        <SlidingDiv className="px-6 xs:px-10 md:px-4" direction={"bottom"} px={10} delay={1}>
-          <p className="text-xs xs:text-sm lg:text-lg">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
+      <div className="py-10 bg-re-500 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
+        <StaggeredHeaders containerClass="px-10 md:px-0 text-6xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
+        <SlidingDiv className="px-10 md:px-0" direction={"bottom"} px={10} delay={1}>
+          <p className="text-xs xs:text-sm lg:text-xl">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
         </SlidingDiv>
 
         <div className="w-full py-4 xs:py-8 gap-4 flex flex-col md:hidden overflow-hidden">
@@ -28,13 +30,12 @@ export const Hero = () => {
             </div>
           </SlidingDiv>
         </div>
-        <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-6 xs:px-10 md:px-4">
-
-          <LinkButton text="Training" textColor={"#FFFFFF"} bgColor={"#FBBA41"} />
-          <LinkButton text="Contact Us" bgColor={"#353535"} textColor={"#FBBA41"} />
+        <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-10 md:px-0">
+          <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Training"} className={"bg-[#FBBA41] font-bold text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
+          <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Contact Us"} className={"text-[#FBBA41] font-bold text-lg xs:text-xl lg:text-2xl bg-[#353535] p-2 xs:px-4 lg:p-4"} />
         </SlidingDiv>
       </div>
-      <div className="w-full xl:w-2/5 gap-4 hidden md:flex overflow-hidden">
+      <div className="w-full xl:w-2/5 gap-4 hidden bg-re-600 md:flex overflow-hidden">
         <SlidingDiv className="flex flex-col gap-4 flex-1" direction={"top"} px={100} delay={0.5}>
           <div className="h-16 xl:h-24 bg-[#74BE43] rounded-bl-[70px] lg:rounded-bl-[120px]"></div>
           <div className="flex-1 bg-[#F8EA01] flex items-end overflow-hidden rounded-[70px] lg:rounded-[120px] lg:rounded-br-none rounded-br-none">

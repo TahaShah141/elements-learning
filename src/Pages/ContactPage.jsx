@@ -7,10 +7,9 @@ import { StaggeredHeaders } from "../components/StaggeredHeaders"
 export const ContactPage = () => {
   return (
     <div className="flex flex-col">
-      <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center ">
-        <StaggeredHeaders headers={["Contact", "Us."]} containerClass="hidden min-[400px]:flex flex-col text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
-        <StaggeredHeaders headers={["Contact Us."]} containerClass="min-[400px]:hidden text-3xl font-bold" direction="left" />
-        <div className="max-w-[400px] sm:max-w-[600px]">
+      <section className="bg-[#F3EEE8] p-2 xs:p-8 xs:px-10 md:px-20 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
+        <StaggeredHeaders headers={["Contact Us"]} containerClass="text-3xl min-[400px] text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
+        <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
           <img src="/contactpage/contactus.png" alt="" />
         </div>
       </section>

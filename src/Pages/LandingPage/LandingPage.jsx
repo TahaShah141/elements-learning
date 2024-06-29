@@ -51,12 +51,11 @@ const events = [
 export const LandingPage = () => {
   return (
     <div className="flex flex-col overflow-hidden items-center">
-
-      <section className="bg-[#F3EEE8] w-full flex md:justify-center lg:px-10 lg:gap-12 xl:gap-20">
+      <section className="bg-[#F3EEE8] w-full justify-between flex md:px-10 xl:px-20">
         <Hero />
       </section>
 
-      <section className="w-full py-4">
+      <section className="w-full py-12">
         <SlidingDiv direction={"right"} px={75}>
           <h3 className="px-4 text-3xl min-[900px]:text-5xl min-[900px]:text-center font-bold uppercase">Our Journey</h3>
         </SlidingDiv>
@@ -73,7 +72,7 @@ export const LandingPage = () => {
         <Pillars />
       </section>
 
-      <section className="bg-[#F3EEE8] p-8 sm:p-12 lg:p-20 lg:px-32 xl:px-40 w-full" >
+      <section className="bg-[#F3EEE8] p-8 sm:p-10 lg:p-20 w-full" >
         <WhatWeOffer />
       </section> 
 

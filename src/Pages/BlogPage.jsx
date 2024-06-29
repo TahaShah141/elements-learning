@@ -50,11 +50,11 @@ const blogs = [
 
 const NewsCard = ({src, content, link, index}) => {
   return (
-    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 max-w-md bg-[#F3EEE8]">
+    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 md:max-w-md bg-[#F3EEE8]">
       <div className="w-full md:h-64 lg:h-72 xl:h-96 aspect-square bg-neutral-400">
         {/* <img src={src} alt="" className="size-full" /> */}
       </div>
-      <div className="flex flex-col flex-1 text-xs xs:text-base md:text-sm lg:text-base xl:text-xl gap-4 p-8 md:p-6 lg:p-6 xl:p-10 items-start">
+      <div className="flex flex-col flex-1 text-xs md:text-sm lg:text-base xl:text-xl gap-4 p-8 md:p-6 lg:p-6 xl:p-10 items-start">
         <p>{content}</p>
         <LinkButton textColor={"#FFFFFF"} bgColor="#FBBA41" text={"More Info"} />
       </div>
@@ -99,10 +99,10 @@ const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
 export const BlogPage = () => {
   return (
     <div className="flex flex-col">
-      <section className=" bg[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse xs:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center ">
-        <StaggeredHeaders headers={["News and", "Blogs"]} containerClass="hidden xs:flex flex-col text-3xl sm:text-5xl lg:text-8xl font-bold" direction="left" />
-        <StaggeredHeaders headers={["News and Blogs"]} containerClass="min-[400px]:hidden text-2xl font-bold" direction="left" />
-        <div className="max-w-[300px] sm:max-w-[600px]">
+      <section className="bg-[#F3EEE8] p-2 xs:p-8 xs:px-10 md:px-20 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
+        <StaggeredHeaders headers={["News", "&", "Blogs"]} containerClass="text-3xl min-[400px]:block hidden text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
+        <StaggeredHeaders headers={["News & Blogs"]} containerClass="text-3xl min-[400px]:hidden text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
+        <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
           <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
