@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer"
 import { useState } from "react"
 
 const TabHeader = ({tab, isOpen, onClick}) => {
@@ -28,6 +29,7 @@ export const TabView = ({name, color, src, tabs}) => {
         </div>
       </div>
       {opened.content}
+      <Footer />
     </div>
   )
 }

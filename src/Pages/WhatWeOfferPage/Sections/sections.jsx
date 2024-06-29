@@ -2,6 +2,7 @@ import { AssessmentsContent } from "./MathSection/AssessmentsContent";
 import { MathsLabsContent } from "./MathSection/MathsLabsContent";
 import { MathsManipulativesContent } from "./MathSection/MathsManipulativesContent";
 import { PublicationsContent } from "./MathSection/PublicationsContent";
+import { TrainingsContent } from "./MathSection/TrainingsContent";
 
 export const sections = 
 [
@@ -18,6 +19,7 @@ export const sections =
       {
         name: "Trainings",
         src: "/whatweofferpage/maths/trainings.png",
+        content: <TrainingsContent />
       },
       {
         name: "Maths Lab",
