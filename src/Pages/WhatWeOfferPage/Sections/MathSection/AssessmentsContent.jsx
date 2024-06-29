@@ -83,7 +83,7 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
 
 export const AssessmentsContent = () => {
   return (
-    <FadeIn className="flex flex-col w-full gap-4 p-20 px-32">
+    <FadeIn threshold={0.01} className="flex flex-col w-full gap-4 p-20 px-32">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-8 text-xl">
           <h4 className="text-3xl">Assessments play a crucial role in the teaching and learning process, serving as valuable tools for evaluating progress, identifying areas for growth, and informing instructional decision-making.</h4>

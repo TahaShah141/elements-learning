@@ -53,7 +53,7 @@ const ManipulativeCard = ({name, src, color, innerColor, text}) => {
 
 export const MathsManipulativesContent = () => {
   return (
-    <FadeIn className="flex flex-col w-full p-20 px-32">
+    <FadeIn threshold={0.01} className="flex flex-col w-full p-20 px-32">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-xl">
           <h4 className="text-3xl">Play, Learn, and Grow with the DoMath Series!</h4>

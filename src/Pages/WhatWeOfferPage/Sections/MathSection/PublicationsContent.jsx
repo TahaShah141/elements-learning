@@ -4,7 +4,7 @@ import { BulletList } from "../BulletList"
 
 export const PublicationsContent = () => {
   return (
-    <FadeIn className="flex flex-col w-full p-20 px-32">
+    <FadeIn threshold={0.01} className="flex flex-col w-full p-20 px-32">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-xl">
           <p>At Elements Learning (EL), we are dedicated to producing high-quality educational materials that cater to the diverse needs of educators and students. Our comprehensive range of textbooks and popular Maths resources is designed to enhance the learning experience and foster a deep understanding of Mathematical concepts.</p>

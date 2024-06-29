@@ -81,7 +81,7 @@ const events = [
 
 export const MathsLabsContent = () => {
   return (
-    <FadeIn className="flex flex-col w-full">
+    <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-xl p-10 px-32">
           <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
