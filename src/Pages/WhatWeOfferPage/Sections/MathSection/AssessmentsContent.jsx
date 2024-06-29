@@ -25,21 +25,61 @@ const teacherAssessments = [
     headers: ["Pre-Training", "Assessment"],
     content: " Before initiation of our teacher training program, educators undergo comprehensive assessments to gauge their current knowledge, skills, and teaching practices. These assessments serve as a baseline to identify areas for growth and tailor the training experience to meet individual needs effectively.",
     color: "#9FD8EB",
-    highlight: "#2D7CEA"
+    highlight: "#2D7CEA",
+    corner: "tr",
+    number: "01"
   },
   {
     headers: ["Mid-Training", "Assessment"],
     content: "Throughout the training program, educators are assessed through a variety of methods to evaluate their progress and proficiency. These assessments may include presentations, practical demonstrations of tool usage, written evaluations, and reflective exercises. By assessing educators' performance during training, we ensure that they are acquiring the necessary knowledge and skills to effectively implement our methodologies in the classroom.",
     color: "#C5AECB",
-    highlight: "#66378A"
+    highlight: "#66378A",
+    corner: "br",
+    number: "02"
   },
   {
     headers: ["Post-Training", "Assessment"],
     content: " Following the completion of our training program, educators undergo assessments again to evaluate the impact and effectiveness of the training. These assessments measure the changes in knowledge, pedagogical practices, and confidence levels, providing valuable insights into the training program's outcomes and areas for further improvement.",
     color: "#C7DFAF",
-    highlight: "#74C045"
+    highlight: "#74C045",
+    corner: "tr",
+    number: "03"
   },
 ]
+
+const AssessmentCard = ({headers, content, color, highlight, corner, number}) => {
+
+  return (
+    <div className="flex-1 flex flex-col items-center gap-2">
+      <div className={`relative flex justify-center p-2 rounded-full`} style={{backgroundColor: highlight}}>
+        <div className="p-3 bg-white rounded-full z-10">
+          <div className={`rounded-full size-64 flex flex-col justify-center items-center rounded-${corner}-none p-4`} style={{backgroundColor: color}}>
+            <h3 className="text-7xl font-bold" style={{color: highlight}}>{number}</h3>
+            <div className="flex flex-col items-center justify-center font-bold text-3xl">
+              <p>{headers[0]}</p>
+              <p>{headers[1]}</p>
+            </div>
+          </div>
+        </div>
+        <div className={`absolute w-full h-1/2 bg-white left-0 ${corner === "tr" ? "top-0" : "bottom-0" }`} />
+        <div className={`absolute h-2 w-full flex justify-between top-1/2 z-10 -translate-y-1/2`}>
+          <div className="size-2 rounded-full" style={{backgroundColor: highlight}}></div>
+          <div className="relative size-2 rounded-full" style={{backgroundColor: highlight}}>
+            <div className="absolute left-0 h-full w-16 rounded-full" style={{backgroundColor: highlight}}>
+              <div className="relative w-full h-full rounded-full" style={{backgroundColor: highlight}}>
+                <div className="absolute w-1/2 rotate-45 -translate-y-[calc(150%)] h-full rounded-full rounded-r-none right-0" style={{backgroundColor: highlight}}></div>
+                <div className="absolute w-1/2 -rotate-45 translate-y-[calc(150%)] h-full rounded-full rounded-r-none right-0" style={{backgroundColor: highlight}}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="text-base">
+        {content}
+      </p>
+    </div>
+  )
+}
 
 export const AssessmentsContent = () => {
   return (
@@ -66,7 +106,8 @@ export const AssessmentsContent = () => {
           id: "Teacher Assessments",
           content: 
           
-          <div className="flex flex-col gap-4 p-8 text-lg">
+          <div className="flex gap-4 p-8">
+            {teacherAssessments.map(assessment => <AssessmentCard {...assessment} />)}
           </div>
 
         },

@@ -82,13 +82,13 @@ export const MathsManipulativesContent = () => {
             content: 
             <div className="p-8">
               <div className="flex gap-2">
-                <div className="h-[600px] w-[450px] bg-neutral-400">
+                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                 </div>
-                <div className="flex-1 flex flex-col px-4 gap-8 md:text-2xl">
+                <div className="flex-[3_0_0] flex flex-col px-4 gap-8 md:text-2xl">
                   <p>EL's activity booklets are essential tools for educators and parents looking to enhance students' math learning. Designed to complement our math manipulatives, each booklet features over 50 activities tailored to a specific tool. These resources inspire curiosity, foster creativity, and develop essential mathematical skills, encouraging meaningful exploration both in classrooms and at home.</p>
                   <div className="flex flex-col gap-4">
-                    <h3 className="text-4xl">Benifits of Using Activity Booklets</h3>
-                    <div className="pl-48">
+                    <h3 className="text-5xl">Benifits of Using Activity Booklets</h3>
+                    <div className="pl-32">
                       <BulletList contentClass="text-2xl break-all"
                       list={[
                         {title: "Hands-On Exploration"},

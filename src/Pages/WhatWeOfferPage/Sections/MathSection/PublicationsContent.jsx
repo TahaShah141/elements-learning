@@ -26,15 +26,15 @@ export const PublicationsContent = () => {
             content: 
             <div className="p-8">
               <div className="flex gap-2">
-                <div className="flex-1 flex flex-col text-right p-12 gap-8 bg-[#F3EEE8]">
-                  <h3 className="text-3xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
-                  <p className="text-base md:text-lg"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
+                <div className="flex-[3_0_0] flex flex-col text-right p-12 gap-8 bg-[#F3EEE8]">
+                  <h3 className="text-5xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
+                  <p className="text-base md:text-xl"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
                   <div className="flex gap-2 mt-auto justify-end">
                     <button className="px-6 py-4 font-bold text-lg text-white bg-[#FBBA42]">Teacher Guide</button>
                     <button className="px-6 py-4 font-bold text-lg text-white bg-[#353535]">Student Workbooks</button>
                   </div>
                 </div>
-                <div className="h-[600px] w-[450px] bg-neutral-400">
+                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                 </div>
               </div>
             </div>
@@ -46,10 +46,10 @@ export const PublicationsContent = () => {
             content: 
             <div className="p-8">
               <div className="flex gap-2">
-                <div className="h-[600px] w-[450px] bg-neutral-400">
+                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                 </div>
-                <div className="flex-1 flex flex-col p-12 gap-8 text-base md:text-lg bg-[#F3EEE8]">
-                  <h3 className="text-3xl">Popular Math uses puzzles and games to make learning enjoyable for all ages, featuring resources from renowned Maths popularizers and plans for recreational programs and olympiads.</h3>
+                <div className="flex-[3_0_0] flex flex-col p-12 gap-8 text-base md:text-xl bg-[#F3EEE8]">
+                  <h3 className="text-5xl">Popular Math uses puzzles and games to make learning enjoyable for all ages, featuring resources from renowned Maths popularizers and plans for recreational programs and olympiads.</h3>
                   <p>Martin Gardner, a famous Maths popularizer, is best known for creating and sustaining interest in recreational Math. It is said that Martin transformed countless kids into scientists and countless scientists into kids. Known for his mind-bending puzzles and over 100 engaging books, he sparked curiosity worldwide.</p>
                   <p>Now, we invite you to continue Martin's legacy by joining us as a part-time author.</p>
                 </div>

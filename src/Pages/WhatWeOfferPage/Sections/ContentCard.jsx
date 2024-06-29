@@ -6,7 +6,7 @@ export const ContentCard = ({headers, color, content}) => {
         <p className="text-6xl">{headers[0]}</p>
         <p className="text-4xl">{headers[1]}</p>
       </div>
-      <div className="p-8 flex flex-col gap-2 text-sm">
+      <div className="p-8 flex flex-col gap-2 text-lg">
         {content instanceof Array ? 
         <>
           {content.map((point, i) => 

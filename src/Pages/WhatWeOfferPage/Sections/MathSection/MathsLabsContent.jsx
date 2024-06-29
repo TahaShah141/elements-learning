@@ -57,8 +57,8 @@ export const MathsLabsContent = () => {
             id: "Packages",
             content: 
             
-            <div className="flex flex-col gap-4 p-8 text-lg">
-              <p>We offer three packages in our Maths Labs. Each package is tailored to meet the diverse needs of schools and educators.</p>    
+            <div className="flex flex-col gap-4 p-8">
+              <p className="px-10 text-xl">We offer three packages in our Maths Labs. Each package is tailored to meet the diverse needs of schools and educators.</p>    
               <div className="flex gap-6">
                 {packages.map(pkg => <ContentCard {...pkg} />)}
               </div>
@@ -71,10 +71,10 @@ export const MathsLabsContent = () => {
             content: 
             <div className="p-8">
               <div className="flex gap-2">
-                <div className="h-[600px] w-[450px] bg-neutral-400">
+                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                 </div>
-                <div className="flex-1 flex flex-col p-12 gap-8 text-base md:text-lg">
-                  <h3 className="text-3xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages.</h3>
+                <div className="flex-[3_0_0] flex flex-col px-8 gap-8 text-base md:text-xl">
+                  <h3 className="text-5xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages.</h3>
                   <p>These manuals are crafted to provide clear, step-by-step instructions on teaching specific math concepts through hands-on activities, ensuring that both teachers and students get the most out of their math learning experience.</p>
                   <p>Each Math Lab Manual is grade-specific and aligned with the National Curriculum (NC) to fulfill defined SLO’s.</p>
                 </div>
