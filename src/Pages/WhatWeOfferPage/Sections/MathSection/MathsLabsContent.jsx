@@ -83,22 +83,22 @@ export const MathsLabsContent = () => {
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-4 text-xl p-10 px-32">
+        <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
           <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
         </div>
-        <section className="p-16 bg-[#F3EEE8]">
+        <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
           <MultiCarousel items={events} />
         </section>
-        <CustomAccordion containerClass={"w-full p-10 px-32"} type="multiple"
+        <CustomAccordion containerClass={"w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32"} type="multiple"
         items={[
           {
             title: "Packages",
             id: "Packages",
             content: 
             
-            <div className="flex flex-col gap-4 p-8">
-              <p className="px-10 text-xl">We offer three packages in our Maths Labs. Each package is tailored to meet the diverse needs of schools and educators.</p>    
-              <div className="flex gap-6">
+            <div className="flex flex-col gap-4 py-2 xs:py-4 md:py-6 lg:py-8">
+              <p className="text-base md:text-lg xl:text-xl">We offer three packages in our Maths Labs. Each package is tailored to meet the diverse needs of schools and educators.</p>    
+              <div className="flex flex-col flex-wrap sm:flex-row gap-4">
                 {packages.map(pkg => <ContentCard {...pkg} />)}
               </div>
             </div>
@@ -108,12 +108,12 @@ export const MathsLabsContent = () => {
             title: "Lab Manuals",
             id: "Lab Manuals",
             content: 
-            <div className="p-8">
-              <div className="flex gap-2">
-                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
+            <div className="py-2 xs:py-4 md:py-6 lg:py-8">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
                 </div>
-                <div className="flex-[3_0_0] flex flex-col px-8 gap-8 text-base md:text-xl">
-                  <h3 className="text-5xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages.</h3>
+                <div className="flex-[3_0_0] flex flex-col  p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base xl:text-lg">
+                  <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages.</h3>
                   <p>These manuals are crafted to provide clear, step-by-step instructions on teaching specific math concepts through hands-on activities, ensuring that both teachers and students get the most out of their math learning experience.</p>
                   <p>Each Math Lab Manual is grade-specific and aligned with the National Curriculum (NC) to fulfill defined SLO’s.</p>
                 </div>

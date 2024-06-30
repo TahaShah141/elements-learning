@@ -43,25 +43,25 @@ const manipulatives = [
 const ManipulativeCard = ({name, src, color, innerColor, text}) => {
   return (
     <div className="flex gap-4 items-center rounded-3xl rounded-bl-[96px] text-2xl rounded-tl-none" style={{backgroundColor: color}}>
-      <div className="size-48 rounded-full rounded-tl-none overflow-hidden p-12" style={{backgroundColor: innerColor}}>
+      <div className="size-16 xs:size-24 sm:size-32 md:size-40 lg:size-48 rounded-full rounded-tl-none overflow-hidden p-4 sm:p-8 md:p-10 lg:p-12" style={{backgroundColor: innerColor}}>
         <img src={src} className="w-full"/>
       </div>
-      <p className="flex-1 pr-20"><strong>{name+": "}</strong>{text}</p>
+      <p className="flex-1 text-[8px] line-height-1 xs:text-[10px] sm:text-sm md:text-base xl:text-lg"><strong>{name+": "}</strong>{text}</p>
     </div>
   )
 }
 
 export const MathsManipulativesContent = () => {
   return (
-    <FadeIn threshold={0.01} className="flex flex-col w-full p-20 px-32">
+    <FadeIn threshold={0.01} className="flex flex-col w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-4 text-xl">
-          <h4 className="text-3xl">Play, Learn, and Grow with the DoMath Series!</h4>
+        <div className="flex flex-col gap-4  text-base md:text-lg xl:text-xl">
+          <h4 className="text-2xl xl:text-3xl">Play, Learn, and Grow with the DoMath Series!</h4>
           <p>Our DoMath series, inspired by the well-known Singapore maths technique, would be an adventurous mathematical discovery for the students.</p>
           <p>This series is reinforced with manipulative tools including Tangram, Geoboard, Circular Geoboard, Tens Blocks, and Fraction Board, which turn traditional topics into engaging problems for young students. Our series, designed for children aged 4 to 13, promotes knowledge and discovery through hands-on experience.</p>
         </div>
-        <div className="pl-52 py-4">
-          <BulletList contentClass="text-xl break-all"
+        <div className="pl-8 xs:pl-10 md:pl-24 lg:pl-32 xl:pl-52 py-4">
+          <BulletList contentClass="text-base md:text-lg xl:text-xl"
           list={[
             {title: "For Schools", content: "We aim to provide kids a unique opportunity to connect with numbers, shapes, and mathematical concepts in an interactive and enriching setting in your Maths class. Our DoMath Library containing 50+ Booklets will transform your school into an exciting place of mathematical exploration."},
             {title: "For Homeschoolers", content: "You can create a lively maths corner at home with our series designed specifically for homeschooling success. Watch your child go through booklets that are designed to grow alongside them, delivering a comprehensive and adaptable learning experience."},
@@ -73,7 +73,7 @@ export const MathsManipulativesContent = () => {
             title: "Manipulatives",
             id: "Manipulatives",
             content: 
-            <div className="p-8 flex flex-col gap-4">
+            <div className="py-2 xs:py-4 md:py-6 lg:py-8 flex flex-col gap-2 md:gap-4">
               {manipulatives.map(man => <ManipulativeCard {...man} />)}
             </div>
 
@@ -82,16 +82,16 @@ export const MathsManipulativesContent = () => {
             title: "Activity Booklets",
             id: "Activity Booklets",
             content: 
-            <div className="p-8">
-              <div className="flex gap-2">
-                <div className="flex-[2_0_0] aspect-[3/4] bg-neutral-400">
+            <div className="py-2 xs:py-4 md:py-6 lg:py-8">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
                 </div>
-                <div className="flex-[3_0_0] flex flex-col px-4 gap-8 md:text-2xl">
+                <div className="flex-[3_0_0] flex flex-col sm:px-4 md:px-8 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base xl:text-lg">
                   <p>EL's activity booklets are essential tools for educators and parents looking to enhance students' math learning. Designed to complement our math manipulatives, each booklet features over 50 activities tailored to a specific tool. These resources inspire curiosity, foster creativity, and develop essential mathematical skills, encouraging meaningful exploration both in classrooms and at home.</p>
                   <div className="flex flex-col gap-4">
-                    <h3 className="text-5xl">Benifits of Using Activity Booklets</h3>
-                    <div className="pl-32">
-                      <BulletList contentClass="text-2xl break-all"
+                    <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Benifits of Using Activity Booklets</h3>
+                    <div className="pl-6 md:pl-16 lg:pl-24 xl:pl-32">
+                      <BulletList contentClass="text-sm md:text-base xl:text-lg"
                       list={[
                         {title: "Hands-On Exploration"},
                         {title: "Engagement and Motivation"},

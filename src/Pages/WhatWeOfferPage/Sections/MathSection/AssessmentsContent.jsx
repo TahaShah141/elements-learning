@@ -50,22 +50,24 @@ const teacherAssessments = [
 const AssessmentCard = ({headers, content, color, highlight, corner, number}) => {
 
   return (
-    <div className="flex-1 flex flex-col items-center gap-2">
-      <div className={`relative flex justify-center p-2 rounded-full`} style={{backgroundColor: highlight}}>
-        <div className="p-3 bg-white rounded-full z-10">
-          <div className={`rounded-full size-64 flex flex-col justify-center items-center rounded-${corner}-none p-4`} style={{backgroundColor: color}}>
-            <h3 className="text-7xl font-bold" style={{color: highlight}}>{number}</h3>
-            <div className="flex flex-col items-center justify-center font-bold text-3xl">
-              <p>{headers[0]}</p>
-              <p>{headers[1]}</p>
+    <div className="flex-1 flex md:flex-col items-center gap-2">
+      <div className={`relative rotate-90 md:rotate-0 flex justify-center p-1 lg:p-2 rounded-full`} style={{backgroundColor: highlight}}>
+        <div className="p-1 lg:p-3 bg-white rounded-full z-10">
+          <div className={`rounded-full size-24 lg:size-48 xl:size-64 p-2 lg:p-4 flex flex-col justify-center items-center rounded-${corner}-none`} style={{backgroundColor: color}}>
+            <div className="flex -rotate-90 md:rotate-0 flex-col justify-center items-center">
+              <h3 className="text-3xl lg:text-5xl xl:text-7xl font-bold" style={{color: highlight}}>{number}</h3>
+              <div className="flex flex-col items-center justify-center font-bold text-[10px] line-height-1 lg:text-xl xl:text-3xl">
+                <p>{headers[0]}</p>
+                <p>{headers[1]}</p>
+              </div>
             </div>
           </div>
         </div>
         <div className={`absolute w-full h-1/2 bg-white left-0 ${corner === "tr" ? "top-0" : "bottom-0" }`} />
-        <div className={`absolute h-2 w-full flex justify-between top-1/2 z-10 -translate-y-1/2`}>
-          <div className="size-2 rounded-full" style={{backgroundColor: highlight}}></div>
-          <div className="relative size-2 rounded-full" style={{backgroundColor: highlight}}>
-            <div className="absolute left-0 h-full w-16 rounded-full" style={{backgroundColor: highlight}}>
+        <div className={`absolute h-1 lg:h-2 w-full flex justify-between top-1/2 z-10 -translate-y-1/2`}>
+          <div className="size-1 lg:size-2 rounded-full" style={{backgroundColor: highlight}}></div>
+          <div className="relative size-1 lg:size-2 rounded-full" style={{backgroundColor: highlight}}>
+            <div className="absolute left-0 h-full w-8 lg:w-16 rounded-full" style={{backgroundColor: highlight}}>
               <div className="relative w-full h-full rounded-full" style={{backgroundColor: highlight}}>
                 <div className="absolute w-1/2 rotate-45 -translate-y-[calc(150%)] h-full rounded-full rounded-r-none right-0" style={{backgroundColor: highlight}}></div>
                 <div className="absolute w-1/2 -rotate-45 translate-y-[calc(150%)] h-full rounded-full rounded-r-none right-0" style={{backgroundColor: highlight}}></div>
@@ -74,7 +76,7 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
           </div>
         </div>
       </div>
-      <p className="text-base">
+      <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base line-height-1">
         {content}
       </p>
     </div>
@@ -83,14 +85,14 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
 
 export const AssessmentsContent = () => {
   return (
-    <FadeIn threshold={0.01} className="flex flex-col w-full gap-4 p-20 px-32">
+    <FadeIn threshold={0.01} className="flex flex-col w-full gap-4 p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-8 text-xl">
-          <h4 className="text-3xl">Assessments play a crucial role in the teaching and learning process, serving as valuable tools for evaluating progress, identifying areas for growth, and informing instructional decision-making.</h4>
+        <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl">
+          <h4 className="text-2xl xl:text-3xl">Assessments play a crucial role in the teaching and learning process, serving as valuable tools for evaluating progress, identifying areas for growth, and informing instructional decision-making.</h4>
           <p> By implementing a comprehensive assessment framework, Elements Learning (EL) ensures that both educators and students receive the support and feedback needed to achieve academic success and mastery in mathematics.</p>
         </div>
-        <div className="pl-52 py-4">
-          <BulletList contentClass="text-xl break-all"
+        <div className="pl-8 xs:pl-10 md:pl-24 lg:pl-32 xl:pl-52 py-4">
+          <BulletList contentClass="text-base md:text-lg xl:text-xl"
           list={[
             {title: "Inform Instructional Planning", content: " Assessments provide valuable data that informs instructional planning and decision-making, allowing educators to tailor their teaching strategies to address students' learning needs effectively."},
             {title: "Monitor Progress", content: "Assessments help educators and students monitor progress over time, identifying areas of strength and areas requiring additional support or intervention."},
@@ -106,7 +108,7 @@ export const AssessmentsContent = () => {
           id: "Teacher Assessments",
           content: 
           
-          <div className="flex gap-4 p-8">
+          <div className="py-2 xs:py-4 md:py-6 lg:p-8 flex md:flex-row gap-8 md:gap-4 flex-col">
             {teacherAssessments.map(assessment => <AssessmentCard {...assessment} />)}
           </div>
 
@@ -115,7 +117,7 @@ export const AssessmentsContent = () => {
           title: "Student Assessments",
           id: "Student Assessments",
           content: 
-          <div className="p-8 flex gap-6">
+          <div className="flex flex-col flex-wrap sm:flex-row gap-4 py-2 xs:py-4 md:py-6 lg:py-8">
             {studentAssessments.map(assessment => <ContentCard {...assessment} />)}
           </div>
         },
