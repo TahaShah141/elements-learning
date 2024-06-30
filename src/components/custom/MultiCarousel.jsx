@@ -65,7 +65,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
           onClick={() => setIndex(i)}
           >
-            <img src={item.src} alt="" className="w-full h-full shadow-lg" />
+            <img src={item.src} alt="" className="w-full object-cover shadow-lg" />
           </div>
         ))}
       </div>
