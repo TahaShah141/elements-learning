@@ -2,9 +2,9 @@
 export const ContentCard = ({headers, color, content}) => {
   return (
     <div className="flex flex-1 flex-col rounded-tl-xl rounded-3xl min-w-72 lg:rounded-[40px] overflow-hidden bg-[#F3EEE8]">
-      <div className="flex flex-col text-white font-bold p-8 pb-4 xl:p-12 xl:pb-8 rounded-xl rounded-bl-3xl xl:rounded-[40px] xl:rounded-tl-xl xl:rounded-bl-[70px]" style={{backgroundColor: color}}>
-        <p className="text-5xl xl:text-6xl">{headers[0]}</p>
-        <p className="text-3xl xl:text-4xl">{headers[1]}</p>
+      <div className="flex flex-col text-white font-bold p-4 pb-2 sm:p-8 sm:pb-4 xl:p-12 xl:pb-8 rounded-xl rounded-bl-3xl xl:rounded-[40px] xl:rounded-tl-xl xl:rounded-bl-[70px]" style={{backgroundColor: color}}>
+        <p className="text-2xl sm:text-5xl xl:text-6xl">{headers[0]}</p>
+        <p className="text-lg sm:text-3xl xl:text-4xl">{headers[1]}</p>
       </div>
       <div className="p-4 xl:p-8 flex flex-col gap-2 text-sm xl:text-lg">
         {content instanceof Array ? 
