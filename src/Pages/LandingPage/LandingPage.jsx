@@ -16,35 +16,35 @@ const events = [
     secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#CFE8BE",
     innerColor: "#B1DA94",
-    src: "/media/DSC_1434.JPG"
+    src: "/media/compressed-DSC_1434.jpg"
   },
   {
     name: "AJK Training",
     secondaries: ["Date: 04/03/2022", "Place: Azad Jammu Kashmir"],
     color: "#CAB9DB",
     innerColor: "#A98CC2",
-    src: "/media/DSC_1512.JPG"
+    src: "/media/compressed-DSC_1512.jpg"
   },
   {
     name: "Lahore Science Mela",
     secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
-    src: "/media/DSC_1638.JPG"
+    src: "/media/compressed-DSC_1638.jpg"
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 06/02/2023", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "/media/DSC_1410.JPG"
+    src: "/media/compressed-DSC_1410.jpg"
   },
   {
     name: "Lahore Science Mela",
     secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#F8A6D6",
     innerColor: "#F46CBE",
-    src: "/media/DSC_1599.JPG"
+    src: "/media/compressed-DSC_1599.jpg"
   },
 ]
 
