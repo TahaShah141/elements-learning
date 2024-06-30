@@ -43,39 +43,46 @@ const packages = [
 
 const events = [
   {
-    name: "Fraction Board",
-    text: "The fraction board provides ",
-    color: "#CFE8BE",
-    innerColor: "#B1DA94",
-    src: "#"
-  },
-  {
-    name: "Base-10 Blocks",
-    text: " Understand numbers better by using blocks for",
+    name: "Jhang Lab Setup",
+    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
     color: "#CAB9DB",
     innerColor: "#A98CC2",
-    src: "#"
+    src: "/media/DSC_2991.JPG"
   },
   {
-    name: "Tangram",
-    text: "The Tangram, an ancient Chinese puzzle Involves seven tans,",
+    name: "Attock Lab Setup",
+    secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
-    src: "#"
+    src: "/media/DSC_4180.JPG"
   },
   {
-    name: "Geoboard",
-    text: "A geoboard is a board with",
+    name: "Attock Lab Setup",
+    secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "#"
+    src: "/media/DSC08492.JPG"
   },
   {
-    name: "Circular Geoboard",
-    text: "A circular geoboard consists of 12",
+    name: "Attock Lab Setup",
+    secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#F8A6D6",
     innerColor: "#F46CBE",
-    src: "#"
+    src: "/media/DSC_2953.JPG"
+  },
+  {
+    name: "Jhang Training",
+    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
+    color: "#CAB9DB",
+    innerColor: "#A98CC2",
+    src: "/media/DSC_2991.JPG"
+  },
+  {
+    name: "Attock Training",
+    secondaries: ["Date: 03/08/2022", "Place: Attock"],
+    color: "#A7E4F9",
+    innerColor: "#6DD1F5",
+    src: "/media/DSC_4180.JPG"
   },
 ]
 
@@ -111,6 +118,7 @@ export const MathsLabsContent = () => {
             <div className="py-2 xs:py-4 md:py-6 lg:py-8">
               <div className="flex flex-col sm:flex-row gap-2">
                 <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+                  <img src="/media/IMG-20240401-WA0010.jpg" alt="" className="h-full" />
                 </div>
                 <div className="flex-[3_0_0] flex flex-col  p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base xl:text-lg">
                   <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our Math Lab Manuals serve as invaluable teacher's guides, meticulously designed to help educators utilize the tools and manipulatives included in our Math Lab packages.</h3>

@@ -48,10 +48,11 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
   return (
     <div className="relative w-full flex overflow-hidden justify-center items-center gap-8" 
-    style={{height: size}} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+    style={{height: size}}>
       <div className="absolute flex flex-col justify-between transition-all duration-500" 
-      style={{backgroundColor: items[index].color, color: "#FDB945", width: size*0.9, height: size, paddingRight: size/10, paddingLeft: size/10, paddingTop: size/6, paddingBottom: size/7, borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`}}>
-        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold">{items[index].name}</p>
+      onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}
+      style={{backgroundColor: items[index].color, color: "#FFFFFF", width: size*0.9, height: size, paddingRight: size/10, paddingLeft: size/10, paddingTop: size/6, paddingBottom: size/7, borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`}}>
+        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">{items[index].name}</p>
         {items[index].secondaries && 
         <div className="hidden md:flex gap-2 md:flex-col md:gap-0 font-semibold text-xs md:text-sm lg:text-base xl:text-lg">
           {items[index].secondaries.map(text => 
@@ -65,7 +66,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
           onClick={() => setIndex(i)}
           >
-            <img src={item.src} alt="" className="w-full object-cover shadow-lg" />
+            <img src={item.src} alt="" className="size-full shadow-lg" />
           </div>
         ))}
       </div>
