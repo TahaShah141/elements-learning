@@ -12,16 +12,23 @@ export const CustomAccordion = ({containerClass, items, type="single", changeHea
         <AccordionItem value={item.id}>
           <AccordionTrigger className={`p-1 rounded-full hover:no-underline rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${item.id !== opened && changeHeaders ? "bg-transparent delay-0 duration-0" : "bg-[#FBBA41] duration-200"}`}>
             <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
-              {!(item.id === opened) ? 
+              {!(item.id === opened || (opened instanceof Array && opened.filter(id => item.id === id).length !== 0)) ? 
+              <>
+              {changeHeaders ? 
               <>
               <div className="absolute inset-0 transition-opacity duration-200 size-full opacity-100 group-hover:opacity-0">
-                <HexagonPlayButton outerColor="#FCBA42" />
+                <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"} />
               </div>
-              <div className="absolute inset-0 transition-opacity duration-200 size-full opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 transition-all duration-500 size-full opacity-0 group-hover:opacity-100">
                 <HexagonPlayButton outerColor="#FFFFFF" innerColor="#000000" />
               </div>
               </>:
-              <div className="size-full">
+              <div className="absolute inset-0 transition-all duration-200 size-full group-hover:rotate-90">
+                <HexagonPlayButton outerColor={"#FFFFFF"} innerColor={"#000000"} />
+              </div>
+              }
+              </>:
+              <div className="size-full rotate-90">
                 <HexagonPlayButton innerColor="#000000" outerColor="#FFFFFF" />
               </div>}
             </div>

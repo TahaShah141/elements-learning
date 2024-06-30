@@ -35,7 +35,7 @@ const goals = [
 const GoalCard = ({color, innerBg, src, title, content, index}) => {
   return (
     <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
-      <div className="flex items-center p-5 md:p-6 overflow-hidden justify-center aspect-square rounded-full size-24 md:size-36 lg:size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
+      <div className="flex items-center p-5 md:p-6 lg:p-12 overflow-hidden justify-center aspect-square rounded-full size-24 md:size-36 lg:size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
         <img src={src} alt="" className="h-full" />
       </div>
       <div className="flex flex-1 md:flex-auto flex-col text-sm md:text-lg md:gap-1 p-6 xl:p-10 md:h-[420px] min-[800px]:h-96 min-[870px]:h-80">

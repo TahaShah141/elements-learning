@@ -53,10 +53,10 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
     <div className="flex-1 flex md:flex-col items-center gap-2">
       <div className={`relative rotate-90 md:rotate-0 flex justify-center p-1 lg:p-2 rounded-full`} style={{backgroundColor: highlight}}>
         <div className="p-1 lg:p-3 bg-white rounded-full z-10">
-          <div className={`rounded-full size-24 lg:size-48 xl:size-64 p-2 lg:p-4 flex flex-col justify-center items-center rounded-${corner}-none`} style={{backgroundColor: color}}>
+          <div className={`rounded-full size-24 lg:size-48 xl:size-52 p-2 lg:p-4 flex flex-col justify-center items-center rounded-${corner}-none`} style={{backgroundColor: color}}>
             <div className="flex -rotate-90 md:rotate-0 flex-col justify-center items-center">
-              <h3 className="text-3xl lg:text-5xl xl:text-7xl font-bold" style={{color: highlight}}>{number}</h3>
-              <div className="flex flex-col items-center justify-center font-bold text-[10px] line-height-1 lg:text-xl xl:text-3xl">
+              <h3 className="text-3xl lg:text-5xl xl:text-6xl font-bold" style={{color: highlight}}>{number}</h3>
+              <div className="flex flex-col items-center justify-center font-bold text-[10px] line-height-1 lg:text-xl xl:text-2xl">
                 <p>{headers[0]}</p>
                 <p>{headers[1]}</p>
               </div>
@@ -76,7 +76,7 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
           </div>
         </div>
       </div>
-      <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base line-height-1">
+      <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base line-height-1 text-center">
         {content}
       </p>
     </div>
@@ -108,7 +108,7 @@ export const AssessmentsContent = () => {
           id: "Teacher Assessments",
           content: 
           
-          <div className="py-2 xs:py-4 md:py-6 lg:p-8 flex md:flex-row gap-8 md:gap-4 flex-col">
+          <div className="py-8 md:py-6 lg:p-8 flex md:flex-row gap-8 md:gap-4 flex-col">
             {teacherAssessments.map(assessment => <AssessmentCard {...assessment} />)}
           </div>
 

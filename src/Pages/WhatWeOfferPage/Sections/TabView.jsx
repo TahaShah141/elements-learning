@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const TabHeader = ({tab, isOpen, onClick}) => {
   return (
-    <div onClick={onClick} className={`xs:h-16 sm:h-24 md:h-32 flex-1 lg:h-44 xl:h-64 shadow-lg p-4 lg:p-6 flex flex-col gap-2 items-center justify-center sm:justify-end transition-all duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
+    <div onClick={onClick} className={`xs:h-16 sm:h-24 md:h-32 flex-1 lg:h-40 xl:h-48 shadow-lg p-4 lg:p-6 flex flex-col gap-2 items-center sm:items-start justify-center sm:justify-end transition-all duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
       <div className="hidden sm:flex h-3/5">
         <img src={tab.src} alt="" className="h-full"/>
       </div>
@@ -24,7 +24,7 @@ export const TabView = ({name, color, src, tabs}) => {
           <img src={src} alt="" className="h-24 sm:h-32 lg:h-48"/>
         </div>
 
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
           {tabs.map(tab => <TabHeader tab={tab} onClick={() => setOpened(tab)} isOpen={opened.name === tab.name} />)}
         </div>
       </div>

@@ -1,6 +1,8 @@
+import { IconButton } from "@/components/custom/IconButton"
 import { LinkButton } from "../../components/LinkButton"
 import { SlidingDiv } from "../../components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
+import { ArrowRightIcon } from "lucide-react"
 
 const services = [
   {
@@ -82,7 +84,8 @@ export const WhatWeOffer = () => {
               <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
                 {service.content}
               </p>
-              <LinkButton to={service.link} text={service.linkText} textColor="#FBBA41" bgColor="#353535" />
+              <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={"text-[#FBBA41] font-bold text-sm sm:text-lg bg-[#353535] p-1 px-2 sm:p-2"} />
+
               </div>
             </div>
           )

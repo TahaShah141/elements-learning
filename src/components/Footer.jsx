@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="flex xl:flex-1 gap-12 flex-col xl:flex-row">
           
           <div className="flex-1 flex flex-col gap-4">
-            <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">FAQs</div>
+            <div className="xl:flex hidden p-2 px-4 rounded-full rounded-br-none bg-[#FBBA41] font-bold">FAQs</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white text-lg">FAQs</div>
             <div className="flex-1 flex flex-col gap-4 xl:gap-8 text-white">
               <p className="text-xs md:text-base">
@@ -51,7 +51,7 @@ export const Footer = () => {
           </div>
           
           <div className="flex-1 flex flex-col gap-4">
-            <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Location</div>
+            <div className="xl:flex hidden p-2 px-4 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Location</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white text-lg">Location</div>
             <div className="flex-1 xl:px-12 flex gap-2 flex-col sm:flex-row xl:gap-8 text-white">
               <div className="flex-1 flex-col text-sm md:text-base flex gap-6">
@@ -92,7 +92,7 @@ export const Footer = () => {
         
         <div className="flex flex-col-reverse xl:flex-row flex-1 gap-4 xl:gap-8">
           <div className="flex-1 flex flex-col gap-4">
-            <div className="xl:flex hidden p-4 px-8 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
+            <div className="xl:flex hidden p-2 px-4 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Subscribe</div>
             <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white">Subscribe</div>
             <div className="flex-1 xl:px-12 flex flex-col text-sm md:text-base gap-4 text-white">
               <div className="flex gap-2">
@@ -102,7 +102,7 @@ export const Footer = () => {
                 <p className="">Subscribe to our Newsletters and stuff.</p>
                 <div className="flex gap-2">
                   <input type="text" className="flex-1 text-black px-2 min-w-0"/>
-                  <LinkButton text={"Subscribe"} bgColor={"#FBBA41"} textColor={"#FFFFFF"} />
+                  <button className="bg-[#FBBA41] p-1 sm:text-base text-sm sm:p-2 sm:px-4 font-bold">Submit</button>
                 </div>
               </div>
             </div>

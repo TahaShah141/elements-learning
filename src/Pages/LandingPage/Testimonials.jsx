@@ -20,7 +20,7 @@ const TestimonialCard = ({quote, person}) => {
 export const Testimonials = () => {
   return (
     <>
-    <div className="flex min-[550px]:flex-col gap-2 justify-center">
+    <div className="flex min-[550px]:flex-col gap-2 items-end justify-center">
       <div className="w-32 sm:w-40 md:w-48 lg:w-72">
         <img src="landingpage/testimonials.png" alt="" />
       </div>

@@ -64,7 +64,7 @@ const NewsCard = ({src, content, link, index}) => {
 
 const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
   return (
-    <div className="w-full p-6 lg:p-10 rounded-[50px] md:flex-row-reverse lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center gap-4 lg:gap-10 shadow-md bg-white border">
+    <div className="w-full p-6 pb-8 lg:p-10 rounded-[50px] md:flex-row-reverse lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center gap-4 lg:gap-10 shadow-md bg-white border">
       <div className="flex flex-col gap-4 flex-1">
         <div className="flex flex-col text-xs xs:text-sm md:text-base">
           <h4 className="font-bold text-xl xs:text-2xl sm:text-3xl">{title}</h4>
@@ -100,14 +100,14 @@ export const BlogPage = () => {
   return (
     <div className="flex flex-col">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 xs:px-10 md:px-20 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
-        <StaggeredHeaders headers={["News", "&", "Blogs"]} containerClass="text-3xl min-[400px]:block hidden text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
+        <StaggeredHeaders headers={["News", "&", "Blogs"]} containerClass="text-3xl min-[400px]:block hidden text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold" direction="left" />
         <StaggeredHeaders headers={["News & Blogs"]} containerClass="text-3xl min-[400px]:hidden text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
           <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
       <section className="flex flex-col p-4 md:px-8 lg:p-12 xl:p-20">
-        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-center font-bold uppercase">News</h3>
+        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">News</h3>
         <div className="p-8 lg:p-4">
           <CarouselWithIndicators 
           itemClassName="sm:basis-1/2 lg:basis-1/3 flex justify-center" 

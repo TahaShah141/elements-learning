@@ -45,7 +45,7 @@ export const Pillars = () => {
     </div>
     <SlidingDiv direction="bottom" px={50}>
     <div className="xl:px-20">
-      <p className="sm:text-lg">
+      <p className="sm:text-lg text-center">
         Quality education rides on the sturdy foundation of four crucial components: well-crafted teaching materials to engage and enlighten, continuous teacher training to inspire and empower, rigorous assessments to measure progress and potential, and dynamic school leadership to steer towards excellence. These wheels form the backbone of a holistic educational journey.
       </p>
     </div>
