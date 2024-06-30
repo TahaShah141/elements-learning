@@ -12,39 +12,39 @@ import { WhatWeOffer } from "./WhatWeOffer"
 
 const events = [
   {
-    name: "Fraction Board",
-    text: "The fraction board provides ",
+    name: "Lahore Science Mela",
+    secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#CFE8BE",
     innerColor: "#B1DA94",
-    src: "#"
+    src: "/media/DSC_1434.JPG"
   },
   {
-    name: "Base-10 Blocks",
-    text: " Understand numbers better by using blocks for",
+    name: "AJK Training",
+    secondaries: ["Date: 04/03/2022", "Place: Azad Jammu Kashmir"],
     color: "#CAB9DB",
     innerColor: "#A98CC2",
-    src: "#"
+    src: "/media/DSC_1512.JPG"
   },
   {
-    name: "Tangram",
-    text: "The Tangram, an ancient Chinese puzzle Involves seven tans,",
+    name: "Lahore Science Mela",
+    secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
-    src: "#"
+    src: "/media/DSC_1638.JPG"
   },
   {
-    name: "Geoboard",
-    text: "A geoboard is a board with",
+    name: "Attock Training",
+    secondaries: ["Date: 06/02/2023", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "#"
+    src: "/media/DSC_1410.JPG"
   },
   {
-    name: "Circular Geoboard",
-    text: "A circular geoboard consists of 12",
+    name: "Lahore Science Mela",
+    secondaries: ["Date: 12/12/2022", "Place: Lahore"],
     color: "#F8A6D6",
     innerColor: "#F46CBE",
-    src: "#"
+    src: "/media/DSC_1599.JPG"
   },
 ]
 
