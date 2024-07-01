@@ -123,7 +123,7 @@ export const Footer = () => {
                 <p>Trainings</p>
                 <p>Curriculum Review</p>
                 <p>Environment Design</p>
-                <p>Lorem Ipsum</p>
+                <p className="opacity-0">-</p>
               </div>
               <div className="flex-1 flex flex-col gap-2 justify-between">
                 <h3 className="font-bold text-lg underline">Products</h3>
@@ -137,7 +137,7 @@ export const Footer = () => {
                 <p>Details</p>
                 <p>Contact Form</p>
                 <p>Location</p>
-                <p> </p>
+                <p className="opacity-0">-</p>
               </div>
             </div>
           </div>
