@@ -56,9 +56,9 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
     {opened && <div onClick={() => setOpened(false)} className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center">
       <div className="size-4/5">
         <CarouselSingle containerClass={"size-full"} 
-        items={Array.from({length: 10}, (_, i) => 
+        items={items[index].gallery.map((src) => 
           <div className="size-full flex flex-col justify-center">
-            <img loading="lazy" onClick={(e) => e.stopPropagation()} src={items[index].src} alt="" className="w-full bg-neutral-400" />
+            <img loading="lazy" onClick={(e) => e.stopPropagation()} src={src} alt="" className="w-full bg-neutral-400" />
           </div>
         )}
         nextButton={
