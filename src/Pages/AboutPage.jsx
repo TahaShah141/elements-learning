@@ -68,7 +68,7 @@ const team = [
 
 const GoalCard = ({color, innerBg, src, title, content, index}) => {
   return (
-    <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
+    <SlidingDiv direction={"top"} delay={index*0.2} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
       <div className="flex items-center p-5 md:p-6 lg:p-12 overflow-hidden justify-center aspect-square rounded-full size-24 md:size-36 lg:size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
         <img loading="lazy"  src={src} alt="" className="h-full" />
       </div>
