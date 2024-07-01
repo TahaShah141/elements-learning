@@ -1,6 +1,7 @@
 import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
 import { ContentCard } from "@/Pages/WhatWeOfferPage/Sections/ContentCard"
 import { FadeIn } from "@/components/FadeIn"
+import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 
 const studentAssessments = [
@@ -47,10 +48,10 @@ const teacherAssessments = [
   },
 ]
 
-const AssessmentCard = ({headers, content, color, highlight, corner, number}) => {
+const AssessmentCard = ({headers, content, color, highlight, corner, number, index}) => {
 
   return (
-    <div className="flex-1 flex md:flex-col items-center gap-2">
+    <SlidingDiv direction={"top"} delay={index*0.1} className="flex-1 flex md:flex-col items-center gap-2">
       <div className={`relative rotate-90 md:rotate-0 flex justify-center p-1 lg:p-2 rounded-full`} style={{backgroundColor: highlight}}>
         <div className="p-1 lg:p-3 bg-white rounded-full z-10">
           <div className={`rounded-full size-24 lg:size-48 xl:size-52 p-2 lg:p-4 flex flex-col justify-center items-center rounded-${corner}-none`} style={{backgroundColor: color}}>
@@ -79,7 +80,7 @@ const AssessmentCard = ({headers, content, color, highlight, corner, number}) =>
       <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base line-height-1 text-center">
         {content}
       </p>
-    </div>
+    </SlidingDiv>
   )
 }
 
@@ -91,7 +92,7 @@ export const AssessmentsContent = () => {
           <h4 className="text-2xl xl:text-3xl">Assessments play a crucial role in the teaching and learning process, serving as valuable tools for evaluating progress, identifying areas for growth, and informing instructional decision-making.</h4>
           <p> By implementing a comprehensive assessment framework, Elements Learning (EL) ensures that both educators and students receive the support and feedback needed to achieve academic success and mastery in mathematics.</p>
         </div>
-        <div className="pl-8 xs:pl-10 md:pl-24 lg:pl-32 xl:pl-52 py-4">
+        <SlidingDiv direction={"bottom"} className="pl-8 xs:pl-10 md:pl-24 lg:pl-32 xl:pl-52 py-4">
           <BulletList contentClass="text-base md:text-lg xl:text-xl"
           list={[
             {title: "Inform Instructional Planning", content: " Assessments provide valuable data that informs instructional planning and decision-making, allowing educators to tailor their teaching strategies to address students' learning needs effectively."},
@@ -99,7 +100,7 @@ export const AssessmentsContent = () => {
             {title: "Promote Mastery Learning", content: "By providing opportunities for feedback and reflection, assessments support the principles of mastery learning, encouraging students to persist and succeed in their learning journey."},
             {title: "Guide Differentiation", content: "Assessments inform differentiation strategies, allowing educators to customize instruction based on individual students' readiness, interests, and learning profiles."},
           ]} />
-        </div>
+        </SlidingDiv>
       </div>
       <CustomAccordion containerClass={"w-full"} type="multiple"
       items={[
@@ -109,7 +110,7 @@ export const AssessmentsContent = () => {
           content: 
           
           <div className="py-8 md:py-6 lg:p-8 flex md:flex-row gap-8 md:gap-4 flex-col">
-            {teacherAssessments.map(assessment => <AssessmentCard {...assessment} />)}
+            {teacherAssessments.map((assessment, i) => <AssessmentCard {...assessment} index={i} />)}
           </div>
 
         },
