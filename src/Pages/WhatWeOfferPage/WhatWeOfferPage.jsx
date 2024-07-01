@@ -1,6 +1,8 @@
 import { Footer } from "@/components/Footer"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { NavLink } from "react-router-dom"
+import { services } from "../LandingPage/WhatWeOffer"
+
 
 export const WhatWeOfferPage = () => {
   return (
@@ -12,14 +14,14 @@ export const WhatWeOfferPage = () => {
           <img src="/whatweofferpage/whatweoffer.png" alt="" />
         </div>
       </section>
-      <section className="w-full flex gap-2 p-6 flex-wrap">
-        <NavLink to="/services/ece" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>ECE</NavLink>
-        <NavLink to="/services/maths" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Maths</NavLink>
-        <NavLink to="/services/language" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Language</NavLink>
-        <NavLink to="/services/socialsciences" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Social Science</NavLink>
-        <NavLink to="/services/science" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Science</NavLink>
-        <NavLink to="/services/steam" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>STEAM</NavLink>
-        <NavLink to="/services/edtech" className={`text-xl transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Ed Tech</NavLink>
+      <section className="w-full flex justify-center flex-wrap gap-4 p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20">
+        {services.map( service => (
+          <NavLink to={service.link} className="rounded-3xl flex flex-col gap-2 justify-center items-center w-96 p-8 sm:w-40 sm:p-4 lg:w-64 lg:p-8 xl:w-96" style={{backgroundColor: service.color+"40"}}>
+            <img src={service.illustrationSrc} alt={service.alt} className="w-full"/>
+            <p className="font-bold text-xl sm:text-xs md:text-base lg:text-xl text-center">{service.title}</p>
+          </NavLink>
+        ))}
+
       </section>
       <Footer />
     </div>

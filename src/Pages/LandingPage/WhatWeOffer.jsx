@@ -4,55 +4,62 @@ import { SlidingDiv } from "../../components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { ArrowRightIcon } from "lucide-react"
 
-const services = [
+export const services = [
   {
     title: "Early Childhood Education (ECE) and Parenting",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/ece.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/ece",
+    linkText: "Learn more",
+    color: "#DA037F"
   },
   {
     title: "Maths",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/maths.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/maths",
+    linkText: "Learn more",
+    color: "#D36E08"
   },
   {
     title: "Language",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/language.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/language",
+    linkText: "Learn more",
+    color: "#307F01"
   },
   {
     title: "Science",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/science.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/science",
+    linkText: "Learn more",
+    color: "#55088C"
   },
   {
     title: "Social Science",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/socialscience.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/socialsciences",
+    linkText: "Learn more",
+    color: "#007E3D"
   },
   {
     title: "STEAM (connected learning)",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/steam.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/steam",
+    linkText: "Learn more",
+    color: "#00678F"
   },
   {
     title: "Ed Tech",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nihil unde assumenda iste dolores. Corporis magnam sapiente odit pariatur officia.",
     illustrationSrc: "/landingpage/edtech.png",
-    link: "/",
-    linkText: "Learn more"
+    link: "/services/edtech",
+    linkText: "Learn more",
+    color: "#D86B10"
   }
 ]
 

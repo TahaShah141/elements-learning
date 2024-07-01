@@ -7,6 +7,7 @@ import { BlogPage } from "./Pages/BlogPage"
 import { WhatWeOfferPage } from "./Pages/WhatWeOfferPage/WhatWeOfferPage"
 import { TabView } from "./Pages/WhatWeOfferPage/Sections/TabView"
 import { sections } from "./Pages/WhatWeOfferPage/Sections/sections"
+import { NotFound } from "./Pages/NotFound"
 
 const RootLayout = () => {
   return (
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="blogs" element={<BlogPage />} />
       <Route path="services" element={<WhatWeOfferPage />}/>
       <Route path="services/maths" element={<TabView {...(sections[0])} />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 )
