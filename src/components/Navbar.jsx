@@ -71,11 +71,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className={`w-full transition-all duration-300 overflow-hidden ${opened ? "h-48" : "h-0"}`}>
-        <div className="flex flex-col h-full text-xl gap-4 xl:gap-10 justify-center items-center">
-          {/* <NavOption text="About Us" link="/about" />
-          <NavOption text="What We Offer" link="/services" />
-          <NavOption text="News & Blogs" link="/blogs" />
-          <NavOption text="Contact Us" link="/contact" /> */}
+        <div onClick={() => setOpened(false)} className="flex flex-col h-full text-xl gap-4 xl:gap-10 justify-center items-center">
           <NavLink to="/about" className={`border-b-2 border-[#FBBA41]`}>About Us</NavLink>
           <NavLink to="/services" className={`border-b-2 border-[#FBBA41]`}>What we Offer</NavLink>
           <NavLink to="/blogs" className={`border-b-2 border-[#FBBA41]`}>News & Blogs</NavLink>
