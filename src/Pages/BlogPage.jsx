@@ -51,7 +51,7 @@ const NewsCard = ({src, content, link, index}) => {
   return (
     <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-col flex-1 rounded-[50px] overflow-hidden rounded-tl-none gap-4 md:max-w-md bg-[#F3EEE8]">
       <div className="w-full md:h-64 lg:h-72 xl:h-96 aspect-square bg-neutral-400">
-        {/* <img loading="lazy" src={src} alt="" className="size-full" /> */}
+        {/* <img src={src} alt="" className="size-full" /> */}
       </div>
       <div className="flex flex-col flex-1 text-xs md:text-sm lg:text-base xl:text-xl gap-4 p-8 md:p-6 lg:p-6 xl:p-10 items-start">
         <p>{content}</p>
@@ -102,7 +102,7 @@ export const BlogPage = () => {
         <StaggeredHeaders headers={["News", "&", "Blogs"]} containerClass="text-3xl min-[400px]:block hidden text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold" direction="left" />
         <StaggeredHeaders headers={["News & Blogs"]} containerClass="text-3xl min-[400px]:hidden text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
-          <img loading="lazy" src="/newsandblogspage/newsandblogs.png" alt="" />
+          <img src="/newsandblogspage/newsandblogs.png" alt="" />
         </div>
       </section>
       <section className="flex flex-col p-4 md:px-8 lg:p-12 xl:p-20">

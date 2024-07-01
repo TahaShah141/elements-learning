@@ -36,7 +36,7 @@ export const Navbar = () => {
     <nav className="hidden min-[700px]:flex w-full justify-center py-4 px-10 xl:px-20 border-b-2 border-[#FABF23]">
       <div className="w-full flex justify-between items-center text-sm lg:text-base ">
         <Link to={"/"} className="flex gap-2">
-          <img loading="lazy" src="/logo.png" className="h-12 sm:h-8 md:h-12" alt="" />
+          <img src="/logo.png" className="h-12 sm:h-8 md:h-12" alt="" />
         </Link>
         <div className="flex gap-2 xl:gap-10 items-center">
           <NavOption text="About Us" link="/about">
@@ -60,7 +60,7 @@ export const Navbar = () => {
     <nav className="flex min-[700px]:hidden flex-col gap-2 w-full justify-center py-4 px-10 xl:px-20 border-b-2 border-[#FABF23]">
       <div className="w-full flex justify-between items-center text-sm lg:text-base ">
         <Link to={"/"} className="flex gap-2">
-          <img loading="lazy" src="/logo.png" className="h-8 md:h-12" alt="" />
+          <img src="/logo.png" className="h-8 md:h-12" alt="" />
         </Link>
         <div className="relative group">
           <button className="size-6 flex flex-col justify-around" onClick={() => setOpened(!opened)}>

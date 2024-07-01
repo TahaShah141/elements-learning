@@ -36,7 +36,7 @@ const GoalCard = ({color, innerBg, src, title, content, index}) => {
   return (
     <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
       <div className="flex items-center p-5 md:p-6 lg:p-12 overflow-hidden justify-center aspect-square rounded-full size-24 md:size-36 lg:size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
-        <img loading="lazy" src={src} alt="" className="h-full" />
+        <img src={src} alt="" className="h-full" />
       </div>
       <div className="flex flex-1 md:flex-auto flex-col text-sm md:text-lg md:gap-1 p-6 xl:p-10 md:h-[420px] min-[800px]:h-96 min-[870px]:h-80">
         <h4 className="font-bold text-xl xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl">{title}</h4>
@@ -52,7 +52,7 @@ const TeamCard = ({name, designation, extra, src, corner}) => {
 
   return (
     <div className={`relative group overflow-hidden rounded-[25px] sm:rounded-[40px] md:rounded-[50px] border border-black w-full aspect-[4/3] ${cornerClass} bg-orange-50`}>
-      <img loading="lazy" src={src} className="w-full" />
+      <img src={src} className="w-full" />
       <div className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-all duration-500 flex-col justify-end gap-1 items-end bg-black/40">
 
       </div>
@@ -66,11 +66,11 @@ export const AboutPage = () => {
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
         <StaggeredHeaders headers={["About Us"]} containerClass="text-3xl min-[400px] text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
-          <img loading="lazy" src="/aboutpage/aboutus.png" alt="" />
+          <img src="/aboutpage/aboutus.png" alt="" />
         </div>
       </section>
       <section className="relative w-full">
-        <img loading="lazy" src="/aboutpage/hero.jpg" alt="" className="w-full"/>
+        <img src="/aboutpage/hero.jpg" alt="" className="w-full"/>
         <div className="absolute grid px-4 xs:p-2 min-[500px]:p-5 md:p-10 lg:p-14 text-white min-[500px]:grid-cols-2 grid-rows-2 inset-0 bg-black/75">
           <SlidingDiv direction={"right"} className="flex flex-col md:gap-4 text-right min-[500px]:col-start-2 justify-center size-full">
             <h2 className="text-sm xs:text-lg min-[500px]:text-2xl md:text-3xl lg:text-6xl uppercase font-bold" >Our Mission</h2>
@@ -91,7 +91,7 @@ export const AboutPage = () => {
       <section className="bg-[#F3EEE8] p-6 lg:p-16 flex flex-col lg:flex-row gap-8 justify-center items-start">
         <div className="rounded-md flex flex-col md:flex-row lg:flex-col xs:gap-2 md:gap-8 justify-end items-end gap-px">
           <div className="max-w-96">
-            <img loading="lazy" src="/landingpage/services.png" alt="" />
+            <img src="/landingpage/services.png" alt="" />
           </div>
           
           <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
