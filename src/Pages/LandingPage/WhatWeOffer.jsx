@@ -71,7 +71,7 @@ export const WhatWeOffer = () => {
 
         <div className="rounded-md flex-1 flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
           <div className="max-w-[400px]">
-            <img src="/landingpage/services.png" alt="" />
+            <img loading="lazy" src="/landingpage/services.png" alt="" />
           </div>
           
           <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
@@ -85,7 +85,7 @@ export const WhatWeOffer = () => {
           content: (
             <div className={`flex justify-start gap-2 p-2`}>
               <div className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64">
-                <img src={service.illustrationSrc} className="w-full h-fit float-start" />
+                <img loading="lazy" src={service.illustrationSrc} className="w-full h-fit float-start" />
               </div>
               <div className="flex flex-1 flex-col gap-4 items-start">
               <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">

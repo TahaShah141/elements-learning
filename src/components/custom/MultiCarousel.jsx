@@ -58,7 +58,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
         <CarouselSingle containerClass={"size-full"} 
         items={Array.from({length: 10}, (_, i) => 
           <div className="size-full flex flex-col justify-center">
-            <img onClick={(e) => e.stopPropagation()} src={items[index].src} alt="" className="w-full bg-neutral-400" />
+            <img loading="lazy" onClick={(e) => e.stopPropagation()} src={items[index].src} alt="" className="w-full bg-neutral-400" />
           </div>
         )}
         nextButton={
@@ -93,7 +93,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
           onClick={() => (i === index) ? setOpened(true) : setIndex(i)}
           >
-            <img src={item.src} alt="" className="size-full shadow-lg" />
+            <img loading="lazy" src={item.src} alt="" className="size-full shadow-lg" />
           </div>
         ))}
       </div>
