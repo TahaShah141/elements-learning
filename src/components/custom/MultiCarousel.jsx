@@ -51,6 +51,8 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
   }, [opened, paused, autoScroll])
 
+  return (<></>)
+
   return (
     <>
     {opened && <div onClick={() => setOpened(false)} className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center">
