@@ -56,15 +56,15 @@ const events = [
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
     src: "/media/Attock_Training/compressed_DSC_2960.jpg",
-    gallery: ["/media/Attock_Training/compressed_DSC_2967.jpg","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3047.jpg"]
+    gallery: ["/media/Attock_Training/compressed_DSC_2967.JPG","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3047.JPG"]
   },
   {
     name: "Attock Lab Setup",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "/media/Gilgit_Training/compressed_DSC07851.JPG",
-    gallery: ["/media/Gilgit_Training/compressed_DSC07951.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
+    src: "/media/Gilgit_Training/compressed_DSC08433.JPG",
+    gallery: ["/media/Gilgit_Training/compressed_DSC07950.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
   },
   {
     name: "Attock Lab Setup",
@@ -80,7 +80,7 @@ const events = [
     color: "#CAB9DB",
     innerColor: "#A98CC2",
     src: "/media/Gilgit_Training/compressed_DSC07950.JPG",
-    gallery: ["/media/Gilgit_Training/compressed_DSC07851.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
+    gallery: ["/media/Gilgit_Training/compressed_DSC08491.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
   },
   {
     name: "Attock Training",
@@ -88,7 +88,7 @@ const events = [
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
     src: "/media/NCLS_winter_camp/compressed_DSC_4574.JPG",
-    gallery: ["/media/NCLS_winter_camp/DSC_4616.JPG","/media/NCLS_winter_camp/compressed_DSC_4574.JPG","/media/NCLS_winter_camp/compressed_DSC_5040.JPG",]
+    gallery: ["/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/NCLS_winter_camp/compressed_DSC_4574.JPG","/media/NCLS_winter_camp/compressed_DSC_5040.jpg",]
   },
 ]
 
