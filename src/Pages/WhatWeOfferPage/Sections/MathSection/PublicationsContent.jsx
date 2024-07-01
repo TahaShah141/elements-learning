@@ -1,10 +1,10 @@
 import { FadeIn } from "@/components/FadeIn"
-import { CustomAccordion } from "@/components/custom/CustomAccordion"
-import { BulletList } from "../BulletList"
-import { useState } from "react"
-import { CarouselSingle } from "@/components/custom/CarouselSingle"
 import { HexagonPlayButton } from "@/components/HexagonPlayButton"
+import { CarouselSingle } from "@/components/custom/CarouselSingle"
+import { CustomAccordion } from "@/components/custom/CustomAccordion"
+import { useState } from "react"
 import samplePDF from '../../../../../public/sample.pdf'
+import { BulletList } from "../BulletList"
 
 const TextbooksPublications = () => {
   const [opened, setOpened] = useState("OVERVIEW")
@@ -49,7 +49,7 @@ const TextbooksPublications = () => {
             <img src="/bookcovers/book5.jpg" className="size-full" />, 
           ]}
           nextButton={
-            <div className="size-10 lg:size-16">
+            <div className="size-10 lg:size-16 pr-2 xs:pr-0">
               <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
             </div>
           } />
