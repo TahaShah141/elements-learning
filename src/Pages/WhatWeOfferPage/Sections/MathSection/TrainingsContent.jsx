@@ -7,39 +7,40 @@ const events = [
     secondaries: ["Date: 12/04/2021", "Place: Jhang"],
     color: "#CFE8BE",
     innerColor: "#B1DA94",
-    src: "/media/DSC_0628.JPG"
+    src: "/media/Lahore_Science_Mela/compressed_DSC_1329.JPG",
+    gallery: ["/media/Lahore_Science_Mela/compressed_DSC_1328.JPG","/media/Lahore_Science_Mela/compressed_DSC_1437.JPG","/media/Lahore_Science_Mela/compressed_DSC_1379.JPG",]
   },
   {
     name: "Jhang Training",
     secondaries: ["Date: 12/04/2021", "Place: Jhang"],
     color: "#CAB9DB",
     innerColor: "#A98CC2",
-    src: "/media/Jhang Training/DSC_2707.JPG",
-    gallery: ["/media/Jhang Training/DSC_2878.JPG","/media/Jhang Training/DSC_2793.JPG","/media/Jhang Training/DSC_2758.JPG",]
+    src: "/media/Jhang Training/compressed_DSC_2707.JPG",
+    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2758.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
-    src: "/media/Gilgit_Training/DSC07950.JPG",
-    gallery: ["/media/Gilgit_Training/DSC07851.JPG","/media/Gilgit_Training/DSC08492.JPG","/media/Gilgit_Training/DSC08433.JPG",]
+    src: "/media/Gilgit_Training/compressed_DSC07950.JPG",
+    gallery: ["/media/Gilgit_Training/compressed_DSC07851.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "/media/Lahore_Science_Mela/DSC_1328.JPG",
-    gallery: ["/media/Lahore_Science_Mela/DSC_1329.JPG","/media/Lahore_Science_Mela/DSC_1437.JPG","/media/Lahore_Science_Mela/DSC_1379.JPG",]
+    src: "/media/Lahore_Science_Mela/compressed_DSC_1328.JPG",
+    gallery: ["/media/Lahore_Science_Mela/compressed_DSC_1329.JPG","/media/Lahore_Science_Mela/compressed_DSC_1437.JPG","/media/Lahore_Science_Mela/compressed_DSC_1379.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#F8A6D6",
     innerColor: "#F46CBE",
-    src: "/media/Attock_Training/DSC_2991.jpg",
-    gallery: ["/media/Attock_Training/DSC_2960.jpg","/media/Attock_Training/DSC_3014.jpg","/media/Attock_Training/DSC_3030.jpg,"]
+    src: "/media/Attock_Training/compressed_DSC_2991.jpg",
+    gallery: ["/media/Attock_Training/compressed_DSC_2960.jpg","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3030.jpg,"]
   },
 
   {
@@ -47,40 +48,40 @@ const events = [
     secondaries: ["Date: 12/04/2021", "Place: Jhang"],
     color: "#CFE8BE",
     innerColor: "#B1DA94",
-    src: "/media/Lahore_Science_Mela/DSC_1417.JPG",
-    gallery: ["/media/Lahore_Science_Mela/DSC_1329.JPG","/media/Lahore_Science_Mela/DSC_1437.JPG","/media/Lahore_Science_Mela/DSC_1328.JPG",]
+    src: "/media/Lahore_Science_Mela/compressed_DSC_1417.JPG",
+    gallery: ["/media/Lahore_Science_Mela/compressed_DSC_1329.JPG","/media/Lahore_Science_Mela/compressed_DSC_1437.JPG","/media/Lahore_Science_Mela/compressed_DSC_1328.JPG",]
   },
   {
     name: "Jhang Training",
     secondaries: ["Date: 12/04/2021", "Place: Jhang"],
     color: "#CAB9DB",
     innerColor: "#A98CC2",
-    src: "/media/NCLS_winter_camp/DSC_4574.JPG",
-    gallery: ["/media/NCLS_winter_camp/DSC_4616.JPG","/media/NCLS_winter_camp/DSC_4574.JPG","/media/NCLS_winter_camp/DSC_5040.JPG",]
+    src: "/media/NCLS_winter_camp/compressed_DSC_4574.JPG",
+    gallery: ["/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/NCLS_winter_camp/compressed_DSC_4574.JPG","/media/NCLS_winter_camp/compressed_DSC_5040.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
-    src: "/media/Gilgit_Training/DSC07851.JPG",
-    gallery: ["/media/Gilgit_Training/DSC07951.JPG","/media/Gilgit_Training/DSC08492.JPG","/media/Gilgit_Training/DSC08433.JPG",]
+    src: "/media/Gilgit_Training/compressed_DSC07851.JPG",
+    gallery: ["/media/Gilgit_Training/compressed_DSC07951.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#FEE7BD",
     innerColor: "#FED792",
-    src: "/media/Jhang Training/DSC_2758.JPG",
-    gallery: ["/media/Jhang Training/DSC_2878.JPG","/media/Jhang Training/DSC_2793.JPG","/media/Jhang Training/DSC_2707.JPG",]
+    src: "/media/Jhang Training/compressed_DSC_2758.JPG",
+    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2707.JPG",]
   },
   {
     name: "Attock Training",
     secondaries: ["Date: 03/08/2022", "Place: Attock"],
     color: "#F8A6D6",
     innerColor: "#F46CBE",
-    src: "/media/Attock_Training/DSC_2960.jpg",
-    gallery: ["/media/Attock_Training/DSC_2967.jpg","/media/Attock_Training/DSC_3014.jpg","/media/Attock_Training/DSC_3047.jpg"]
+    src: "/media/Attock_Training/compressed_DSC_2960.jpg",
+    gallery: ["/media/Attock_Training/compressed_DSC_2967.jpg","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3047.jpg"]
   }, 
 ]
 

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
-import { CarouselSingle } from "./CarouselSingle"
-import Carousel from "../Carousel"
 import { HexagonPlayButton } from "../HexagonPlayButton"
+import { CarouselSingle } from "./CarouselSingle"
 
 export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
@@ -51,7 +50,6 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
   }, [opened, paused, autoScroll])
 
-  return (<></>)
 
   return (
     <>
