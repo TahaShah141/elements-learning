@@ -7,6 +7,7 @@ import { sections } from "@/Pages/WhatWeOfferPage/Sections/sections"
 import { WhatWeOfferPage } from "@/Pages/WhatWeOfferPage/WhatWeOfferPage"
 import { Navbar } from "@/components/Navbar"
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
+import { NotFound } from "@/Pages/NotFound"
 
 const RootLayout = () => {
   return (
