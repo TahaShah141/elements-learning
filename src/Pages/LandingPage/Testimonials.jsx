@@ -49,7 +49,7 @@ export const Testimonials = () => {
     <>
     <div className="flex min-[550px]:flex-col gap-2 items-end justify-center">
       <div className="w-32 sm:w-40 md:w-48 lg:w-72">
-        <img src="landingpage/testimonials.png" alt="" />
+        <img loading="lazy"  src="landingpage/testimonials.png" alt="" />
       </div>
       <StaggeredHeaders headers={["What", "Others", "Say About Us"]} direction="bottom" px={20} containerClass="flex flex-col text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold uppercase sm:items-end" />
     </div>
