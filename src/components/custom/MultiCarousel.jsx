@@ -78,7 +78,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
     style={{height: size}}>
       <div className="absolute flex flex-col justify-between transition-all duration-500" 
       onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}
-      style={{backgroundColor: items[index].color, color: "#FFFFFF", width: size*0.9, height: size, paddingRight: size/10, paddingLeft: size/10, paddingTop: size/6, paddingBottom: size/7, borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`}}>
+      style={{backgroundColor: items[index].color, color: "#FFFFFF", width: size*0.9, height: size, paddingRight: 0, paddingLeft: size/15, paddingTop: size/6, paddingBottom: size/7, borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`}}>
         <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">{items[index].name}</p>
         {items[index].secondaries && 
         <div className="hidden md:flex gap-2 md:flex-col md:gap-0 font-semibold text-xs md:text-sm lg:text-base xl:text-lg">
