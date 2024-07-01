@@ -103,8 +103,40 @@ const flowchartSteps = [
 
 const FlowChart = () => {
   return (
-    <div className="w-full flex justify-center gap-2 ">
-
+    <div className="w-full flex justify-center gap-2 h-[80vh]">
+      {flowchartSteps.map(({name, color, corner, optionals}, i) =>
+        <>
+          <div className="flex flex-col justify-center">
+            {optionals && 
+            <div className="flex-1 w-full flex flex-col items-center">
+              <div className={`flex flex-col p-4 w-32 h-1/2 justify-center items-center text-center rounded-[20px] rounded-${optionals[0].corner}-none border-2 border-dashed border-neutral-500 text-neutral-500`}>
+                <p className="font-bold text-lg">{optionals[0].name}</p>
+              </div>
+              <div className="flex-1 flex flex-col justify-around">
+                {Array.from({length: 10}).map((_, i) => <div className="size-1 bg-neutral-600 rounded-full" />)} 
+              </div>
+            </div>}
+            <div className={`flex flex-col p-8 w-64 h-1/3 justify-center items-center text-center rounded-[30px] rounded-${corner}-none drop-shadow-md`}
+            style={{backgroundColor: color}}>
+              <p className="font-bold text-2xl">{name}</p>
+            </div>
+            {optionals && 
+            <div className="flex-1 w-full flex flex-col items-center">
+              <div className="flex-1 flex flex-col justify-around">
+                {Array.from({length: 10}).map((_, i) => <div className="size-1 bg-neutral-600 rounded-full" />)} 
+              </div>
+              <div className={`flex flex-col p-4 w-32 h-1/2 justify-center items-center text-center rounded-[20px] rounded-${optionals[1].corner}-none border-2 border-dashed border-neutral-500 text-neutral-500`}>
+                <p className="font-bold text-lg">{optionals[1].name}</p>
+              </div>
+            </div>}              
+          </div>
+          {i !== flowchartSteps.length - 1 && 
+          <div className="flex-1 flex items-center justify-around">
+            {Array.from({length: 8}).map((_, i) => <div className="size-1.5 bg-black rounded-full" />)} 
+          </div>
+          }
+        </>
+      )}
     </div>
   )
 }
@@ -117,7 +149,8 @@ export const TrainingsContent = () => {
           <p>At Elements Learning, we believe that the changing face of mathematics demands a fresh approach to teaching, one that embraces innovation and fosters critical thinking skills in the mathematicians of tomorrow.</p>
           <p>Our comprehensive teacher's training program is the cornerstone of this evolution, aimed at upskilling Elementary and Middle School Mathematics Teachers.</p>
         </div>
-        <section className="p-16 sm:p-8 lg:p-12  bg-[#F3EEE8]">
+        <section className="p-16 sm:p-8 lg:p-12 bg-[#F3EEE8]">
+          <FlowChart />
         </section>
         <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
           <p>Through extensive face-to-face trainings with esteemed organizations and schools, such as APS, Froebels International Schools, Silver Oaks School System, FDE, FGE, NCLS, and many more to come, we ensure that teachers receive immersive learning experiences, preparing them to excel in the ever-evolving landscape of education.</p>
