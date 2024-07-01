@@ -40,16 +40,16 @@ const TextbooksPublications = () => {
   }
 
   const contents = {
-    "OVERVIEW": <img loading="lazy"  src="/media/IMG-20240401-WA0010.jpg" className="h-full" />,
+    "OVERVIEW": <img src="/media/IMG-20240401-WA0010.jpg" className="h-full" />,
     "TEACHERS": <>
       <CarouselSingle containerClass={"size-full"} items={[
-        <img loading="lazy"  src="/bookcovers/book1.jpg" className="size-full" />, 
+        <img src="/bookcovers/book1.jpg" className="size-full" />, 
         <a href={samplePDF} target="_blank" rel="noreferrer"> 
-          <img loading="lazy"  src="/bookcovers/book2.jpg" className="size-full" />
+          <img src="/bookcovers/book2.jpg" className="size-full" />
         </a>, 
-        <img loading="lazy"  src="/bookcovers/book3.jpg" className="size-full" />, 
-        <img loading="lazy"  src="/bookcovers/book4.jpg" className="size-full" />, 
-        <img loading="lazy"  src="/bookcovers/book5.jpg" className="size-full" />, 
+        <img src="/bookcovers/book3.jpg" className="size-full" />, 
+        <img src="/bookcovers/book4.jpg" className="size-full" />, 
+        <img src="/bookcovers/book5.jpg" className="size-full" />, 
       ]}
       nextButton={
         <div className="size-10 lg:size-16 pr-2 xs:pr-0">
@@ -59,13 +59,13 @@ const TextbooksPublications = () => {
     </>,
     "STUDENTS": <>
       <CarouselSingle containerClass={"size-full"} items={[
-        <img loading="lazy"  src="/bookcovers/book1.jpg" className="size-full" />, 
+        <img src="/bookcovers/book1.jpg" className="size-full" />, 
         <a href={samplePDF} target="_blank" rel="noreferrer"> 
-          <img loading="lazy"  src="/bookcovers/book2.jpg" className="size-full" />
+          <img src="/bookcovers/book2.jpg" className="size-full" />
         </a>, 
-        <img loading="lazy"  src="/bookcovers/book3.jpg" className="size-full" />, 
-        <img loading="lazy"  src="/bookcovers/book4.jpg" className="size-full" />, 
-        <img loading="lazy"  src="/bookcovers/book5.jpg" className="size-full" />, 
+        <img src="/bookcovers/book3.jpg" className="size-full" />, 
+        <img src="/bookcovers/book4.jpg" className="size-full" />, 
+        <img src="/bookcovers/book5.jpg" className="size-full" />, 
       ]}
       nextButton={
         <div className="size-10 lg:size-16 pr-2 xs:pr-0">
@@ -124,7 +124,7 @@ export const PublicationsContent = () => {
             <div className="py-2 xs:py-4 md:py-6 lg:py-8">
               <div className="flex flex-col sm:flex-row gap-2">
                 <SlidingDiv direction={"left"} className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
-                  <img loading="lazy"  src="/media/popularmaths.jpg" className="h-full" />
+                  <img src="/media/popularmaths.jpg" className="h-full" />
                 </SlidingDiv>
                 <SlidingDiv direction={"right"} className="flex-[3_0_0] flex flex-col p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl bg-[#F3EEE8]">
                   <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Popular Math uses puzzles and games to make learning enjoyable for all ages, featuring resources from renowned Maths popularizers and plans for recreational programs and olympiads.</h3>
