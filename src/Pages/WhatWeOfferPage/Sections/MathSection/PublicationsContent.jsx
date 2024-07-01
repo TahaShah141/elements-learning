@@ -9,83 +9,88 @@ import { BulletList } from "../BulletList"
 const TextbooksPublications = () => {
   const [opened, setOpened] = useState("OVERVIEW")
 
+  const texts = {
+    "OVERVIEW": <>
+      <h3 className="text-left text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
+      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
+    </>,
+    "TEACHERS": <>
+      <h3 className="text-left text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our Teacher Guides offer essential teaching strategies and classroom management tips, helping educators deliver engaging and effective lessons.</h3>
+      <div className="pl-12 md:pl-24 lg:pl-32 xl:pl-40">
+        <BulletList contentClass="text-sm text-left md:text-base xl:text-lg"
+        list={[
+          {title: "Effective Teaching Strategies"},
+          {title: "Comprehensive Assessment Tools"},
+          {title: "Supplementary Learning Resources"},
+        ]} />
+      </div>
+    </>,
+    "STUDENTS": <>
+      <h3 className="text-left text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our Student Workbooks are designed to complement the Teacher Guides, providing students with practical excersises and activities that reinforce their learning.</h3>
+      <div className="pl-12 md:pl-24 lg:pl-32 xl:pl-40">
+        <BulletList contentClass="text-sm text-left md:text-base xl:text-lg"
+        list={[
+          {title: "Curriculum-Aligned Content"},
+          {title: "Engaging Interactive Excersises"},
+          {title: "Progressive Skill Development"},
+        ]} />
+      </div>
+    </>
+  }
+
+  const contents = {
+    "OVERVIEW": <img loading="lazy" src="/media/IMG-20240401-WA0010.jpg" className="h-full" />,
+    "TEACHERS": <>
+      <CarouselSingle containerClass={"size-full"} items={[
+        <img loading="lazy" src="/bookcovers/book1.jpg" className="size-full" />, 
+        <a href={samplePDF} target="_blank" rel="noreferrer"> 
+          <img loading="lazy" src="/bookcovers/book2.jpg" className="size-full" />
+        </a>, 
+        <img loading="lazy" src="/bookcovers/book3.jpg" className="size-full" />, 
+        <img loading="lazy" src="/bookcovers/book4.jpg" className="size-full" />, 
+        <img loading="lazy" src="/bookcovers/book5.jpg" className="size-full" />, 
+      ]}
+      nextButton={
+        <div className="size-10 lg:size-16 pr-2 xs:pr-0">
+          <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
+        </div>
+      } />
+    </>,
+    "STUDENTS": <>
+      <CarouselSingle containerClass={"size-full"} items={[
+        <img loading="lazy" src="/bookcovers/book1.jpg" className="size-full" />, 
+        <a href={samplePDF} target="_blank" rel="noreferrer"> 
+          <img loading="lazy" src="/bookcovers/book2.jpg" className="size-full" />
+        </a>, 
+        <img loading="lazy" src="/bookcovers/book3.jpg" className="size-full" />, 
+        <img loading="lazy" src="/bookcovers/book4.jpg" className="size-full" />, 
+        <img loading="lazy" src="/bookcovers/book5.jpg" className="size-full" />, 
+      ]}
+      nextButton={
+        <div className="size-10 lg:size-16 pr-2 xs:pr-0">
+          <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
+        </div>
+      } />
+    </>,
+
+  }
+
   return (
-    <>
-    {opened === "OVERVIEW" ? 
     <div className="p-2 xs:p-4 md:p-6 lg:p-8">
       <div className="flex flex-col-reverse sm:flex-row gap-2">
         <div className="flex-[3_0_0] flex flex-col text-right p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 bg-[#F3EEE8]">
-          <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
+          {texts[opened]}
           <div className="flex gap-2 mt-auto justify-end">
-            <button onClick={() => setOpened("TEACHERS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#FBBA42]">Teacher Guide</button>
-            <button onClick={() => setOpened("STUDENTS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Student Workbooks</button>
+            <button onClick={() => setOpened(opened === "TEACHERS" ? "OVERVIEW" : "TEACHERS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#FBBA42]">{opened === "TEACHERS" ? "Overview" : "Teacher Guide"}</button>
+            <button onClick={() => setOpened(opened === "STUDENTS" ? "OVERVIEW" : "STUDENTS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">{opened === "STUDENTS" ? "Overview" : "Student Workbooks"}</button>
           </div>
         </div>
         <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
-          <img loading="lazy" src="/media/IMG-20240401-WA0010.jpg" className="h-full" />
-        </div>
-      </div>
-    </div>:
-    opened === "TEACHERS" ?
-    <div className="p-2 xs:p-4 md:p-6 lg:p-8">
-      <div className="flex flex-col-reverse sm:flex-row gap-2">
-        <div className="flex-[3_0_0] flex flex-col text-right p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 bg-[#F3EEE8]">
-          <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
-          <div className="flex gap-2 mt-auto justify-end">
-            <button onClick={() => setOpened("OVERVIEW")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#FBBA42]">Textbooks Overview</button>
-            <button onClick={() => setOpened("STUDENTS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Student Workbooks</button>
-          </div>
-        </div>
-        <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
-          <CarouselSingle containerClass={"size-full"} items={[
-            <img loading="lazy" src="/bookcovers/book1.jpg" className="size-full" />, 
-            <a href={samplePDF} target="_blank" rel="noreferrer"> 
-              <img loading="lazy" src="/bookcovers/book2.jpg" className="size-full" />
-            </a>, 
-            <img loading="lazy" src="/bookcovers/book3.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book4.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book5.jpg" className="size-full" />, 
-          ]}
-          nextButton={
-            <div className="size-10 lg:size-16 pr-2 xs:pr-0">
-              <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
-            </div>
-          } />
-        </div>
-      </div>
-    </div>:
-    <div className="p-2 xs:p-4 md:p-6 lg:p-8">
-      <div className="flex flex-col-reverse sm:flex-row gap-2">
-        <div className="flex-[3_0_0] flex flex-col text-right p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 bg-[#F3EEE8]">
-          <h3 className="text-lg font-semibold lg:font-normal md:text-xl lg:text-3xl xl:text-4xl">Our textbooks are meticulously crafted to align with the Student Learning Outcomes (SLOs) provided by the single National Curriculum.</h3>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"> By incorporating best practices based on the CPA methodology, and innovative methods from educational theorists such as Jerome Bruner, Richard Skemp, Zoltán Pál Dienes, and Caleb Gattegno, our textbooks ensure a comprehensive and effective learning experience.</p>
-          <div className="flex gap-2 mt-auto justify-end">
-            <button onClick={() => setOpened("TEACHERS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#FBBA42]">Teacher Guide</button>
-            <button onClick={() => setOpened("OVERVIEW")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Textbooks Overview</button>
-          </div>
-        </div>
-        <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
-          <CarouselSingle containerClass={"size-full"} items={[
-            <img loading="lazy" src="/bookcovers/book1.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book2.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book3.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book4.jpg" className="size-full" />, 
-            <img loading="lazy" src="/bookcovers/book5.jpg" className="size-full" />, 
-          ]}
-          nextButton={
-            <div className="size-10 lg:size-16">
-              <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
-            </div>
-          } />
+          {contents[opened]}
         </div>
       </div>
     </div>
-    }
-    </>
   )
-
 }
 
 export const PublicationsContent = () => {
