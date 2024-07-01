@@ -1,6 +1,6 @@
+import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
 import { FadeIn } from "@/components/FadeIn"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
-import { BulletList } from "../BulletList"
 
 const manipulatives = [
   {

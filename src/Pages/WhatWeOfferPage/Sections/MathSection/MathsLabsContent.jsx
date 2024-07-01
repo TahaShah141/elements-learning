@@ -1,7 +1,7 @@
+import { ContentCard } from "@/Pages/WhatWeOfferPage/Sections/ContentCard"
 import { FadeIn } from "@/components/FadeIn"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
-import { ContentCard } from "../ContentCard"
 
 const packages = [
   {

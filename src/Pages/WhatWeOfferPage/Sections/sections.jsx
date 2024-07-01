@@ -1,8 +1,8 @@
-import { AssessmentsContent } from "./MathSection/AssessmentsContent";
-import { MathsLabsContent } from "./MathSection/MathsLabsContent";
-import { MathsManipulativesContent } from "./MathSection/MathsManipulativesContent";
-import { PublicationsContent } from "./MathSection/PublicationsContent";
-import { TrainingsContent } from "./MathSection/TrainingsContent";
+import { AssessmentsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/AssessmentsContent";
+import { MathsLabsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/MathsLabsContent";
+import { MathsManipulativesContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/MathsManipulativesContent";
+import { PublicationsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/PublicationsContent";
+import { TrainingsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/TrainingsContent";
 
 export const sections = 
 [

@@ -1,7 +1,7 @@
-import { FadeIn } from "../../../components/FadeIn"
-import { SlidingDiv } from "../../../components/SlidingDiv"
-import { Bullet } from "./Bullet"
-import { journeySteps } from "./OurJourneySection"
+import { Bullet } from "@/Pages/LandingPage/OurJourney/Bullet"
+import { journeySteps } from "@/Pages/LandingPage/OurJourney/OurJourneySection"
+import { FadeIn } from "@/components/FadeIn"
+import { SlidingDiv } from "@/components/SlidingDiv"
 
 const JourneyCard = ({color, header, content}) => {
 

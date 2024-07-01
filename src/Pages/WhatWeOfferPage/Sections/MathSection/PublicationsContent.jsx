@@ -1,10 +1,10 @@
+import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
 import { FadeIn } from "@/components/FadeIn"
 import { HexagonPlayButton } from "@/components/HexagonPlayButton"
 import { CarouselSingle } from "@/components/custom/CarouselSingle"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { useState } from "react"
 import samplePDF from '../../../../../public/sample.pdf'
-import { BulletList } from "../BulletList"
 
 const TextbooksPublications = () => {
   const [opened, setOpened] = useState("OVERVIEW")

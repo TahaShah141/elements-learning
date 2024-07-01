@@ -1,8 +1,7 @@
 import { IconButton } from "@/components/custom/IconButton"
-import { LinkButton } from "../../components/LinkButton"
-import { SlidingDiv } from "../../components/SlidingDiv"
-import { StaggeredHeaders } from "../../components/StaggeredHeaders"
-import { ArrowRight, ArrowRightIcon } from "lucide-react"
+import { SlidingDiv } from "@/components/SlidingDiv"
+import { StaggeredHeaders } from "@/components/StaggeredHeaders"
+import { ArrowRightIcon } from "lucide-react"
 
 export const Hero = () => {
   return (

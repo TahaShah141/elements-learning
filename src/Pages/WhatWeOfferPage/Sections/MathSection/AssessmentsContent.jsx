@@ -1,7 +1,7 @@
+import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
+import { ContentCard } from "@/Pages/WhatWeOfferPage/Sections/ContentCard"
 import { FadeIn } from "@/components/FadeIn"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
-import { BulletList } from "../BulletList"
-import { ContentCard } from "../ContentCard"
 
 const studentAssessments = [
   {

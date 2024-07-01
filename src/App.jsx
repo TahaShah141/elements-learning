@@ -1,12 +1,12 @@
+import { AboutPage } from "@/Pages/AboutPage"
+import { BlogPage } from "@/Pages/BlogPage"
+import { ContactPage } from "@/Pages/ContactPage"
+import { LandingPage } from "@/Pages/LandingPage/LandingPage"
+import { TabView } from "@/Pages/WhatWeOfferPage/Sections/TabView"
+import { sections } from "@/Pages/WhatWeOfferPage/Sections/sections"
+import { WhatWeOfferPage } from "@/Pages/WhatWeOfferPage/WhatWeOfferPage"
+import { Navbar } from "@/components/Navbar"
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
-import { LandingPage } from "./Pages/LandingPage/LandingPage"
-import { Navbar } from "./components/Navbar"
-import { ContactPage } from "./Pages/ContactPage"
-import { AboutPage } from "./Pages/AboutPage"
-import { BlogPage } from "./Pages/BlogPage"
-import { WhatWeOfferPage } from "./Pages/WhatWeOfferPage/WhatWeOfferPage"
-import { TabView } from "./Pages/WhatWeOfferPage/Sections/TabView"
-import { sections } from "./Pages/WhatWeOfferPage/Sections/sections"
 
 const RootLayout = () => {
   return (

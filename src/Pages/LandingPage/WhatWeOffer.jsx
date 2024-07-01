@@ -1,7 +1,6 @@
-import { IconButton } from "@/components/custom/IconButton"
-import { LinkButton } from "../../components/LinkButton"
-import { SlidingDiv } from "../../components/SlidingDiv"
+import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
+import { IconButton } from "@/components/custom/IconButton"
 import { ArrowRightIcon } from "lucide-react"
 
 const services = [

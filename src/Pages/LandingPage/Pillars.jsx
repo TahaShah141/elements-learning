@@ -1,6 +1,5 @@
-import React from 'react'
-import { StaggeredPillarHeader } from './StaggeredPillarHeader'
-import { SlidingDiv } from '../../components/SlidingDiv'
+import { StaggeredPillarHeader } from '@/Pages/LandingPage/StaggeredPillarHeader'
+import { SlidingDiv } from '@/components/SlidingDiv'
 
 export const Pillars = () => {
   return (

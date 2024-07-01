@@ -1,5 +1,4 @@
-import { HexagonPlayButton } from "./HexagonPlayButton"
-import { LinkButton } from "./LinkButton"
+import { HexagonPlayButton } from "@/components/HexagonPlayButton"
 
 export const Footer = () => {
   return (

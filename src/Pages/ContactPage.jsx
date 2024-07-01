@@ -1,8 +1,8 @@
-import { ArrowBigDownDash, Mail, MapPin, Smartphone } from "lucide-react"
-import { FadeIn } from "../components/FadeIn"
-import { Footer } from "../components/Footer"
-import { SlidingDiv } from "../components/SlidingDiv"
-import { StaggeredHeaders } from "../components/StaggeredHeaders"
+import { FadeIn } from "@/components/FadeIn"
+import { Footer } from "@/components/Footer"
+import { SlidingDiv } from "@/components/SlidingDiv"
+import { StaggeredHeaders } from "@/components/StaggeredHeaders"
+import { Mail, MapPin, Smartphone } from "lucide-react"
 
 
 export const ContactPage = () => {

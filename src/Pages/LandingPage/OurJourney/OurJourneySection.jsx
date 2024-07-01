@@ -1,10 +1,10 @@
+import { Bullet } from '@/Pages/LandingPage/OurJourney/Bullet'
+import { Jahaaz } from '@/Pages/LandingPage/OurJourney/Jahaaz'
+import '@/Styles/ourJourney.css'
+import { FadeIn } from '@/components/FadeIn'
+import { SlidingDiv } from '@/components/SlidingDiv'
 import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
-import '../../../Styles/ourJourney.css'
-import { FadeIn } from '../../../components/FadeIn'
-import { SlidingDiv } from '../../../components/SlidingDiv'
-import { Bullet } from './Bullet'
-import { Jahaaz } from './Jahaaz'
 
 const animationTime = 3
 
