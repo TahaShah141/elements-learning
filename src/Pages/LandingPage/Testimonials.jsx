@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { StaggeredHeaders } from '../../components/StaggeredHeaders'
-import { SlidingDiv } from '../../components/SlidingDiv'
-import { HexagonPlayButton } from '../../components/HexagonPlayButton'
+import { HexagonPlayButton } from '@/components/HexagonPlayButton'
+import { SlidingDiv } from '@/components/SlidingDiv'
+import { StaggeredHeaders } from '@/components/StaggeredHeaders'
+import { useState } from 'react'
 
 
 const TestimonialCard = ({quote, person}) => {

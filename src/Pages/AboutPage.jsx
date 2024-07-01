@@ -1,6 +1,6 @@
-import { Footer } from "../components/Footer";
-import { SlidingDiv } from "../components/SlidingDiv";
-import { StaggeredHeaders } from "../components/StaggeredHeaders";
+import { Footer } from "@/components/Footer";
+import { SlidingDiv } from "@/components/SlidingDiv";
+import { StaggeredHeaders } from "@/components/StaggeredHeaders";
 
 const tailwindClasses = [
   "sm:rounded-tl-none sm:rounded-tr-none sm:rounded-bl-none sm:rounded-br-none",

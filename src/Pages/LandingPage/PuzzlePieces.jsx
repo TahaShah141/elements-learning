@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion'
+import { SlidingDiv } from "@/components/SlidingDiv";
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { SlidingDiv } from '../../components/SlidingDiv';
 
 const puzzles = [
   {

@@ -1,5 +1,4 @@
-import React from 'react'
-import { CountUp } from '../../components/CountUp'
+import { CountUp } from "@/components/CountUp"
 
 export const Stats = () => {
   return (

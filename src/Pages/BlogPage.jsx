@@ -1,8 +1,7 @@
-import { CarouselSingle } from "@/components/custom/CarouselSingle"
-import { Footer } from "../components/Footer"
-import { LinkButton } from "../components/LinkButton"
-import { SlidingDiv } from "../components/SlidingDiv"
-import { StaggeredHeaders } from "../components/StaggeredHeaders"
+import { Footer } from "@/components/Footer"
+import { LinkButton } from "@/components/LinkButton"
+import { SlidingDiv } from "@/components/SlidingDiv"
+import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
 
 
