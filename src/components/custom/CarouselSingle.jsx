@@ -29,10 +29,10 @@ export const CarouselSingle = ({containerClass, items, nextButton, prevButton, a
           </div>
         )}
       </div>
-      <button onClick={() => setIndex((index+1)%items.length)} className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 text-black p-2">
+      <button onClick={(e) => {e.stopPropagation(); setIndex((index+1)%items.length)}} className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 text-black p-2">
         {nextButton}
       </button>      
-      <button onClick={() => setIndex((index-1) < 0 ? items.length-1 : (index-1)%items.length)} className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 size-fit p-2">
+      <button onClick={(e) => {e.stopPropagation(); setIndex((index-1) < 0 ? items.length-1 : (index-1)%items.length)}} className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 size-fit p-2">
         {prevButton}
       </button>
       
