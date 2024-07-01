@@ -57,8 +57,8 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
       <div className="size-4/5">
         <CarouselSingle containerClass={"size-full"} 
         items={Array.from({length: 10}, (_, i) => 
-          <div onClick={(e) => e.stopPropagation()} className="size-full flex flex-col justify-center">
-            <img src={items[index].src} alt="" className="w-full bg-neutral-400" />
+          <div className="size-full flex flex-col justify-center">
+            <img onClick={(e) => e.stopPropagation()} src={items[index].src} alt="" className="w-full bg-neutral-400" />
           </div>
         )}
         nextButton={
