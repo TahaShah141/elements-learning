@@ -22,7 +22,7 @@ const TextbooksPublications = () => {
             <button onClick={() => setOpened("STUDENTS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Student Workbooks</button>
           </div>
         </div>
-        <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+        <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
           <img src="/media/IMG-20240401-WA0010.jpg" className="h-full" />
         </div>
       </div>
@@ -38,7 +38,7 @@ const TextbooksPublications = () => {
             <button onClick={() => setOpened("STUDENTS")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Student Workbooks</button>
           </div>
         </div>
-        <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+        <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
           <CarouselSingle containerClass={"size-full"} items={[
             <img src="/bookcovers/book1.jpg" className="size-full" />, 
             <a href={samplePDF} target="_blank" rel="noreferrer"> 
@@ -66,7 +66,7 @@ const TextbooksPublications = () => {
             <button onClick={() => setOpened("OVERVIEW")} className="lg:px-6 lg:py-4 p-2 font-bold md:text-lg lg:text-lg text-white bg-[#353535]">Textbooks Overview</button>
           </div>
         </div>
-        <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+        <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
           <CarouselSingle containerClass={"size-full"} items={[
             <img src="/bookcovers/book1.jpg" className="size-full" />, 
             <img src="/bookcovers/book2.jpg" className="size-full" />, 
@@ -117,7 +117,7 @@ export const PublicationsContent = () => {
             content: 
             <div className="py-2 xs:py-4 md:py-6 lg:py-8">
               <div className="flex flex-col sm:flex-row gap-2">
-                <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+                <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                   <img src="/media/popularmaths.jpg" className="h-full" />
                 </div>
                 <div className="flex-[3_0_0] flex flex-col p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl bg-[#F3EEE8]">

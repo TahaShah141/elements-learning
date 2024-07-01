@@ -84,7 +84,7 @@ export const MathsManipulativesContent = () => {
             content: 
             <div className="py-2 xs:py-4 md:py-6 lg:py-8">
               <div className="flex flex-col sm:flex-row gap-2">
-                <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+                <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                   <img src="/media/WhatsApp Image 2024-04-01 at 14.31.45_b695ae6f.jpg" alt="" className="h-full" />
                 </div>
                 <div className="flex-[3_0_0] flex flex-col sm:px-4 md:px-8 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base xl:text-lg">

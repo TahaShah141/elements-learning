@@ -117,7 +117,7 @@ export const MathsLabsContent = () => {
             content: 
             <div className="py-2 xs:py-4 md:py-6 lg:py-8">
               <div className="flex flex-col sm:flex-row gap-2">
-                <div className="sm:flex-[2_0_0] aspect-square sm:aspect-[3/4] bg-neutral-400">
+                <div className="sm:flex-[2_0_0] aspect-[3/4] bg-neutral-400">
                   <img src="/media/IMG-20240401-WA0010.jpg" alt="" className="h-full" />
                 </div>
                 <div className="flex-[3_0_0] flex flex-col  p-4 md:p-8 lg:p-10 xl:p-12 gap-4 lg:gap-6 xl:gap-8 text-xs sm:text-sm md:text-base xl:text-lg">
