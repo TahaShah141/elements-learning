@@ -32,6 +32,40 @@ const goals = [
   },
 ]
 
+const team = [
+  {
+    name: "Dr. Abid Rafique",
+    designation: "Chief Executive Officer",
+    corner: "br"
+    
+  },
+  {
+    name: "Irfan Sarfraz",
+    designation: "Founder & Chief Knowledge Officer",
+    corner: "tl"
+  },
+  {
+    name: "M. Idrees Mian",
+    designation: "Founder & Chief Marketing Officer",
+    corner: "bl"
+  },
+  {
+    name: "Janita Khan",
+    designation: "Program Manager & Math Team Lead",
+    corner: "bl"
+  },
+  {
+    name: "Mahjabeen Butt",
+    designation: "Math Lead Trainer & Researcher",
+    corner: "br"
+  },
+  {
+    name: "Munazzah Younus",
+    designation: "Business Development Executive & Marketing Manager",
+    corner: "tr"
+  },
+]
+
 const GoalCard = ({color, innerBg, src, title, content, index}) => {
   return (
     <SlidingDiv direction={"top"} delay={index*0.5} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
@@ -46,15 +80,16 @@ const GoalCard = ({color, innerBg, src, title, content, index}) => {
   )
 }
 
-const TeamCard = ({name, designation, extra, src, corner}) => {
+const TeamCard = ({name, designation, corner}) => {
 
   const cornerClass = `rounded-${corner}-none sm:rounded-${corner}-none md:rounded-${corner}-none `
 
   return (
     <div className={`relative group overflow-hidden rounded-[25px] sm:rounded-[40px] md:rounded-[50px] border border-black w-full aspect-[4/3] ${cornerClass} bg-orange-50`}>
-      <img src={src} className="w-full" />
-      <div className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-all duration-500 flex-col justify-end gap-1 items-end bg-black/40">
-
+      <img src={`/team/${name}.png`} alt="Missing"  className="w-full" />
+      <div className="absolute inset-0 translate-y-full overflow-hidden group-hover:translate-y-0 transition-all duration-500 flex flex-col justify-end p-3 sm:p-4 md:p-5 lg:p-4 xl:p-6 bg-black/40">
+        <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-2xl font-bold text-[#FBBA42]">{name}</p>
+        <p className="text-[8px] xs:text-[10px] sm:text-xs line-height-1 lg:text-[10px] xl:text-sm text-white">{designation}</p>
       </div>
     </div>
   )
@@ -100,19 +135,8 @@ export const AboutPage = () => {
           </SlidingDiv>
         </div>
         <div className="flex-1 w-full grid grid-cols-2 sm:grid-cols-3 gap-4 lg:grid-cols-2 min-[1100px]:grid-cols-3 flex-col">
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
-          <TeamCard corner={"tl"}/>
+          {team.map(member => <TeamCard {...member} />)}
+          {team.map(member => <TeamCard {...member} />)}
         </div>
       </section>
       <Footer />
