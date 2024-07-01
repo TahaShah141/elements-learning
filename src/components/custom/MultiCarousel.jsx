@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+import { CarouselSingle } from "./CarouselSingle"
+import Carousel from "../Carousel"
+import { HexagonPlayButton } from "../HexagonPlayButton"
 
 export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
@@ -7,6 +10,8 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
   const [size, setSize] = useState(200)
   const [gapSize, setGapSize] = useState(5)
   const [paused, setPaused] = useState(false)
+
+  const [opened, setOpened] = useState(false)
   const smallerSize = size * 0.75
 
   useEffect(() => {
@@ -36,7 +41,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
   useEffect(() => {
 
-    if (paused || !autoScroll) {
+    if (paused || !autoScroll || opened) {
       clearInterval(intervalID)
     } else {
       const id = setInterval(() => setIndex(i => (i+1)%items.length), delay)
@@ -44,9 +49,31 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
       return () => clearInterval(id)
     }
 
-  }, [paused, autoScroll])
+  }, [opened, paused, autoScroll])
 
   return (
+    <>
+    {opened && <div onClick={() => setOpened(false)} className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center">
+      <div className="size-4/5">
+        <CarouselSingle containerClass={"size-full"} 
+        items={Array.from({length: 10}, (_, i) => 
+          <div className="size-full flex flex-col justify-center">
+            <img src={items[index].src} alt="" className="w-full bg-neutral-400" />
+          </div>
+        )}
+        nextButton={
+          <div className="size-10 lg:size-16">
+            <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
+          </div>
+        }
+        prevButton={
+          <div className="size-10 lg:size-16 rotate-180">
+            <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"}/>
+          </div>
+        }
+        delay={2000} />
+      </div>
+    </div>}
     <div className="relative w-full flex overflow-hidden justify-center items-center gap-8" 
     style={{height: size}}>
       <div className="absolute flex flex-col justify-between transition-all duration-500" 
@@ -64,12 +91,13 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
         {items.map((item, i) => (
           <div className={`absolute transition-all duration-700 bottom-0 ${i === index ? "h-full w-full" : "h-2/3 w-2/3"}`} 
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
-          onClick={() => setIndex(i)}
+          onClick={() => (i === index) ? setOpened(true) : setIndex(i)}
           >
             <img src={item.src} alt="" className="size-full shadow-lg" />
           </div>
         ))}
       </div>
     </div>
+    </>
   )
 }
