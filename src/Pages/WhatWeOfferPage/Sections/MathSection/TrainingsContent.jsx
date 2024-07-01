@@ -81,9 +81,49 @@ const events = [
     innerColor: "#F46CBE",
     src: "/media/Attock_Training/DSC_2960.jpg",
     gallery: ["/media/Attock_Training/DSC_2967.jpg","/media/Attock_Training/DSC_3014.jpg","/media/Attock_Training/DSC_3047.jpg"]
-  },
-  
+  }, 
 ]
+
+const flowchartSteps = [
+  {
+    name: "Sensitization Session",
+    color: "#C5AECB",
+    corner: "br",
+  },
+  {
+    name: "Critical Fundamental Concepts",
+    color: "#9FD5B5",
+    corner: "tr",
+    optionals: [
+      {
+        name: "Train the Trainer",
+        corner: "bl"
+      },
+      {
+        name: "Induction Training",
+        corner: "tl"
+      },
+    ]
+  },
+  {
+    name: "Class Assessment / Assessment for Learning",
+    color: "#9FD8EB",
+    corner: "br",
+  },
+  {
+    name: "Student Learning Impact Analysis",
+    color: "#F2CBAC",
+    corner: "tr",
+  },
+]
+
+const FlowChart = () => {
+  return (
+    <div className="w-full flex justify-center gap-2 ">
+
+    </div>
+  )
+}
 
 export const TrainingsContent = () => {
   return (
