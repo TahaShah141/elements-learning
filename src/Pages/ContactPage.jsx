@@ -32,8 +32,8 @@ export const ContactPage = () => {
             <button className="bg-[#FBBA41] rounded-md p-2 sm:text-base text-sm sm:p-4 font-bold">Submit</button>
           </SlidingDiv>
           <SlidingDiv direction={"right"} className="flex-[1.5_0_0] flex flex-col gap-4">
-          <h1 className=" font-bold text-3xl text-center sm:hidden">Our Info</h1>
-            <div id="info" className="flex gap-2 p-4 md:p-6 rounded-md bg-[#F3EEE8]">
+          <h1 id="info" className=" font-bold text-3xl text-center sm:hidden">Our Info</h1>
+            <div className="flex gap-2 p-4 md:p-6 rounded-md bg-[#F3EEE8]">
               <MapPin className="size-8 text-[#FBBB40]" /> 
               <div  className="flex flex-col gap-2">
                 <p className="text-lg lg:text-2xl font-bold">Address</p>

@@ -85,6 +85,31 @@
     @apply bg-background text-foreground;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #d3d3d3 #ffffff00;
+    }
+  
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 12px;
+  }
+  
+    *::-webkit-scrollbar-track {
+      background: #ffffff00;
+    }
+  
+    *::-webkit-scrollbar-thumb {
+      background-color: #3f3a41;
+      border-radius: 12px;
+    }
+
   .line-height-1 {
     line-height: 1;
   }
