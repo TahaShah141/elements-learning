@@ -1,6 +1,7 @@
 import { SlidingDiv } from "@/components/SlidingDiv"
 
 export const ContentCard = ({headers, color, content, index, headerSize="text-2xl sm:text-5xl xl:text-6xl"}) => {
+  
   return (
     <SlidingDiv direction={"left"} delay={index*0.2} className="flex flex-1 flex-col rounded-tl-sm md:rounded-tl-lg rounded-3xl min-w-72 lg:rounded-[40px] overflow-hidden bg-[#F3EEE8]">
       <div className="flex flex-col text-white font-bold p-4 pb-2 sm:p-8 sm:pb-4 xl:p-12 xl:pb-8 rounded-xl rounded-tl-sm rounded-bl-3xl xl:rounded-[40px] xl:rounded-tl-xl xl:rounded-bl-[70px]" style={{backgroundColor: color}}>

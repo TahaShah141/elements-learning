@@ -1,5 +1,6 @@
 
 export const IconButton = ({icon, text, className}) => {
+  
   return (
     <button className={`group ${className}`}>
       <div className="flex items-center gap-2">

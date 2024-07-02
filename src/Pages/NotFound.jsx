@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export const NotFound = () => {
+
   return (
     <div className="size-screen flex flex-col justify-center items-center p-16">
       <img src="/404/404.jpg" alt="" className="w-full"/>

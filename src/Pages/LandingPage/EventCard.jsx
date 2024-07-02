@@ -1,5 +1,5 @@
-
 export const EventCard = ({title, date, content}) => {
+
   return (
     <div className="w-full flex justify-center">
       <div className="flex gap-8 p-12 rounded-2xl max-w-5xl bg-neutral-200 ">

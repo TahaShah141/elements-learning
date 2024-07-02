@@ -3,8 +3,8 @@ import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { services } from "@/constants/WhatWeOffer/services"
 import { NavLink } from "react-router-dom"
 
-
 export const WhatWeOfferPage = () => {
+
   return (
     <div className="flex flex-col">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center ">
@@ -21,7 +21,6 @@ export const WhatWeOfferPage = () => {
             <p className="font-bold text-xl sm:text-xs md:text-base lg:text-xl text-center">{service.title}</p>
           </NavLink>
         ))}
-
       </section>
       <Footer />
     </div>

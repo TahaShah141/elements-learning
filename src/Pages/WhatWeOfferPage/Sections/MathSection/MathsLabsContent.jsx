@@ -1,4 +1,4 @@
-import { ContentCard } from "@/Pages/WhatWeOfferPage/Sections/ContentCard"
+import { ContentCard } from "@/components/Cards/ContentCard"
 import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
@@ -8,6 +8,7 @@ import { packages } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabC
 
 
 export const MathsLabsContent = () => {
+
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">

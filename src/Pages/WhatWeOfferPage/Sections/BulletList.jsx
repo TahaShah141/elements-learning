@@ -1,6 +1,7 @@
 import { HexagonPlayButton } from "@/components/HexagonPlayButton"
 
 export const BulletList = ({list, contentClass="text-lg"}) => {
+
   return (
     <div className="flex flex-col gap-4">
       {list.map(({title, content}) => 

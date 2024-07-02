@@ -2,9 +2,9 @@ import { Hero } from "@/Pages/LandingPage/Hero"
 import { OurJourneyMobile } from "@/Pages/LandingPage/OurJourney/OurJourneyMobile"
 import { OurJourneySection } from "@/Pages/LandingPage/OurJourney/OurJourneySection"
 import { Pillars } from "@/Pages/LandingPage/Pillars"
-import { PuzzlePieces } from "@/Pages/LandingPage/PuzzlePieces"
+import { PuzzlePieces } from "@/Pages/LandingPage/Puzzles/PuzzlePieces"
 import { Stats } from "@/Pages/LandingPage/Stats"
-import { Testimonials } from "@/Pages/LandingPage/Testimonials"
+import { Testimonials } from "@/Pages/LandingPage/Testimonials/Testimonials"
 import { WhatWeOffer } from "@/Pages/LandingPage/WhatWeOffer"
 import { Footer } from "@/components/Footer"
 import { SlidingDiv } from "@/components/SlidingDiv"
@@ -12,6 +12,7 @@ import { MultiCarousel } from "@/components/custom/MultiCarousel"
 import { LandingPageEvents } from "@/constants/LandingPage/LandingPageEvents"
 
 export const LandingPage = () => {
+
   return (
     <div className="flex flex-col overflow-hidden items-center">
       <section className="bg-[#F3EEE8] w-full justify-between flex md:px-10 xl:px-20">
@@ -30,7 +31,6 @@ export const LandingPage = () => {
         <PuzzlePieces />
       </section>
 
-      
       <section className="flex p-4 xs:p-10 sm:p-20 gap-12 md:gap-16 flex-col justify-center">
         <Pillars />
       </section>
@@ -52,9 +52,7 @@ export const LandingPage = () => {
       </section>
 
       {/* Divider */}
-      <section className="w-full p-2">
-
-      </section>
+      <section className="w-full p-2"></section>
 
       <section className="bg-[#F3EEE8] w-full p-4 sm:p-8 lg:p-12">
         <MultiCarousel items={LandingPageEvents} />

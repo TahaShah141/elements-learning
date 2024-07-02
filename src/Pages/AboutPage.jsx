@@ -1,3 +1,5 @@
+import { GoalCard } from "@/components/Cards/GoalCard";
+import { TeamCard } from "@/components/Cards/TeamCard";
 import { Footer } from "@/components/Footer";
 import { SlidingDiv } from "@/components/SlidingDiv";
 import { StaggeredHeaders } from "@/components/StaggeredHeaders";
@@ -10,36 +12,8 @@ const tailwindClasses = [
 
 ]
 
-const GoalCard = ({color, innerBg, src, title, content, index}) => {
-  return (
-    <SlidingDiv direction={"top"} delay={index*0.2} className="flex flex-row md:flex-col flex-1 rounded-[50px] rounded-tl-none gap-4 max-w-md" style={{backgroundColor: color}}>
-      <div className="flex items-center p-5 md:p-6 lg:p-12 overflow-hidden justify-center aspect-square rounded-full size-24 md:size-36 lg:size-56 rounded-tl-none" style={{backgroundColor: innerBg}}>
-        <img src={src} alt="" className="h-full" />
-      </div>
-      <div className="flex flex-1 md:flex-auto flex-col text-sm md:text-lg md:gap-1 p-6 xl:p-10 md:h-[420px] min-[800px]:h-96 min-[870px]:h-80">
-        <h4 className="font-bold text-xl xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl">{title}</h4>
-        <p className="text-xs xs:text-xs md:text-base">{content}</p>
-      </div>
-    </SlidingDiv>
-  )
-}
-
-const TeamCard = ({name, designation, corner}) => {
-
-  const cornerClass = `rounded-${corner}-none sm:rounded-${corner}-none md:rounded-${corner}-none `
-
-  return (
-    <div className={`relative group overflow-hidden rounded-[25px] sm:rounded-[40px] md:rounded-[50px] border border-black w-full aspect-[4/3] ${cornerClass} bg-orange-50`}>
-      <img src={`/team/${name}.png`} alt="Missing"  className="w-full" />
-      <div className="absolute inset-0 translate-y-full overflow-hidden group-hover:translate-y-0 gap-1 transition-all duration-500 flex flex-col justify-end p-3 sm:p-4 md:p-5 lg:p-4 xl:p-6 bg-black/40">
-        <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-2xl font-bold text-[#FBBA42]" style={{lineHeight: "1"}}>{name}</p>
-        <p className="text-[8px] xs:text-[10px] sm:text-xs line-height-1 lg:text-[10px] xl:text-sm text-white">{designation}</p>
-      </div>
-    </div>
-  )
-}
-
 export const AboutPage = () => {
+
   return (
     <div className="flex flex-col w-full">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
@@ -87,3 +61,6 @@ export const AboutPage = () => {
     </div>
   )
 }
+
+
+

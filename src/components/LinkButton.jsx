@@ -1,5 +1,6 @@
 
 export const LinkButton = ({text, bgColor, textColor}) => {
+  
   return (
     <button className="p-2 text-sm xl:p-4 xl:text-xl font-bold flex items-center group" style={{backgroundColor: bgColor, color: textColor}}>
       <p>{text}</p>

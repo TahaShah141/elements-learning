@@ -23,7 +23,6 @@ export const TabView = ({name, color, src, tabs}) => {
           <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl">{name}</h1>
           <img src={src} alt="" className="h-24 sm:h-32 lg:h-48"/>
         </div>
-
         <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
           {tabs.map(tab => <TabHeader tab={tab} onClick={() => setOpened(tab)} isOpen={opened.name === tab.name} />)}
         </div>

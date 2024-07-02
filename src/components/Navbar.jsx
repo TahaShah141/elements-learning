@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 
 const navLinkClassName = ({isActive}) => {
+
   return `transition-all duration-500 border-b-2 hover:border-[#FBBA41] ${(isActive ? "border-[#FBBA41]" : "border-transparent")}`
 }
 
@@ -57,6 +58,7 @@ export const Navbar = () => {
         </div>
       </div>
     </nav>
+    {/* Mobile Navbar */}
     <nav className="flex min-[700px]:hidden flex-col gap-2 w-full justify-center py-4 px-10 xl:px-20 border-b-2 border-[#FABF23]">
       <div className="w-full flex justify-between items-center text-sm lg:text-base ">
         <Link to={"/"} className="flex gap-2">

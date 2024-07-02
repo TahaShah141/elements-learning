@@ -6,6 +6,7 @@ import { Mail, MapPin, Smartphone } from "lucide-react"
 
 
 export const ContactPage = () => {
+
   return (
     <div className="flex flex-col">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 xs:px-10 md:px-20 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">

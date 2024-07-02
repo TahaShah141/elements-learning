@@ -1,4 +1,5 @@
 export const Jahaaz = ({innerColor="#D89000", OuterColor="#FCB500"}) => {
+  
   return (
     <div className="h-full w-full flex justify-center items-center">
       <svg viewBox="0 0 24 12" xmlns="http://www.w3.org/2000/svg">

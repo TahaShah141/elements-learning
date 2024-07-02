@@ -1,21 +1,12 @@
 import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
+import { ManipulativeCard } from "@/components/Cards/ManipulativeCard"
 import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { manipulatives } from "@/constants/WhatWeOffer/Sections/MathSections/MathsManipulativesContent/MathsManipulativeContent"
 
-const ManipulativeCard = ({name, src, color, innerColor, text, index}) => {
-  return (
-    <SlidingDiv direction={"bottom"} delay={index*0.25} className="flex gap-4 items-center rounded-3xl rounded-bl-[96px] text-2xl rounded-tl-none" style={{backgroundColor: color}}>
-      <div className="size-16 xs:size-24 sm:size-32 md:size-40 lg:size-48 rounded-full rounded-tl-none overflow-hidden p-4 sm:p-8 md:p-10 lg:p-12" style={{backgroundColor: innerColor}}>
-        <img src={src} className="w-full"/>
-      </div>
-      <p className="flex-1 text-[8px] line-height-1 xs:text-[10px] sm:text-sm md:text-base xl:text-lg"><strong>{name+": "}</strong>{text}</p>
-    </SlidingDiv>
-  )
-}
-
 export const MathsManipulativesContent = () => {
+
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
       <div className="flex flex-col gap-4">

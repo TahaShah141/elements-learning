@@ -2,6 +2,7 @@ import { StaggeredPillarHeader } from '@/Pages/LandingPage/StaggeredPillarHeader
 import { SlidingDiv } from '@/components/SlidingDiv'
 
 export const Pillars = () => {
+
   return (
     <>
     <div className="flex gap-4 sm:gap-8 md:gap-16 w-full flex-col  sm:flex-row justify-center sm:items-end">
@@ -40,7 +41,6 @@ export const Pillars = () => {
           </div>
         </SlidingDiv>
       </div>
-
     </div>
     <SlidingDiv direction="bottom" px={50}>
     <div className="xl:px-20">

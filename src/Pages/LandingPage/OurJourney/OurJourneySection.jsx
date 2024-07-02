@@ -10,6 +10,7 @@ import { useInView } from 'react-intersection-observer'
 const animationTime = 3
 
 const JourneyMarker = ({color, content, header, reverse=false, index}) => {
+
   return (
     <SlidingDiv direction={reverse ? "bottom" : "top"} delay={index*animationTime/5} className={`relative w-full`} >
       <div className={`relative w-full flex justify-center -translate-y-1/2`} >
@@ -37,8 +38,6 @@ const getTangentAngle = (xPercent) => {
   return angle
 }
 
-
-
 const Dots = ({inc=0.01, allowed=false}) => {
 
   const coords = []
@@ -50,7 +49,6 @@ const Dots = ({inc=0.01, allowed=false}) => {
     <FadeIn key={x} className="absolute bg-black size-2 rounded-full -translate-x-1/2 -translate-y-1/2" style={{left: `${x*100}%`, top: `${y}%`}} delay={(x-0.1)/0.8*animationTime}/>
   )
 }
-
 
 export const OurJourneySection = () => {
   
