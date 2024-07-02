@@ -1,106 +1,9 @@
 import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
+import { TrainingEvent } from "@/constants/WhatWeOffer/Sections/MathSections/TrainingsContent/TrainingEvent"
+import { flowchartSteps } from "@/constants/WhatWeOffer/Sections/MathSections/TrainingsContent/flowchartSteps"
 
-const events = [
-  {
-    name: "Jhang Training",
-    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
-    color: "#CFE8BE",
-    innerColor: "#B1DA94",
-    src: "/media/Lahore_Science_Mela/compressed_DSC_1417.JPG",
-    gallery: ["/media/Lahore_Science_Mela/compressed_DSC_1328.JPG","/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/Lahore_Science_Mela/compressed_DSC_1379.JPG",]
-  },
-  {
-    name: "Jhang Training",
-    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
-    color: "#CAB9DB",
-    innerColor: "#A98CC2",
-    src: "/media/Jhang Training/compressed_DSC_2707.JPG",
-    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2758.JPG",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#A7E4F9",
-    innerColor: "#6DD1F5",
-    src: "/media/Gilgit_Training/compressed_DSC07950.JPG",
-    gallery: ["/media/Gilgit_Training/compressed_DSC07950.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#FEE7BD",
-    innerColor: "#FED792",
-    src: "/media/Lahore_Science_Mela/compressed_DSC_1328.JPG",
-    gallery: ["/media/Lahore_Science_Mela/compressed_DSC_1328.JPG","/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/Lahore_Science_Mela/compressed_DSC_1379.JPG",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#F8A6D6",
-    innerColor: "#F46CBE",
-    src: "/media/Attock_Training/compressed_DSC_2991.jpg",
-    gallery: ["/media/Attock_Training/compressed_DSC_2960.jpg","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3030.jpg"]
-  },
-  {
-    name: "Jhang Training",
-    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
-    color: "#CAB9DB",
-    innerColor: "#A98CC2",
-    src: "/media/NCLS_winter_camp/compressed_DSC_4574.JPG",
-    gallery: ["/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/NCLS_winter_camp/compressed_DSC_4574.JPG","/media/NCLS_winter_camp/compressed_DSC_5040.jpg",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#FEE7BD",
-    innerColor: "#FED792",
-    src: "/media/Jhang Training/compressed_DSC_2758.JPG",
-    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2707.JPG",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#F8A6D6",
-    innerColor: "#F46CBE",
-    src: "/media/Attock_Training/compressed_DSC_2960.jpg",
-    gallery: ["/media/Attock_Training/compressed_DSC_2967.JPG","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3047.JPG"]
-  }, 
-]
-
-const flowchartSteps = [
-  {
-    name: "Sensitization Session",
-    color: "#C5AECB",
-    corner: "br",
-  },
-  {
-    name: "Critical Fundamental Concepts",
-    color: "#9FD5B5",
-    corner: "tr",
-    optionals: [
-      {
-        name: "Train the Trainer",
-        corner: "bl"
-      },
-      {
-        name: "Induction Training",
-        corner: "tl"
-      },
-    ]
-  },
-  {
-    name: "Class Assessment / Assessment for Learning",
-    color: "#9FD8EB",
-    corner: "br",
-  },
-  {
-    name: "Student Learning Impact Analysis",
-    color: "#F2CBAC",
-    corner: "tr",
-  },
-]
 
 const FlowChart = () => {
   return (
@@ -157,7 +60,7 @@ export const TrainingsContent = () => {
           <p>Through extensive face-to-face trainings with esteemed organizations and schools, such as APS, Froebels International Schools, Silver Oaks School System, FDE, FGE, NCLS, and many more to come, we ensure that teachers receive immersive learning experiences, preparing them to excel in the ever-evolving landscape of education.</p>
         </div>
         <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
-          <MultiCarousel items={events} />
+          <MultiCarousel items={TrainingEvent} />
         </section>
                
       </div>

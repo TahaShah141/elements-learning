@@ -3,95 +3,9 @@ import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
+import { MathLabEvents } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/MathLabEvents"
+import { packages } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/packages"
 
-const packages = [
-  {
-    headers: ["Basic", "Maths Lab"],
-    color: "#75BF46",
-    content: [
-      "Perfect for schools new to hands-on math learning.",
-      "Includes five fundamental tools and manipulatives.",
-      "Designed to cover key math concepts.",
-      "Initiates interactive math learning.",
-      "Improves understanding through concrete and pictorial representations.",
-
-    ]
-  },
-  {
-    headers: ["Standard", "Maths Lab"],
-    color: "#02AEEE",
-    content: [
-      "Builds on the Basic package.",
-      "Offers a wider range of tools and resources.",
-      "Includes all items in the Basic package.",
-      "Additional manipulatives and activities for complex math topics.",
-      "Supports a more comprehensive math curriculum.",
-
-    ]
-  },
-  {
-    headers: ["Premium", "Maths Lab"],
-    color: "#6C3694",
-    content: [
-      "Ideal for schools aiming to provide an enriched math learning experience.",
-      "Includes everything in the Standard package.",
-      "Premium tools, technology integration, and advanced activity tools.",
-      "Furniture designed around math learning.",
-
-    ]
-  },
-]
-
-const events = [
-  {
-    name: "Jhang Lab Setup",
-    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
-    color: "#CAB9DB",
-    innerColor: "#A98CC2",
-    src: "/media/Jhang Training/compressed_DSC_2707.JPG",
-    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2758.JPG",]
-  },
-  {
-    name: "Attock Lab Setup",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#A7E4F9",
-    innerColor: "#6DD1F5",
-    src: "/media/Attock_Training/compressed_DSC_2960.jpg",
-    gallery: ["/media/Attock_Training/compressed_DSC_2967.JPG","/media/Attock_Training/compressed_DSC_3014.jpg","/media/Attock_Training/compressed_DSC_3047.JPG"]
-  },
-  {
-    name: "Attock Lab Setup",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#FEE7BD",
-    innerColor: "#FED792",
-    src: "/media/Gilgit_Training/compressed_DSC08433.JPG",
-    gallery: ["/media/Gilgit_Training/compressed_DSC07950.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
-  },
-  {
-    name: "Attock Lab Setup",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#F8A6D6",
-    innerColor: "#F46CBE",
-    src: "/media/Jhang Training/compressed_DSC_2758.JPG",
-    gallery: ["/media/Jhang Training/compressed_DSC_2878.JPG","/media/Jhang Training/compressed_DSC_2793.JPG","/media/Jhang Training/compressed_DSC_2707.JPG",]
-  },
-  {
-    name: "Jhang Training",
-    secondaries: ["Date: 12/04/2021", "Place: Jhang"],
-    color: "#CAB9DB",
-    innerColor: "#A98CC2",
-    src: "/media/Gilgit_Training/compressed_DSC07950.JPG",
-    gallery: ["/media/Gilgit_Training/compressed_DSC08491.JPG","/media/Gilgit_Training/compressed_DSC08492.JPG","/media/Gilgit_Training/compressed_DSC08433.JPG",]
-  },
-  {
-    name: "Attock Training",
-    secondaries: ["Date: 03/08/2022", "Place: Attock"],
-    color: "#A7E4F9",
-    innerColor: "#6DD1F5",
-    src: "/media/NCLS_winter_camp/compressed_DSC_4574.JPG",
-    gallery: ["/media/NCLS_winter_camp/compressed_DSC_4616.JPG","/media/NCLS_winter_camp/compressed_DSC_4574.JPG","/media/NCLS_winter_camp/compressed_DSC_5040.jpg",]
-  },
-]
 
 export const MathsLabsContent = () => {
   return (
@@ -101,7 +15,7 @@ export const MathsLabsContent = () => {
           <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
         </div>
         <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
-          <MultiCarousel items={events} />
+          <MultiCarousel items={MathLabEvents} />
         </section>
         <CustomAccordion containerClass={"w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32"} type="multiple"
         items={[

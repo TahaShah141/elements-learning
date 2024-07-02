@@ -1,69 +1,13 @@
 import { Footer } from "@/components/Footer";
 import { SlidingDiv } from "@/components/SlidingDiv";
 import { StaggeredHeaders } from "@/components/StaggeredHeaders";
+import { goals } from "@/constants/AboutPage/goals";
+import { team } from "@/constants/AboutPage/team";
 
 const tailwindClasses = [
   "sm:rounded-tl-none sm:rounded-tr-none sm:rounded-bl-none sm:rounded-br-none",
   "md:rounded-tl-none md:rounded-tr-none md:rounded-bl-none md:rounded-br-none",
 
-]
-
-const goals = [
-  {
-    color: "#A7E4F9",
-    innerBg: "#6DD1F5",
-    title: "Access",
-    src: "/aboutpage/access.png",
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students, ensuring seamless learning experiences for all.",
-  },
-  {
-    color: "#CAB9DB",
-    innerBg: "#A98CC2",
-    title: "Quality",
-    src: "/aboutpage/quality.png",
-    content: "We are committed to delivering high-quality learning experiences through innovative methodologies and assessment frameworks, empowering students to unlock their full potential and thrive academically and personally."
-  },
-  {
-    color: "#CFE8BE",
-    innerBg: "#B1DA94",
-    title: "Relevance",
-    src: "/aboutpage/relevance.png",
-    content: "Our focus is on delivering engaging and relevant educational experiences that prepare students for success in a rapidly evolving world, ensuring their learning experiences are impactful and meaningful."
-  },
-]
-
-const team = [
-  {
-    name: "Dr. Abid Rafique",
-    designation: "Chief Executive Officer",
-    corner: "br"
-    
-  },
-  {
-    name: "Irfan Sarfraz",
-    designation: "Founder & Chief Knowledge Officer",
-    corner: "tl"
-  },
-  {
-    name: "M. Idrees Mian",
-    designation: "Founder & Chief Marketing Officer",
-    corner: "bl"
-  },
-  {
-    name: "Janita Khan",
-    designation: "Program Manager & Math Team Lead",
-    corner: "bl"
-  },
-  {
-    name: "Mahjabeen Butt",
-    designation: "Math Lead Trainer & Researcher",
-    corner: "br"
-  },
-  {
-    name: "Munazzah Younus",
-    designation: "Business Development Executive & Marketing Manager",
-    corner: "tr"
-  },
 ]
 
 const GoalCard = ({color, innerBg, src, title, content, index}) => {

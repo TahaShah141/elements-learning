@@ -1,7 +1,7 @@
 import { Footer } from "@/components/Footer"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
+import { services } from "@/constants/WhatWeOffer/services"
 import { NavLink } from "react-router-dom"
-import { services } from "../LandingPage/WhatWeOffer"
 
 
 export const WhatWeOfferPage = () => {

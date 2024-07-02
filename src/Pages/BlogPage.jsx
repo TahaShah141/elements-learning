@@ -3,49 +3,9 @@ import { LinkButton } from "@/components/LinkButton"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
+import { blogs } from "@/constants/BlogPage/blogs"
+import { news } from "@/constants/BlogPage/news"
 
-
-const news = [
-  {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
-  },
-  {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
-  },
-  {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
-  },
-]
-
-const blogs = [
-  {
-    title: "Imposter Syndrome",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
-    date: "5d ago",
-    author: "Laura.blackmoonlith.art.blog",
-    comments: 58,
-    likes: 23
-  },
-  {
-    title: "Imposter Syndrome",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
-    date: "5d ago",
-    author: "Laura.blackmoonlith.art.blog",
-    comments: 58,
-    likes: 23
-  },
-  {
-    title: "Imposter Syndrome",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
-    date: "5d ago",
-    author: "Laura.blackmoonlith.art.blog",
-    comments: 58,
-    likes: 23
-  },
-]
 
 const NewsCard = ({src, content, link, index}) => {
   return (
