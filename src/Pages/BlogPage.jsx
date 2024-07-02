@@ -1,6 +1,6 @@
+import { Footer } from "@/Pages/Footer/Footer"
 import { BlogCard } from "@/components/Cards/BlogsCard"
 import { NewsCard } from "@/components/Cards/NewsCard"
-import { Footer } from "@/components/Footer"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
 import { blogs } from "@/constants/BlogPage/blogs"

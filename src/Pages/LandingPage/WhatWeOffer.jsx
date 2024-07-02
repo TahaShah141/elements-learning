@@ -3,6 +3,7 @@ import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { IconButton } from "@/components/custom/IconButton"
 import { services } from "@/constants/WhatWeOffer/services"
 import { ArrowRightIcon } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export const WhatWeOffer = () => {
 
@@ -32,8 +33,9 @@ export const WhatWeOffer = () => {
               <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
                 {service.content}
               </p>
-              <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={"text-[#FBBA41] font-bold text-sm sm:text-lg bg-[#353535] p-1 px-2 sm:p-2"} />
-
+              <Link to={service.link}>
+                <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={"text-[#FBBA41] font-bold text-sm sm:text-lg bg-[#353535] p-2 sm:p-2"} />
+              </Link>
               </div>
             </div>
           )

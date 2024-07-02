@@ -1,5 +1,5 @@
+import { Footer } from "@/Pages/Footer/Footer"
 import { FadeIn } from "@/components/FadeIn"
-import { Footer } from "@/components/Footer"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { Mail, MapPin, Smartphone } from "lucide-react"
@@ -17,7 +17,7 @@ export const ContactPage = () => {
       </section>
       <section className="flex flex-col md:gap-4">
         <SlidingDiv direction={"top"} className="flex flex-col p-8 sm gap-2 justify-center">
-          <h3 className="text-[#FBBB40] font-bold text-2xl md:text-4xl text-center">Get in touch</h3>
+          <h3 id="location" className="text-[#FBBB40] font-bold text-2xl md:text-4xl text-center">Get in touch</h3>
           <p className="text-center text-xs sm:text-sm md:text-xl md:px-5 lg:px-20">Got questions or feedback? We're here to help! Reach out to us through the contact form below and our team will get back to you as soon as possible.</p>
         </SlidingDiv>
 
@@ -25,7 +25,7 @@ export const ContactPage = () => {
 
         <div className="flex flex-col sm:flex-row p-16 lg:px-32 xl:px-40 px-4 gap-4 justify-center">
           <SlidingDiv direction={"left"} className="flex flex-col flex-[2_0_0] gap-4">
-          <h1 className=" font-bold text-3xl text-center sm:hidden">Fill out the Form</h1>
+          <h1 id="form" className=" font-bold text-3xl text-center sm:hidden">Fill out the Form</h1>
             <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base w-full"/>
             <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base  w-full"/>
             <textarea type="text" placeholder="Your Message" className="sm:flex-1 bg-[#F3EEE8] rounded-md p-3 sm:p-4 h-32 text-xs sm:text-base  w-full"/>
@@ -33,9 +33,9 @@ export const ContactPage = () => {
           </SlidingDiv>
           <SlidingDiv direction={"right"} className="flex-[1.5_0_0] flex flex-col gap-4">
           <h1 className=" font-bold text-3xl text-center sm:hidden">Our Info</h1>
-            <div className="flex gap-2 p-4 md:p-6 rounded-md bg-[#F3EEE8]">
+            <div id="info" className="flex gap-2 p-4 md:p-6 rounded-md bg-[#F3EEE8]">
               <MapPin className="size-8 text-[#FBBB40]" /> 
-              <div className="flex flex-col gap-2">
+              <div  className="flex flex-col gap-2">
                 <p className="text-lg lg:text-2xl font-bold">Address</p>
                 <p className="text-sm md:text-base">IAEC, NUST H-12 Islamabad</p>
               </div>

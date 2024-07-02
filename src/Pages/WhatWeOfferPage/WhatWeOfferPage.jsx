@@ -1,4 +1,4 @@
-import { Footer } from "@/components/Footer"
+import { Footer } from "@/Pages/Footer/Footer"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { services } from "@/constants/WhatWeOffer/services"
 import { NavLink } from "react-router-dom"
