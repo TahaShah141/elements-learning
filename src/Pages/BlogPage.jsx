@@ -5,8 +5,11 @@ import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
 import { blogs } from "@/constants/BlogPage/blogs"
 import { news } from "@/constants/BlogPage/news"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const BlogPage = () => {
+
+  useScrollToTop()
 
  return (   
     <div className="flex flex-col">

@@ -6,8 +6,11 @@ import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { studentAssessments } from "@/constants/WhatWeOffer/Sections/MathSections/AssessmentsContents/studentAssessments"
 import { teacherAssessments } from "@/constants/WhatWeOffer/Sections/MathSections/AssessmentsContents/teacherAssessment"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const AssessmentsContent = () => {
+
+  useScrollToTop()
 
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full gap-4 p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">

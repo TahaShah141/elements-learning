@@ -4,8 +4,11 @@ import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { manipulatives } from "@/constants/WhatWeOffer/Sections/MathSections/MathsManipulativesContent/MathsManipulativeContent"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const MathsManipulativesContent = () => {
+
+  useScrollToTop()
 
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">

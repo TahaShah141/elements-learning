@@ -2,10 +2,13 @@ import { Footer } from "@/Pages/Footer/Footer"
 import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 import { Mail, MapPin, Smartphone } from "lucide-react"
 
 
 export const ContactPage = () => {
+
+  useScrollToTop()
 
   return (
     <div className="flex flex-col">

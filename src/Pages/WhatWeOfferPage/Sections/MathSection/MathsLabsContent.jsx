@@ -5,9 +5,12 @@ import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
 import { MathLabEvents } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/MathLabEvents"
 import { packages } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/packages"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 
 export const MathsLabsContent = () => {
+
+  useScrollToTop()
 
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">

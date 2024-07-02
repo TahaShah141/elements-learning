@@ -10,8 +10,11 @@ import { WhatWeOffer } from "@/Pages/LandingPage/WhatWeOffer"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
 import { LandingPageEvents } from "@/constants/LandingPage/LandingPageEvents"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const LandingPage = () => {
+
+  useScrollToTop()
 
   return (
     <div className="flex flex-col overflow-hidden items-center">

@@ -1,9 +1,12 @@
 import { Footer } from "@/Pages/Footer/Footer"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { services } from "@/constants/WhatWeOffer/services"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 import { NavLink } from "react-router-dom"
 
 export const WhatWeOfferPage = () => {
+
+  useScrollToTop()
 
   return (
     <div className="flex flex-col">

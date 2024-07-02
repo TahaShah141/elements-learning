@@ -2,11 +2,14 @@ import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
 import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 import { TextbooksPublications } from "./TextbooksPublications"
 
 export const PublicationsContent = () => {
-  return (
 
+  useScrollToTop()
+
+  return (
     <FadeIn threshold={0.01} className="flex flex-col w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl">

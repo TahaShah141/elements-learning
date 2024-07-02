@@ -1,10 +1,13 @@
 import { FadeIn } from "@/components/FadeIn"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
 import { TrainingEvent } from "@/constants/WhatWeOffer/Sections/MathSections/TrainingsContent/TrainingEvent"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 import { FlowChart } from "./FlowChart"
 
 export const TrainingsContent = () => {
 
+  useScrollToTop()
+  
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
