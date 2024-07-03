@@ -14,26 +14,31 @@ export const sections =
       {
         name: "Publications",
         src: "/whatweofferpage/maths/publication.png",
+        tabName: "publications",
         content: <PublicationsContent />
       },
       {
         name: "Trainings",
         src: "/whatweofferpage/maths/trainings.png",
+        tabName: "trainings",
         content: <TrainingsContent />
       },
       {
         name: "Maths Lab",
         src: "/whatweofferpage/maths/maths-lab.png",
+        tabName: "labs",
         content: <MathsLabsContent />
       },
       {
         name: "Manipulatives",
         src: "/whatweofferpage/maths/maths-manipulatives.png",
+        tabName: "manipulatives",
         content: <MathsManipulativesContent />
       },
       {
         name: "Assessments",
         src: "/whatweofferpage/maths/assessments.png",
+        tabName: "assessments",
         content: <AssessmentsContent />
       },
     ]
