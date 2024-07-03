@@ -44,9 +44,11 @@ export const LandingPage = () => {
 
       {/* Video Section */}
        <section className="flex gap-2 md:gap-8 lg:px-32 xl:px-40 md:p-10 p-4 xs:p-6 items-center flex-col md:flex-row">
-        <SlidingDiv direction="left" px={50} className="w-full md:w-auto md:h-48 aspect-video bg-neutral-200 rounded-lg"></SlidingDiv>
-        <SlidingDiv direction="right" px={50}>
-          <p className="text-xs xs:text-sm sm:text-base">Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.Welcome to Elements Learning (EL) Where we' reshaping K-12 education from the ground up.</p>
+        <SlidingDiv direction="left" px={50} className="w-full md:w-auto md:h-48 aspect-video bg-neutral-200 rounded-lg overflow-hidden">
+          <img src="/video/DSC_1434.JPG" alt="" className="object-cover" />
+        </SlidingDiv>
+        <SlidingDiv direction="right" px={50} className="flex-1">
+          <p className="text-xs xs:text-sm sm:text-base">Our mission is to deliver top-tier, affordable K-12 educational solutions that equip learners with the knowledge, skills, and values necessary to excel in the 21st century. We strive to utilize the finest global resources and innovative teaching methods to provide a comprehensive, engaging, and locally relevant educational experience. Our commitment extends to enhancing teacher capabilities, fostering a culture of continuous feedback, and promoting the spirit of self-learning.</p>
         </SlidingDiv>
       </section> 
 
