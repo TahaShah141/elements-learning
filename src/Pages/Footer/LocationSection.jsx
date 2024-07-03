@@ -23,8 +23,8 @@ export const LocationSection = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="sm:hidden flex bg-neutral-700 rounded-2xl h-64">
-
+            <div className="sm:hidden flex rounded-2xl h-64">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
             </div>
             <div className="flex justify-center gap-8">
               <svg className="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" fill="currentColor"/></svg>
@@ -34,8 +34,8 @@ export const LocationSection = () => {
             </div>
           </div>
         </div>
-        <div className="sm:flex flex-1 hidden bg-neutral-700 rounded-2xl h-64">
-
+        <div className="sm:flex flex-1 hidden rounded-2xl h-64">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>  
