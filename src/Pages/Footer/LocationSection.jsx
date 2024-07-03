@@ -5,7 +5,7 @@ export const LocationSection = () => {
     <div className="flex-1 flex flex-col gap-4">
       <div className="xl:flex hidden p-2 px-4 rounded-full rounded-br-none bg-[#FBBA41] font-bold">Location</div>
       <div className="p-2 border-b-2 xl:hidden border-[#FBBA41] font-bold text-white text-lg">Location</div>
-      <div className="flex-1 xl:px-12 flex gap-2 flex-col sm:flex-row xl:gap-8 text-white">
+      <div className="flex-1 xl:px-4 flex gap-2 flex-col sm:flex-row xl:gap-8 text-white">
         <div className="flex-1 flex-col text-sm md:text-base flex gap-6">
           <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magnam quasi quisquam earum exercitationem. Nulla qui, culpa sit eaque cupiditate cumque sapiente, quo quam, odio nobis laborum. Totam, obcaecati velit.
@@ -19,12 +19,11 @@ export const LocationSection = () => {
               <svg className="size-4 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" fill="currentColor"/></svg>
               <p className="md:text-lg">info@elementslearning.com</p>
             </div>
-
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="sm:hidden flex rounded-2xl h-64">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            <div className="sm:hidden flex rounded-2xl h-64 w-full">
+              <iframe className="size-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
             </div>
             <div className="flex justify-center gap-8">
               <svg className="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" fill="currentColor"/></svg>
@@ -34,8 +33,8 @@ export const LocationSection = () => {
             </div>
           </div>
         </div>
-        <div className="sm:flex flex-1 hidden rounded-2xl h-64">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div className="sm:flex flex-1 hidden rounded-2xl w-full">
+          <iframe className="size-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.501805795956!2d72.98523267424993!3d33.644157339170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df967473fa7055%3A0xc14fdbda9a155fa7!2sIAEC%20Building%2C%20Scholars%20Ave%2C%20H-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719986374086!5m2!1sen!2s" width allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>  
