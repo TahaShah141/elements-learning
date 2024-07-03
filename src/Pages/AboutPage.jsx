@@ -3,6 +3,7 @@ import { GoalCard } from "@/components/Cards/GoalCard";
 import { TeamCard } from "@/components/Cards/TeamCard";
 import { SlidingDiv } from "@/components/SlidingDiv";
 import { StaggeredHeaders } from "@/components/StaggeredHeaders";
+import { VideoToImage } from "@/components/VideoToImage";
 import { goals } from "@/constants/AboutPage/goals";
 import { team } from "@/constants/AboutPage/team";
 import { useScrollToTop } from "@/lib/useScrollToTop";
@@ -22,7 +23,7 @@ export const AboutPage = () => {
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
         <StaggeredHeaders headers={["About Us"]} containerClass="text-3xl min-[400px] text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
-          <img src="/aboutpage/aboutus.png" alt="" />
+          <VideoToImage videoSrc={"/aboutpage/aboutus.mp4"} imgSrc={"/aboutpage/aboutus.png"} className="w-full" />
         </div>
       </section>
       <section className="relative w-full overflow-hidden">

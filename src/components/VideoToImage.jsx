@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-export const VideoToImage = ({ videoSrc, imgSrc }) => {
+export const VideoToImage = ({ videoSrc, imgSrc, className=""}) => {
   const [showImage, setShowImage] = useState(false);
   const videoRef = useRef(null);
 
@@ -21,11 +21,8 @@ export const VideoToImage = ({ videoSrc, imgSrc }) => {
 
   return (
     <div>
-      {showImage ? (
-        <img src={imgSrc} alt="Illustration" />
-      ) : (
-        <video ref={videoRef} src={videoSrc} autoPlay muted playsInline />
-      )}
+      <img src={imgSrc} alt="Illustration" className={showImage ? "" : "absolute h-0 w-0 " + className} />
+      {!showImage && <video ref={videoRef} src={videoSrc}  className={className} autoPlay muted playsInline />}
     </div>
   );
 };
