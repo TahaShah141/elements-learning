@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 export const Hero = () => {
   return (
     <>
-      <div className="py-10 bg-re-500 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
+      <div className="py-10 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
         <StaggeredHeaders containerClass="px-10 md:px-0 text-6xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
         <SlidingDiv className="px-10 md:px-0" direction={"bottom"} px={10} delay={1}>
           <p className="text-xs xs:text-sm lg:text-xl">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
@@ -31,11 +31,11 @@ export const Hero = () => {
           </SlidingDiv>
         </div>
         <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-10 md:px-0">
-          <Link to={"/services/maths?tab=training"} >
-            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Training"} className={"bg-[#FBBA41] font-bold text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
+          <Link to={"/services/maths?tab=trainings"} >
+            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Training"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
           </Link>
           <Link to={"/contact"}>
-          <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Contact Us"} className={"text-[#FBBA41] font-bold text-lg xs:text-xl lg:text-2xl bg-[#353535] p-2 xs:px-4 lg:p-4"} />
+          <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Contact Us"} className={"text-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl bg-[#353535] p-2 xs:px-4 lg:p-4"} />
           </Link>
         </SlidingDiv>
       </div>
