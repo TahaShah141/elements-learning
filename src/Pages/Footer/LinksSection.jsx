@@ -13,7 +13,7 @@ export const LinksSection = () => {
           <HashLink to={"/about#goals"}>Our Goals</HashLink>
           <HashLink to={"/about#team"}>Our Team</HashLink>
         </div>
-        <div className="flex-1 flex flex-col gap-2 justify-between">
+        <div className="flex-1 flex flex-col gap-2 align-center justify-between">
           <HashLink  to={"/services"} className="font-bold text-lg underline">Services</HashLink>
           <HashLink  to={"/services"}>Trainings</HashLink>
           <HashLink  to={"/services"}>Curriculum Review</HashLink>

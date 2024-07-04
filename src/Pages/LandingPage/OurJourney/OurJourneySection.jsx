@@ -70,7 +70,7 @@ export const OurJourneySection = () => {
         {inView && 
         <>
         {journeySteps.map(({color, header, content, contentBelow}, i) => (
-          <div className="flex flex-col h-full flex-1 items-center z-10">
+          <div className="flex flex-col md:p-1 h-full flex-1 items-center z-10"> {/* add padding bcz of overlapping*/}
             <div className="w-full" style={{height: `${getPercentageY(((i*2)+1)/10)}%`}} />
             <JourneyMarker index={i} offset={0} color={color} header={header} content={content} reverse={!contentBelow} />
           </div>
