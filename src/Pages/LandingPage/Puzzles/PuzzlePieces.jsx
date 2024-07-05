@@ -3,6 +3,7 @@ import { puzzles } from "@/constants/LandingPage/puzzles";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { PuzzlePiece } from "./PuzzlePiece";
+import { useState } from "react";
 
 export const PuzzlePieces = () => {
 
@@ -23,22 +24,26 @@ export const PuzzlePieces = () => {
     threshold: 0.1
   })
 
+  const [showTabs, setShowTabs] = useState(true)
+
   return (
     <>
     <motion.div
     ref={ref}
-    className='hidden min-[450px]:flex h-16 xs:h-24 sm:h-36 md:h-48 lg:h-64 xl:h-80'
+    className='hidden sm:flex h-16 xs:h-24 sm:h-36 md:h-48 lg:h-64 xl:h-80'
     initial="hidden"
     animate={inView ? "visible" : "hidden"}
     variants={containerVariants}
+    onMouseEnter={() => setShowTabs(false)}
+    onMouseLeave={() => setShowTabs(true)}
     >
     {puzzles.map((puzzle, i) => 
-      <PuzzlePiece reverseOrder={i % 2 === 1} showTab={i !== puzzles.length - 1} {...puzzle} order={puzzles.length - i} />
+      <PuzzlePiece reverseOrder={i % 2 === 1} showTab={showTabs && i !== puzzles.length - 1} {...puzzle} order={puzzles.length - i} />
     )}
     </motion.div>
 
     {/* Mobile View */}
-    <div className='flex min-[450px]:hidden flex-col text-white'>
+    <div className='flex sm:hidden flex-col text-white'>
       <div className="grid grid-cols-2 grid-rows-3 ">
         <SlidingDiv direction={"left"} className="aspect-square relative" style={{backgroundColor: puzzles[0].color, zIndex: puzzles.length - 0}}>
           <div className="absolute size-10 rounded-md right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45" style={{backgroundColor: puzzles[0].color}}/>
