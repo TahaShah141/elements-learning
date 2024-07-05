@@ -14,7 +14,7 @@ const JourneyMarker = ({color, content, header, reverse=false, index}) => {
   return (
     <SlidingDiv direction={reverse ? "bottom" : "top"} delay={index*animationTime/5} className={`relative w-full`} >
       <div className={`relative w-full flex justify-center -translate-y-1/2`} >
-        <div className={`absolute flex flex-col lg:gap-2 items-center w-[120%] min-[1400px]:w-full md:text-xs lg:text-sm xl:text-base text-center p-4 ${reverse ? "top-0 -translate-y-full" : "bottom-0 translate-y-full"}`}>
+        <div className={`absolute flex flex-col items-center w-[120%] min-[1400px]:w-full md:text-xs lg:text-sm xl:text-base text-center p-4 lg:py-6 xl:py-8 ${reverse ? "top-0 -translate-y-full" : "bottom-0 translate-y-full"}`}>
           <h4 className='font-semibold md:text-2xl xl:text-4xl'>{header}</h4>
           <p>{content}</p>
         </div>
@@ -70,7 +70,7 @@ export const OurJourneySection = () => {
         {inView && 
         <>
         {journeySteps.map(({color, header, content, contentBelow}, i) => (
-          <div className="flex flex-col md:p-1 h-full flex-1 items-center z-10"> {/* add padding bcz of overlapping*/}
+          <div className="flex flex-col h-full flex-1 items-center z-10"> {/* add padding bcz of overlapping*/}
             <div className="w-full" style={{height: `${getPercentageY(((i*2)+1)/10)}%`}} />
             <JourneyMarker index={i} offset={0} color={color} header={header} content={content} reverse={!contentBelow} />
           </div>

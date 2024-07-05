@@ -9,7 +9,7 @@ export const AssessmentCard = ({headers, content, color, highlight, corner, numb
           <div className={`rounded-full size-24 lg:size-48 xl:size-52 p-2 lg:p-4 flex flex-col justify-center items-center rounded-${corner}-none`} style={{backgroundColor: color}}>
             <div className="flex -rotate-90 md:rotate-0 flex-col justify-center items-center">
               <h3 className="text-3xl lg:text-5xl xl:text-6xl font-bold" style={{color: highlight}}>{number}</h3>
-              <div className="flex flex-col items-center justify-center font-bold text-[10px] line-height-1 lg:text-xl xl:text-2xl">
+              <div className="flex flex-col items-center justify-center font-bold text-[10px] leading-none lg:text-xl xl:text-2xl">
                 <p>{headers[0]}</p>
                 <p>{headers[1]}</p>
               </div>
@@ -29,7 +29,7 @@ export const AssessmentCard = ({headers, content, color, highlight, corner, numb
           </div>
         </div>
       </div>
-      <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base line-height-1 text-center">
+      <p className="text-[10px] xs:text-[11px] sm:text-xs lg:text-sm xl:text-base leading-none text-center">
         {content}
       </p>
     </SlidingDiv>

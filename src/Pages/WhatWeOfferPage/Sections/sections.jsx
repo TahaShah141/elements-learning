@@ -41,6 +41,6 @@ export const sections =
         tabName: "assessments",
         content: <AssessmentsContent />
       },
-    ]
+    ],
   }
 ]

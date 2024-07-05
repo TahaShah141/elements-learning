@@ -2,7 +2,7 @@ import { IconButton } from "@/components/custom/IconButton"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { ArrowRightIcon } from "lucide-react"
-import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 export const Hero = () => {
   return (
@@ -31,12 +31,12 @@ export const Hero = () => {
           </SlidingDiv>
         </div>
         <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-10 md:px-0">
-          <Link to={"/services/maths?tab=trainings"} >
-            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Training"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
-          </Link>
-          <Link to={"/contact"}>
+          <HashLink to={"/about"} >
+            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"View More"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
+          </HashLink>
+          {/* <Link to={"/contact"}>
           <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Contact Us"} className={"text-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl bg-[#353535] p-2 xs:px-4 lg:p-4"} />
-          </Link>
+          </Link> */}
         </SlidingDiv>
       </div>
       <div className="w-full xl:w-2/5 gap-4 hidden bg-re-600 md:flex overflow-hidden">

@@ -7,7 +7,7 @@ export const ManipulativeCard = ({name, src, color, innerColor, text, index}) =>
       <div className="size-16 xs:size-24 sm:size-32 md:size-40 lg:size-48 rounded-full rounded-tl-none overflow-hidden p-4 sm:p-8 md:p-10 lg:p-12" style={{backgroundColor: innerColor}}>
         <img src={src} className="w-full"/>
       </div>
-      <p className="flex-1 text-[8px] line-height-1 xs:text-[10px] sm:text-sm md:text-base xl:text-lg"><strong>{name+": "}</strong>{text}</p>
+      <p className="flex-1 text-[8px] leading-none xs:text-[10px] sm:text-sm md:text-base xl:text-lg"><strong>{name+": "}</strong>{text}</p>
     </SlidingDiv>
   )
 }
