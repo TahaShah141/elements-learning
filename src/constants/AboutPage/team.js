@@ -16,14 +16,14 @@ export const team = [
     corner: "bl"
   },
   {
-    name: "Janita Khan",
-    designation: "Program Manager & Math Team Lead",
-    corner: "bl"
-  },
-  {
     name: "Uzma Rehman",
     designation: "ECE & Parenting Lead",
     corner: "br"
+  },
+  {
+    name: "Janita Khan",
+    designation: "Program Manager & Math Team Lead",
+    corner: "bl"
   },
   {
     name: "Munazzah Younas",
