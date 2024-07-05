@@ -6,12 +6,12 @@ export const team = [
     
   },
   {
-    name: "Irfan Sarfraz",
+    name: "Irfan Sarfaraz",
     designation: "Founder & Chief Knowledge Officer",
     corner: "tl"
   },
   {
-    name: "M. Idrees Mian",
+    name: "Mian Idrees",
     designation: "Founder & Chief Marketing Officer",
     corner: "bl"
   },
@@ -21,13 +21,53 @@ export const team = [
     corner: "bl"
   },
   {
+    name: "Uzma Rehman",
+    designation: "ECE & Parenting Lead",
+    corner: "br"
+  },
+  {
+    name: "Munazzah Younas",
+    designation: "Business Development Executive & Marketing Manager",
+    corner: "tr"
+  },
+  {
     name: "Mahjabeen Butt",
     designation: "Math Lead Trainer & Researcher",
     corner: "br"
   },
   {
-    name: "Munazzah Younus",
-    designation: "Business Development Executive & Marketing Manager",
-    corner: "tr"
+    name: "Saad Ali",
+    designation: "Admin Manager",
+    corner: "br"
+  },
+  {
+    name: "Aneeqa Sehar",
+    designation: "Information Technology",
+    corner: "br"
+  },
+  {
+    name: "Fizza Haq",
+    designation: "Quality Assurance Lead",
+    corner: "br"
+  },
+  {
+    name: "Hamza Mehmood",
+    designation: "Researcher",
+    corner: "br"
+  },
+  {
+    name: "Memoona Ahmad",
+    designation: "Maths Researcher",
+    corner: "br"
+  },
+  {
+    name: "Sadia Maqbool",
+    designation: "Science Researcher",
+    corner: "br"
+  },
+  {
+    name: "Sana Naeem",
+    designation: "Maths Trainer",
+    corner: "br"
   },
 ]
