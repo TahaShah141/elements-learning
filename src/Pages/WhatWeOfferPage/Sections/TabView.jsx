@@ -4,7 +4,7 @@ import { Link, Navigate, useLocation, useSearchParams } from "react-router-dom"
 
 const TabHeader = ({tab, isOpen, newLink}) => {
   return (
-    <Link to={newLink} className={`xs:h-16 sm:h-24 md:h-32 flex-1 lg:h-40 xl:h-48 shadow-lg p-3 xs:p-4 lg:p-6 flex flex-col gap-2 items-center sm:items-start justify-center sm:justify-end transition-all duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
+    <Link to={newLink} className={`xs:h-16 sm:h-24 md:h-32 flex-1 lg:h-40 xl:h-48 shadow-lg p-3 xs:p-4 lg:p-6 flex flex-col gap-2 items-center sm:items-start justify-center sm:justify-end transition-colors duration-300 ${isOpen ? "bg-white" : "bg-white/40 hover:bg-white/70"}`}>
       <div className="hidden sm:flex h-3/5">
         <img src={tab.src} alt="" className="h-full"/>
       </div>

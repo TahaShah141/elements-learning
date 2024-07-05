@@ -19,11 +19,11 @@ export const CustomAccordion = ({containerClass, items, type="single", changeHea
               <div className="absolute inset-0 transition-opacity duration-200 size-full opacity-100 group-hover:opacity-0">
                 <HexagonPlayButton outerColor={"#FCBA42"} innerColor={"#FFFFFF"} />
               </div>
-              <div className="absolute inset-0 transition-all duration-500 size-full opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 transition-opacity duration-500 size-full opacity-0 group-hover:opacity-100">
                 <HexagonPlayButton outerColor="#FFFFFF" innerColor="#000000" />
               </div>
               </>:
-              <div className="absolute inset-0 transition-all duration-200 size-full group-hover:rotate-90">
+              <div className="absolute inset-0 transition-opacity duration-200 size-full group-hover:rotate-90">
                 <HexagonPlayButton outerColor={"#FFFFFF"} innerColor={"#000000"} />
               </div>
               }

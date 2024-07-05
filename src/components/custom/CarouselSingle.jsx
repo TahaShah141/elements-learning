@@ -24,7 +24,7 @@ export const CarouselSingle = ({containerClass, items, nextButton, prevButton, a
     style={{position: "relative"}}>
       <div className={containerClass} style={{overflow: "hidden", position: "relative"}}>
         {items.map((item, i) => 
-          <div className="absolute inset-0 transition-all duration-300" style={{transform: `translateX(${(i-index)*100}%)`}}>
+          <div className="absolute inset-0 transition-transform duration-300" style={{transform: `translateX(${(i-index)*100}%)`}}>
             {item}
           </div>
         )}
