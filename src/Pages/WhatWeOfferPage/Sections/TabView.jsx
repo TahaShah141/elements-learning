@@ -13,19 +13,19 @@ const TabHeader = ({tab, isOpen, newLink}) => {
   )
 }
 
-export const TabView = ({name, color, src, tabs}) => {
+export const TabView = ({name, color, src, tabs=[], content=<></>}) => {
 
   const [searchParams, setSearchParams] = useSearchParams()
   const { pathname } = useLocation()
   const currentTab = searchParams.get("tab")
-  const [opened, setOpened] = useState(currentTab || tabs[0].tabName)
+  const [opened, setOpened] = useState(currentTab || tabs[0]?.tabName)
   
   useEffect(() => {
     const currentTab = searchParams.get("tab")
-    setOpened(currentTab || tabs[0].tabName)
+    setOpened(currentTab || tabs[0]?.tabName)
 
-    if (currentTab === null) setSearchParams({tab: tabs[0].tabName})
-  }, [searchParams])
+    if (currentTab === null) setSearchParams({tab: tabs[0]?.tabName})
+  }, [searchParams, tabs])
   
   return (
     <div className="flex flex-col w-full">
@@ -34,11 +34,16 @@ export const TabView = ({name, color, src, tabs}) => {
           <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl">{name}</h1>
           <img src={src} alt="" className="h-24 sm:h-32 lg:h-48"/>
         </div>
+        {tabs.length !== 0 &&
         <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
-          {tabs.map(tab => <TabHeader tab={tab} newLink={`${pathname}?tab=${tab.tabName}`} isOpen={opened === tab.tabName} />)}
-        </div>
+            {tabs.map(tab => <TabHeader tab={tab} newLink={`${pathname}?tab=${tab.tabName}`} isOpen={opened === tab.tabName} />)}
+        </div>}
       </div>
-      {tabs.find(tab => opened === tab.tabName)?.content || <Navigate to={"/404"} />}
+      {tabs.length !== 0 ? 
+      <>
+        {tabs.find(tab => opened === tab.tabName)?.content}
+      </>
+      : content}
       <Footer />
     </div>
   )

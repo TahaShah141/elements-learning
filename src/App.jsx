@@ -27,6 +27,12 @@ const router = createBrowserRouter(
       <Route path="blogs" element={<BlogPage />} />
       <Route path="services" element={<WhatWeOfferPage />}/>
       <Route path="services/maths" element={<TabView {...(sections[0])} />} />
+      <Route path="services/ece" element={<TabView {...(sections[1])} />} />
+      <Route path="services/language" element={<TabView {...(sections[2])} />} />
+      <Route path="services/steam" element={<TabView {...(sections[3])} />} />
+      <Route path="services/edtech" element={<TabView {...(sections[4])} />} />
+      <Route path="services/science" element={<TabView {...(sections[5])} />} />
+      <Route path="services/socialscience" element={<TabView {...(sections[6])} />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

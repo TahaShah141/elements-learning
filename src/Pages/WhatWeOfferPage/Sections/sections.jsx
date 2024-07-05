@@ -3,6 +3,7 @@ import { MathsLabsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/M
 import { MathsManipulativesContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/MathsManipulativesContent";
 import { PublicationsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Publications/PublicationsContent";
 import { TrainingsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Training/TrainingsContent";
+import { ECEContent } from "./ECESection/ECEContent";
 
 export const sections = 
 [
@@ -42,5 +43,41 @@ export const sections =
         content: <AssessmentsContent />
       },
     ],
-  }
+  },
+  {
+    name: "ECE",
+    color: "#DA037F50",
+    src: "/landingpage/ece.png",
+    content: <ECEContent />
+  },
+  {
+    name: "Language",
+    color: "#307F0150",
+    src: "/landingpage/language.png",
+    content: <ECEContent />
+  },
+  {
+    name: "STEAM",
+    color: "#DA037F50",
+    src: "/landingpage/steam.png",
+    content: <ECEContent />
+  },
+  {
+    name: "EdTech",
+    color: "#DA037F50",
+    src: "/landingpage/edtech.png",
+    content: <ECEContent />
+  },
+  {
+    name: "Science",
+    color: "#DA037F50",
+    src: "/landingpage/science.png",
+    content: <ECEContent />
+  },
+  {
+    name: "Social Sciences",
+    color: "#DA037F50",
+    src: "/landingpage/socialscience.png",
+    content: <ECEContent />
+  },
 ]

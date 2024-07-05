@@ -45,13 +45,13 @@ export const Navbar = () => {
             <NavLink to="/about" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Our Team</NavLink>
           </NavOption>
           <NavOption text="What We Offer" link="/services">
-            <NavLink to="/services#ece" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>ECE</NavLink>
+            <NavLink to="/services/ece" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>ECE</NavLink>
             <NavLink to="/services/maths" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Maths</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Language</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Social Science</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Science</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>STEAM</NavLink>
-            <NavLink to="/services" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Ed Tech</NavLink>
+            <NavLink to="/services/language" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Language</NavLink>
+            <NavLink to="/services/socialscience" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Social Science</NavLink>
+            <NavLink to="/services/science" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Science</NavLink>
+            <NavLink to="/services/steam" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>STEAM</NavLink>
+            <NavLink to="/services/edtech" className={`transition-all duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Ed Tech</NavLink>
           </NavOption>
           <NavOption text="News & Blogs" link="/blogs" />
           <NavOption text="Contact Us" link="/contact" />
