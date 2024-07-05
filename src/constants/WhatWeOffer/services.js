@@ -5,7 +5,7 @@ export const services = [
       illustrationSrc: "/landingpage/ece.png",
       link: "/services/ece",
       linkText: "Learn more",
-      color: "#DA037F"
+      color: "#DA037F50"
     },
     {
       title: "Maths",
@@ -13,7 +13,7 @@ export const services = [
       illustrationSrc: "/landingpage/maths.png",
       link: "/services/maths",
       linkText: "Learn more",
-      color: "#D36E08"
+      color: "#D36E0850"
     },
     {
       title: "Language",
@@ -21,7 +21,7 @@ export const services = [
       illustrationSrc: "/landingpage/language.png",
       link: "/services/language",
       linkText: "Learn more",
-      color: "#307F01"
+      color: "#307F0150"
     },
     {
       title: "Science",
@@ -29,7 +29,7 @@ export const services = [
       illustrationSrc: "/landingpage/science.png",
       link: "/services/science",
       linkText: "Learn more",
-      color: "#55088C"
+      color: "#55088C50"
     },
     {
       title: "Social Science",
@@ -37,7 +37,7 @@ export const services = [
       illustrationSrc: "/landingpage/socialscience.png",
       link: "/services/socialsciences",
       linkText: "Learn more",
-      color: "#007E3D"
+      color: "#007E3D50"
     },
     {
       title: "STEAM (connected learning)",
@@ -45,7 +45,7 @@ export const services = [
       illustrationSrc: "/landingpage/steam.png",
       link: "/services/steam",
       linkText: "Learn more",
-      color: "#00678F"
+      color: "#00678F50"
     },
     {
       title: "Ed Tech",
@@ -53,7 +53,7 @@ export const services = [
       illustrationSrc: "/landingpage/edtech.png",
       link: "/services/edtech",
       linkText: "Learn more",
-      color: "#D86B10"
+      color: "#D86B1050"
     }
   ]
   

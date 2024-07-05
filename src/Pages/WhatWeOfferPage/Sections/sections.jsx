@@ -4,11 +4,11 @@ import { MathsManipulativesContent } from "@/Pages/WhatWeOfferPage/Sections/Math
 import { PublicationsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Publications/PublicationsContent";
 import { TrainingsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Training/TrainingsContent";
 import { ECEContent } from "./ECESection/ECEContent";
-import { LanguageContent } from "./LanguageSection/LanguageContent";
-import { SteamContent } from "./SteamSection/SteamContent";
 import { EdTechContent } from "./EdTechSection/EdTechContent";
+import { LanguageContent } from "./LanguageSection/LanguageContent";
 import { ScienceContent } from "./ScienceSection/ScienceContent";
 import { SocialSciencesContent } from "./SocialSciencesSection/SocialSciencesContent";
+import { SteamContent } from "./SteamSection/SteamContent";
 
 export const sections = 
 [
@@ -63,7 +63,7 @@ export const sections =
   },
   {
     name: "STEAM",
-    color: "#DA037F50",
+    color: "#00678F50",
     src: "/landingpage/steam.png",
     content: <SteamContent />
   },
@@ -75,13 +75,13 @@ export const sections =
   },
   {
     name: "Science",
-    color: "#DA037F50",
+    color: "#55088C50",
     src: "/landingpage/science.png",
     content: <ScienceContent />
   },
   {
     name: "Social Science",
-    color: "#DA037F50",
+    color: "#007E3D50",
     src: "/landingpage/socialscience.png",
     content: <SocialSciencesContent />
   },

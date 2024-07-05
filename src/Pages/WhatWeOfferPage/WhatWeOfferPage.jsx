@@ -19,7 +19,7 @@ export const WhatWeOfferPage = () => {
       </section>
       <section className="w-full flex justify-center flex-wrap gap-4 p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20">
         {services.map( service => (
-          <NavLink to={service.link} className="rounded-3xl flex flex-col gap-2 justify-center items-center w-96 p-8 sm:w-40 sm:p-4 lg:w-64 lg:p-8 xl:w-96" style={{backgroundColor: service.color+"50"}}>
+          <NavLink to={service.link} className="rounded-3xl flex flex-col gap-2 justify-center items-center w-96 p-8 sm:w-40 sm:p-4 lg:w-64 lg:p-8 xl:w-96" style={{backgroundColor: service.color}}>
             <img src={service.illustrationSrc} alt={service.alt} className="w-full"/>
             <p className="font-bold text-xl sm:text-xs md:text-base lg:text-xl text-center">{service.title}</p>
           </NavLink>
