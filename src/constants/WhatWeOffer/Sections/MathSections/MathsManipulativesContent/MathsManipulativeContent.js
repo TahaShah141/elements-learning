@@ -5,7 +5,7 @@ export const manipulatives = [
     color: "#CFE8BE",
     innerColor: "#B1DA94",
     src: "/whatweofferpage/maths/fraction-board.png",
-    buyLink: ""
+    buyLink: "https://elemaths.shop/product/fration-board/"
   },
   {
     name: "Base-10 Blocks",
@@ -13,7 +13,7 @@ export const manipulatives = [
     color: "#CAB9DB",
     innerColor: "#A98CC2",
     src: "/whatweofferpage/maths/base-10-block.png",
-    buyLink: ""
+    buyLink: "https://elemaths.shop/product/base-10-blocks/"
   },
   {
     name: "Tangram",
@@ -21,7 +21,7 @@ export const manipulatives = [
     color: "#A7E4F9",
     innerColor: "#6DD1F5",
     src: "/whatweofferpage/maths/tangram.png",
-    buyLink: ""
+    buyLink: "https://elemaths.shop/product/tangram/"
   },
   {
     name: "Geoboard",
@@ -29,7 +29,7 @@ export const manipulatives = [
     color: "#FEE7BD",
     innerColor: "#FED792",
     src: "/whatweofferpage/maths/geoboard.png",
-    buyLink: ""
+    buyLink: "https://elemaths.shop/product/geoboard/"
   },
   {
     name: "Circular Geoboard",
@@ -37,6 +37,6 @@ export const manipulatives = [
     color: "#F8A6D6",
     innerColor: "#F46CBE",
     src: "/whatweofferpage/maths/circular-geoboard.png",
-    buyLink: ""
+    buyLink: "https://elemaths.shop/product/circular-geoboard/"
   },
 ]
