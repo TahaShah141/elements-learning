@@ -48,7 +48,7 @@ export const LandingPage = () => {
           <img src="/video/DSC_1434.JPG" alt="" className="object-cover" />
         </SlidingDiv>
         <SlidingDiv direction="right" px={50} className="flex-1">
-          <p className="text-xs xs:text-sm sm:text-base">Our mission is to deliver top-tier, affordable K-12 educational solutions that equip learners with the knowledge, skills, and values necessary to excel in the 21st century. We strive to utilize the finest global resources and innovative teaching methods to provide a comprehensive, engaging, and locally relevant educational experience. Our commitment extends to enhancing teacher capabilities, fostering a culture of continuous feedback, and promoting the spirit of self-learning.</p>
+          <p className="text-xs xs:text-sm sm:text-base">At Elements Learning, we are on a mission to eliminate students' anxiety about math and studies by revolutionizing how they learn. Our innovative Maths Lab, hands-on activities, and engaging manipulatives transform abstract concepts into tangible experiences. By making learning interactive and fun, we empower students to approach their education with confidence and enthusiasm, turning challenges into exciting opportunities for growth.</p>
         </SlidingDiv>
       </section> 
 
