@@ -78,16 +78,27 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
     style={{height: size}}>
       <div className="absolute flex flex-col justify-between transition-all duration-500" 
       onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}
-      style={{backgroundColor: items[index].color, color: "#FFFFFF", width: size*0.9, height: size, paddingRight: 0, paddingLeft: size/15, paddingTop: size/6, paddingBottom: size/7, borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`}}>
-        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">{items[index].name}</p>
-        {items[index].secondaries && 
+      style={{
+        backgroundColor: items[index].color, 
+        color: "#FFFFFF", 
+        width: size, height: size, 
+        paddingRight: 0, 
+        paddingLeft: size/8, 
+        paddingTop: size/8, 
+        paddingBottom: size/7, 
+        borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`
+      }}>
+        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">
+          {items[index].name}
+        </p>
+        {/* {items[index].secondaries && 
         <div className="hidden md:flex gap-2 md:flex-col md:gap-0 font-semibold text-xs md:text-sm lg:text-base xl:text-lg">
           {items[index].secondaries.map(text => 
             <p className="text-black">{text}</p>
           )}
-        </div>}
+        </div>} */}
       </div>
-      <div className="relative z-10 h-[45%] sm:-translate-y-[8%]" style={{width: smallerSize}}>
+      <div className="relative z-10 h-1/2 w-1 sm:-translate-y-[8%]" style={{width: smallerSize}}>
         {items.map((item, i) => (
           <div className={`absolute transition-all duration-700 bottom-0 ${i === index ? "h-full w-full" : "h-2/3 w-2/3"}`} 
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
