@@ -1,8 +1,5 @@
-import { BulletList } from "@/Pages/WhatWeOfferPage/Sections/BulletList"
 import { AssessmentCard } from "@/components/Cards/AssessmentCard"
-import { ContentCard } from "@/components/Cards/ContentCard"
 import { FadeIn } from "@/components/FadeIn"
-import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { studentAssessments } from "@/constants/WhatWeOffer/Sections/MathSections/AssessmentsContents/studentAssessments"
 import { teacherAssessments } from "@/constants/WhatWeOffer/Sections/MathSections/AssessmentsContents/teacherAssessment"
@@ -14,7 +11,7 @@ export const AssessmentsContent = () => {
 
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full gap-4 p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
-      <div className="flex flex-col gap-4">
+      {/* <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl">
           <h4 className="text-2xl xl:text-3xl">Assessments play a crucial role in the teaching and learning process, serving as valuable tools for evaluating progress, identifying areas for growth, and informing instructional decision-making.</h4>
           <p> By implementing a comprehensive assessment framework, Elements Learning (EL) ensures that both educators and students receive the support and feedback needed to achieve academic success and mastery in mathematics.</p>
@@ -28,7 +25,7 @@ export const AssessmentsContent = () => {
             {title: "Guide Differentiation", content: "Assessments inform differentiation strategies, allowing educators to customize instruction based on individual students' readiness, interests, and learning profiles."},
           ]} />
         </SlidingDiv>
-      </div>
+      </div> */}
       <CustomAccordion containerClass={"w-full"} type="multiple"
       items={[
         {
@@ -46,7 +43,7 @@ export const AssessmentsContent = () => {
           id: "Student Assessments",
           content: 
           <div className="flex flex-col flex-wrap sm:flex-row gap-4 py-2 xs:py-4 md:py-6 lg:py-8">
-            {studentAssessments.map(assessment => <ContentCard {...assessment} />)}
+            {studentAssessments.map((assessment,i) => <AssessmentCard {...assessment} index={i} />)}
           </div>
         },
       ]}
