@@ -1,5 +1,5 @@
 
-export const IconButton = ({icon, text, className="", style=""}) => {
+export const IconButton = ({icon, text, className="", style={}}) => {
 
   return (
     <button className={`group ${className}`} style={style}>
