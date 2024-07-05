@@ -4,6 +4,11 @@ import { MathsManipulativesContent } from "@/Pages/WhatWeOfferPage/Sections/Math
 import { PublicationsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Publications/PublicationsContent";
 import { TrainingsContent } from "@/Pages/WhatWeOfferPage/Sections/MathSection/Training/TrainingsContent";
 import { ECEContent } from "./ECESection/ECEContent";
+import { LanguageContent } from "./LanguageSection/LanguageContent";
+import { SteamContent } from "./SteamSection/SteamContent";
+import { EdTechContent } from "./EdTechSection/EdTechContent";
+import { ScienceContent } from "./ScienceSection/ScienceContent";
+import { SocialSciencesContent } from "./SocialSciencesSection/SocialSciencesContent";
 
 export const sections = 
 [
@@ -54,30 +59,30 @@ export const sections =
     name: "Language",
     color: "#307F0150",
     src: "/landingpage/language.png",
-    content: <ECEContent />
+    content: <LanguageContent />
   },
   {
     name: "STEAM",
     color: "#DA037F50",
     src: "/landingpage/steam.png",
-    content: <ECEContent />
+    content: <SteamContent />
   },
   {
     name: "EdTech",
     color: "#DA037F50",
     src: "/landingpage/edtech.png",
-    content: <ECEContent />
+    content: <EdTechContent />
   },
   {
     name: "Science",
     color: "#DA037F50",
     src: "/landingpage/science.png",
-    content: <ECEContent />
+    content: <ScienceContent />
   },
   {
-    name: "Social Sciences",
+    name: "Social Science",
     color: "#DA037F50",
     src: "/landingpage/socialscience.png",
-    content: <ECEContent />
+    content: <SocialSciencesContent />
   },
 ]
