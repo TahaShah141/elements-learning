@@ -4,6 +4,7 @@ import { TeamCard } from "@/components/Cards/TeamCard";
 import { SlidingDiv } from "@/components/SlidingDiv";
 import { StaggeredHeaders } from "@/components/StaggeredHeaders";
 import { VideoToImage } from "@/components/VideoToImage";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { goals } from "@/constants/AboutPage/goals";
 import { team } from "@/constants/AboutPage/team";
 import { useScrollToTop } from "@/lib/useScrollToTop";
@@ -16,14 +17,15 @@ const tailwindClasses = [
 
 export const AboutPage = () => {
 
-  useScrollToTop()
+  // useScrollToTop()
 
   return (
     <div className="flex flex-col w-full">
       <section className="bg-[#F3EEE8] p-2 xs:p-8 w-full flex flex-col-reverse min-[400px]:flex-row  min-[400px]:gap-4 lg:gap-20 justify-center items-center">
         <StaggeredHeaders headers={["About Us"]} containerClass="text-3xl min-[400px] text-4xl sm:text-6xl lg:text-9xl font-bold" direction="left" />
         <div className="max-w-[200px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px]">
-          <VideoToImage videoSrc={"/aboutpage/aboutus.mp4"} imgSrc={"/aboutpage/aboutus.png"} className="w-full" />
+          {/* <VideoToImage videoSrc={"/aboutpage/aboutus.mp4"} imgSrc={"/aboutpage/aboutus.png"} className="w-full" /> */}
+          <img src="/aboutpage/aboutus.png" alt="" className="w-full" />
         </div>
       </section>
       <section className="relative w-full overflow-hidden">
@@ -56,10 +58,11 @@ export const AboutPage = () => {
             <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Meet our dedicated team of education experts and innovators, committed to revolutionizing K-12 education through research-based practices and accessible resources.</p>
           </SlidingDiv>
         </div>
-        <div className="flex-1 w-full grid grid-cols-2 sm:grid-cols-3 gap-4 lg:grid-cols-2 min-[1100px]:grid-cols-3 flex-col">
-          {team.map(member => <TeamCard {...member} />)}
-          {team.map(member => <TeamCard {...member} />)}
-        </div>
+        <ScrollArea className="sm:flex-1 md:flex-auto h-96 lg:h-[600px] lg:flex-1">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 lg:grid-cols-2 min-[1100px]:grid-cols-3 flex-col">
+            {team.map(member => <TeamCard {...member} />)}
+          </div>
+        </ScrollArea>
       </section>
       <Footer />
     </div>
