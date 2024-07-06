@@ -88,7 +88,7 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
         paddingBottom: size/7, 
         borderRadius: `${size/10}px ${size/10}px 0px ${size/10}px`
       }}>
-        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">
+        <p className="text-xs xs:text-sm md:text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md">
           {items[index].name}
         </p>
         {/* {items[index].secondaries && 

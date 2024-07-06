@@ -1,8 +1,8 @@
 import { FadeIn } from "@/components/FadeIn"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
-import { TrainingEvent } from "@/constants/WhatWeOffer/Sections/MathSections/TrainingsContent/TrainingEvent"
 import { useScrollToTop } from "@/lib/useScrollToTop"
 import { FlowChart } from "./FlowChart"
+import { TrainingEvents } from "@/constants/WhatWeOffer/Sections/MathSections/TrainingsContent/TrainingEvent"
 
 export const TrainingsContent = () => {
 
@@ -22,7 +22,7 @@ export const TrainingsContent = () => {
           <p>Through extensive face-to-face trainings with esteemed organizations and schools, such as APS, Froebels International Schools, Silver Oaks School System, FDE, FGE, NCLS, and many more to come, we ensure that teachers receive immersive learning experiences, preparing them to excel in the ever-evolving landscape of education.</p>
         </div>
         <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
-          <MultiCarousel items={TrainingEvent} />
+          <MultiCarousel items={TrainingEvents} />
         </section>
       </div>
     </FadeIn>
