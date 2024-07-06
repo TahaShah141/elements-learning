@@ -1,4 +1,4 @@
-export const BlogCard = ({title, src, desc, comments, likes, date, author, index}) => {
+export const UpdateCard = ({title, src, desc, comments, likes, date, author, index}) => {
   
   return (
     <div className="w-full p-6 pb-8 lg:p-10 rounded-[50px] md:flex-row-reverse lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center gap-4 lg:gap-10 shadow-md bg-white border">

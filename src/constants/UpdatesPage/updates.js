@@ -1,4 +1,4 @@
-export const blogs = [
+export const updates = [
   {
     title: "Imposter Syndrome",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
