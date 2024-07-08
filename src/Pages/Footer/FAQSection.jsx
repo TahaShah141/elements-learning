@@ -45,7 +45,7 @@ export const FAQSection = () => {
         </p>
         <div className="flex flex-col text-sm md:text-bas md:px-4 gap-2 xl:px-8">
           {FAQs.map(faq => 
-          <div onClick={() => setOpened(faq)} className="flex items-center gap-2">
+          <div onClick={() => setOpened(faq)} className="flex items-center gap-2 cursor-pointer">
             <div className="size-10">
               <HexagonPlayButton outerColor="#FABB41" />
             </div>
