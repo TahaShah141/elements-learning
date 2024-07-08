@@ -96,7 +96,7 @@ export const LandingPageEvents = [
       innerColor: "#F46CBE",
       src: "/drive/RWU/0.jpg",
       gallery: [
-        "/drive/RWU/3.jpg",
+        "/drive/RWU/0.jpg",
         "/drive/RWU/1.jpg",
         "/drive/RWU/2.jpg",
         "/drive/RWU/3.jpg",
