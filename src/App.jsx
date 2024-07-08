@@ -1,5 +1,5 @@
 import { AboutPage } from "@/Pages/AboutPage"
-import { BlogPage } from "@/Pages/BlogPage"
+import { NewsPage } from "@/Pages/NewsPage"
 import { ContactPage } from "@/Pages/ContactPage"
 import { LandingPage } from "@/Pages/LandingPage/LandingPage"
 import { NotFound } from "@/Pages/NotFound"
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route index element={<LandingPage />} />
       <Route path="contact" element={<ContactPage />} />
       <Route path="about" element={<AboutPage />} />
-      <Route path="blogs" element={<BlogPage />} />
+      <Route path="news" element={<NewsPage />} />
       <Route path="services" element={<WhatWeOfferPage />}/>
       <Route path="services/maths" element={<TabView {...(sections[0])} />} />
       <Route path="services/ece" element={<TabView {...(sections[1])} />} />

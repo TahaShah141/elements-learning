@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-export const SlidingDiv = ({children, direction, className="", repeat=false, style={}, delay=0, px=10, threshold=0.5}) => {
+export const SlidingDiv = ({children, direction, className="", repeat=false, style={}, id="", delay=0, px=10, threshold=0.5}) => {
 
   const [x, y] = [
     (direction === "left" ? -px : direction === "right" ? px : 0),
@@ -20,7 +20,7 @@ export const SlidingDiv = ({children, direction, className="", repeat=false, sty
       initial={{x, y, opacity: 0}}
       animate={inView ? { x: 0, y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.5, ease: "easeOut", delay }}
-
+      id={id}
     >
       {children}
     </motion.div>
