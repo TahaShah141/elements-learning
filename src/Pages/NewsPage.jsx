@@ -4,7 +4,7 @@ import { UpdateCard } from "@/components/Cards/UpdateCard"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
 import { CarouselWithIndicators } from "@/components/custom/CarouselWithIndicators"
 import { news } from "@/constants/UpdatesPage/news"
-import { updates } from "@/constants/UpdatesPage/updates"
+import { updates } from "@/constants/UpdatesPage/update"
 import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const NewsPage = () => {
@@ -21,19 +21,19 @@ export const NewsPage = () => {
         </div>
       </section>
       <section className="flex flex-col p-4 md:px-8 lg:p-12 xl:p-20">
-        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">News</h3>
+        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">Updates</h3>
         <div className="p-8 lg:p-4">
           <CarouselWithIndicators 
           itemClassName="sm:basis-1/2 lg:basis-1/3 flex justify-center" 
           contentClassName="" 
           indicatorClassName="md:hidden"
-          items={news.map((goal, index) => <NewsCard key={goal.title} {...goal} index={index} />)}
+          items={updates.map((update, index) => <UpdateCard key={update.title} {...update} index={index} />)}
           />
         </div>
       </section>
       <section className="bg-[#F3EEE8] p-6 xs:p-8 md:p-16 lg:p-20 flex flex-col gap-8">
-        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">Updates</h3>
-        {updates.map(update => <UpdateCard {...update} />)}        
+        <h3 className="px-4 text-3xl min-[900px]:text-5xl text-left font-bold uppercase">News</h3>
+        {news.map(newss => <NewsCard {...newss} />)}        
       </section>
       <section className="flex flex-col items-center">
         <div className="flex bg-[#FBBA42] translate-y-1/4 w-4/5 flex-col p-5 lg:p-12 justify-center items-center gap-8">

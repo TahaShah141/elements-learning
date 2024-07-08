@@ -1,14 +1,26 @@
 export const news = [
   {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
+    title: "Imposter Syndrome",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
+    date: "5d ago",
+    author: "Laura.blackmoonlith.art.blog",
+    comments: 58,
+    likes: 23
   },
   {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
+    title: "Imposter Syndrome",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
+    date: "5d ago",
+    author: "Laura.blackmoonlith.art.blog",
+    comments: 58,
+    likes: 23
   },
   {
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students; ensuring seamless experiences for all.",
-    link: "#"
+    title: "Imposter Syndrome",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur animi eligendi quasi impedit possimus, itaque illo quis. Porro, reiciendis unde.",
+    date: "5d ago",
+    author: "Laura.blackmoonlith.art.blog",
+    comments: 58,
+    likes: 23
   },
 ]
