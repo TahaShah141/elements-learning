@@ -1,7 +1,7 @@
 import { AboutPage } from "@/Pages/AboutPage"
-import { NewsPage } from "@/Pages/NewsPage"
 import { ContactPage } from "@/Pages/ContactPage"
 import { LandingPage } from "@/Pages/LandingPage/LandingPage"
+import { NewsPage } from "@/Pages/NewsPage"
 import { NotFound } from "@/Pages/NotFound"
 import { TabView } from "@/Pages/WhatWeOfferPage/Sections/TabView"
 import { sections } from "@/Pages/WhatWeOfferPage/Sections/sections"

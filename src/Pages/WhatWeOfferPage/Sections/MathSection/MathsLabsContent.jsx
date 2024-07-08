@@ -3,7 +3,6 @@ import { FadeIn } from "@/components/FadeIn"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CustomAccordion } from "@/components/custom/CustomAccordion"
 import { MultiCarousel } from "@/components/custom/MultiCarousel"
-import { LandingPageEvents } from "@/constants/LandingPage/LandingPageEvents"
 import { MathLabEvents } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/MathLabEvents"
 import { packages } from "@/constants/WhatWeOffer/Sections/MathSections/MathLabContents/packages"
 import { useScrollToTop } from "@/lib/useScrollToTop"
@@ -20,7 +19,7 @@ export const MathsLabsContent = () => {
           <p>The Elements Learning (EL) Math Lab is a transformative educational environment designed to make mathematics engaging and accessible for students of all ages. Our Math Labs are meticulously designed to provide a comprehensive, hands-on learning experience primarily focused on concrete manipulatives, using the CPA (Concrete-Pictorial-Abstract) Methodology.</p>
         </div>
         <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
-          <MultiCarousel items={LandingPageEvents} />
+          <MultiCarousel items={MathLabEvents} />
         </section>
         <CustomAccordion containerClass={"w-full p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32"} type="multiple"
         items={[

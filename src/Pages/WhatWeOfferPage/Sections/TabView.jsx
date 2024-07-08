@@ -1,6 +1,6 @@
 import { Footer } from "@/Pages/Footer/Footer"
 import { useEffect, useState } from "react"
-import { Link, Navigate, useLocation, useSearchParams } from "react-router-dom"
+import { Link, useLocation, useSearchParams } from "react-router-dom"
 
 const TabHeader = ({tab, isOpen, newLink}) => {
   return (
@@ -24,7 +24,6 @@ export const TabView = ({name, color, src, tabs=[], content=<></>}) => {
     const currentTab = searchParams.get("tab")
     setOpened(currentTab || tabs[0]?.tabName)
 
-    if (currentTab === null) setSearchParams({tab: tabs[0]?.tabName})
   }, [searchParams, tabs])
   
   return (
