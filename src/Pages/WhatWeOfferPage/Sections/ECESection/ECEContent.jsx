@@ -1,6 +1,10 @@
 import { FadeIn } from "@/components/FadeIn"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const ECEContent = () => {
+
+  useScrollToTop()
+
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">

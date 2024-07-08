@@ -1,6 +1,9 @@
 import { FadeIn } from "@/components/FadeIn"
 
 export const LanguageContent = () => {
+
+  useScrollToTop()
+
   return (
     <FadeIn threshold={0.01} className="flex flex-col w-full">
       <div className="flex flex-col gap-4">
