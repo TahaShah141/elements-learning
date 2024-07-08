@@ -29,7 +29,7 @@ export const AboutPage = () => {
         </div>
       </section>
       <section id="prospects" className="relative w-full overflow-hidden">
-        <img src="/aboutpage/hero.jpg" alt="" className="w-full"/>
+        <img src="/aboutpage/hero.jpg" alt="" className="w-full max-h-screen"/>
         <div className="absolute grid px-4 xs:p-2 min-[500px]:p-5 md:p-10 lg:p-14 text-white min-[500px]:grid-cols-2 grid-rows-2 inset-0 bg-black/75">
           <SlidingDiv direction={"right"} className="flex flex-col md:gap-4 text-right min-[500px]:col-start-2 justify-center size-full">
             <h2 className="text-sm xs:text-lg min-[500px]:text-2xl md:text-3xl lg:text-6xl uppercase font-bold" >Our Mission</h2>
