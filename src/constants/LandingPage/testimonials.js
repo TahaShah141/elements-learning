@@ -4,7 +4,7 @@ export const testimonials = [
       quote: "As an experienced educator, I thought I had seen it all, but this training opened my eyes to new possibilities and approaches in teaching. The sessions were well-structured, practical, and tailored to the needs of educators. I particularly appreciated the focus on student-centered learing, differentiated instructions, and the integration of tooks/technology in teaching Maths."
     },
     {
-      person: "Teacher Trainee - Chiniote, Pakistan",
+      person: "Teacher Trainee - Chiniot, Pakistan",
       quote: "Thanks to the training program, as a Maths teacher, I feel more confident and equipped to meet the diverse needs of my students and create meaningful learning experiences. I highly recommend Elements Learning's teacher training program and the use of the tools they provide to any educator looking to enhance their teaching skills and make a positive impact in the classroom."
     },
     {
