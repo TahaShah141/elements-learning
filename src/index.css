@@ -132,6 +132,10 @@
   .flipped-content {
     transform: rotateY(-180deg);
   }
+
+  .flipped-content-anti {
+    transform: rotateY(180deg);
+  }
   
   /* Disable flipping on screens below 768px */
   @media (max-width: 400px) {
