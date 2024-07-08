@@ -2,7 +2,7 @@ import { HexagonPlayButton } from "@/components/HexagonPlayButton"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CarouselSingle } from "@/components/custom/CarouselSingle"
 import { useState } from "react"
-import samplePDF from '../../../../../../public/sample.pdf'
+import samplePDF2 from '../../../../../../public/sample.pdf'
 import { BulletList } from "../../BulletList"
 
 export const TextbooksPublications = () => {
@@ -41,13 +41,21 @@ export const TextbooksPublications = () => {
     "OVERVIEW": <img src="/media/IMG-20240401-WA0010.jpg" className="h-full" />,
     "TEACHERS": <>
       <CarouselSingle containerClass={"size-full"} items={[
-        <img src="/bookcovers/book1.jpg" className="size-full" />, 
-        <a href={samplePDF} target="_blank" rel="noreferrer"> 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book1.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
           <img src="/bookcovers/book2.jpg" className="size-full" />
         </a>, 
-        <img src="/bookcovers/book3.jpg" className="size-full" />, 
-        <img src="/bookcovers/book4.jpg" className="size-full" />, 
-        <img src="/bookcovers/book5.jpg" className="size-full" />, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book3.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book4.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book5.jpg" className="size-full" />
+        </a>, 
       ]}
       nextButton={
         <div className="size-10 lg:size-16 pr-2 xs:pr-0">
@@ -57,13 +65,21 @@ export const TextbooksPublications = () => {
     </>,
     "STUDENTS": <>
       <CarouselSingle containerClass={"size-full"} items={[
-        <img src="/bookcovers/book1.jpg" className="size-full" />, 
-        <a href={samplePDF} target="_blank" rel="noreferrer"> 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book1.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
           <img src="/bookcovers/book2.jpg" className="size-full" />
         </a>, 
-        <img src="/bookcovers/book3.jpg" className="size-full" />, 
-        <img src="/bookcovers/book4.jpg" className="size-full" />, 
-        <img src="/bookcovers/book5.jpg" className="size-full" />, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book3.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book4.jpg" className="size-full" />
+        </a>, 
+        <a href={samplePDF2} target="_blank" rel="noreferrer"> 
+          <img src="/bookcovers/book5.jpg" className="size-full" />
+        </a>, 
       ]}
       nextButton={
         <div className="size-10 lg:size-16 pr-2 xs:pr-0">
