@@ -32,8 +32,8 @@ export const ContactPage = () => {
         <div className="flex flex-col sm:flex-row p-16 lg:px-32 xl:px-40 px-4 gap-4 justify-center">
           <SlidingDiv direction={"left"} className="flex flex-col flex-[2_0_0] gap-4">
           <h1 id="form" className=" font-bold text-3xl text-center sm:hidden">Fill out the Form</h1>
-            <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base w-full"/>
-            <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base  w-full"/>
+              <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base w-full"/>
+              <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base  w-full"/>
             <textarea type="text" placeholder="Your Message" className="sm:flex-1 bg-[#F3EEE8] rounded-md p-3 sm:p-4 h-32 text-xs sm:text-base  w-full"/>
             <button className="bg-[#FBBA41] rounded-md p-2 sm:text-base text-sm sm:p-4 font-bold">Submit</button>
           </SlidingDiv>
