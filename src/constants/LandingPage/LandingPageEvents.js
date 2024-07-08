@@ -90,4 +90,16 @@ export const LandingPageEvents = [
         "/drive/CEOCEFVisit/4.jpg",
       ]            
     },
+    {
+      name: "RWU Jobfair 2024",
+      color: "#F8A6D6",
+      innerColor: "#F46CBE",
+      src: "/drive/RWU/0.jpg",
+      gallery: [
+        "/drive/RWU/3.jpg",
+        "/drive/RWU/1.jpg",
+        "/drive/RWU/2.jpg",
+        "/drive/RWU/3.jpg",
+      ]            
+    },
   ]
