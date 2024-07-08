@@ -11,7 +11,7 @@ export const services = [
       title: "Maths",
       content: "Enhancing math education with innovative resources like Maths Labs, interactive corners, and recreational activities, all based on the CPA methodology for deeper understanding.",
       illustrationSrc: "/landingpage/maths.png",
-      link: "/services/maths",
+      link: "/services/maths?tab=publications",
       linkText: "Learn more",
       color: "#D36E0850"
     },
@@ -35,7 +35,7 @@ export const services = [
       title: "Social Science",
       content: "Comprehensive resources and interactive materials covering history, geography, civics, and cultural studies to foster critical thinking and global understanding.",
       illustrationSrc: "/landingpage/socialscience.png",
-      link: "/services/socialsciences",
+      link: "/services/socialscience",
       linkText: "Learn more",
       color: "#007E3D50"
     },
