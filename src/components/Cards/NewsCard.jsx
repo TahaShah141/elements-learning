@@ -1,7 +1,7 @@
 export const NewsCard = ({title, src, desc,  date,}) => {
   
   return (
-    <div className="w-full p-6 pb-8 lg:p-10 rounded-[50px] md:flex-row-reverse lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center gap-4 lg:gap-10 shadow-md bg-white border">
+    <div className="w-full p-6 pb-8 lg:p-10 rounded-[50px] md:flex-row-reverse md:items-start  lg:flex-row rounded-br-none flex flex-col-reverse justify-center items-center lg:items-center gap-4 lg:gap-10 shadow-md bg-white border">
       <div className="flex flex-col gap-4 flex-1">
         <div className="flex flex-col text-xs xs:text-sm md:text-base">
           <h4 className="font-bold text-xl xs:text-2xl sm:text-3xl">{title}</h4>
