@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const navLinkClassName = ({isActive}) => {
 
@@ -41,8 +42,8 @@ export const Navbar = () => {
         </Link>
         <div className="flex gap-2 xl:gap-10 items-center">
           <NavOption text="About Us" link="/about">
-            <NavLink to="/about" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Mission & Vision</NavLink>
-            <NavLink to="/about" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Our Team</NavLink>
+            <HashLink to="/about#prospects" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Mission & Vision</HashLink>
+            <HashLink to="/about#team" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Our Team</HashLink>
           </NavOption>
           <NavOption text="What We Offer" link="/services">
             <NavLink to="/services/ece" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>ECE</NavLink>
