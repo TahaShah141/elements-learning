@@ -1,5 +1,5 @@
 
-export const BlogHeader = ({size="BASE", weight="BOLD", text}) => {
+export const BlogHeader = ({size="BASE", weight="SEMI", style="NONE", text}) => {
 
   const sizes = {
     "SMALL": "text-base md:text-lg xl:text-xl",
@@ -9,11 +9,17 @@ export const BlogHeader = ({size="BASE", weight="BOLD", text}) => {
   }
 
   const weights = {
+    "SEMI": "font-semibold",
     "BOLD": "font-bold"
   }
 
+  const styles = {
+    "NONE": "",
+    "ITALIC": "italic"
+  }
+
   return (
-    <h3 className={`${sizes[size]} ${weights[weight]}`}>
+    <h3 className={`${sizes[size]} ${styles[style]} ${weights[weight]}`}>
       {text}
     </h3>
   )
