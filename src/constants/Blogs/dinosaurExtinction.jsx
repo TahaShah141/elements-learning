@@ -7,6 +7,7 @@ export const dinosaurExtinction = {
   title: "The story of dinosaur extinction",
   author: "Irfan Sarfaraz",
   date: "2022-01-01",
+  summary: "",
   headerSrc: "",
   content: [
     <BlogBullets headerSize={"LARGE"} style="NUMBER" header={"This is how dots were connected"} points={[

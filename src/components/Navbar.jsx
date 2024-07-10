@@ -53,6 +53,7 @@ export const Navbar = () => {
             <NavLink to="/services/steam" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>STEAM</NavLink>
             <NavLink to="/services/edtech" className={`transition-colors duration-500 border-b-2 border-transparent hover:border-[#FBBA41] w-full`}>Ed Tech</NavLink>
           </NavOption>
+          <NavOption text="Blogs" link="/blogs" />
           <NavOption text="News & Updates" link="/news" />
           <NavOption text="Contact Us" link="/contact" />
         </div>
@@ -72,10 +73,11 @@ export const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className={`w-full transition-all duration-300 overflow-hidden ${opened ? "h-48" : "h-0"}`}>
-        <div onClick={() => setOpened(false)} className="flex flex-col h-full text-xl gap-4 xl:gap-10 justify-center items-center">
+      <div className={`w-full transition-all duration-300 overflow-hidden ${opened ? "h-64" : "h-0"}`}>
+        <div onClick={() => setOpened(false)} className="flex flex-col h-full text-xl gap-4 xl:gap-10 justify-center items-start">
           <NavLink to="/about" className={`border-b-2 border-[#FBBA41]`}>About Us</NavLink>
           <NavLink to="/services" className={`border-b-2 border-[#FBBA41]`}>What we Offer</NavLink>
+          <NavLink to="/blogs" className={`border-b-2 border-[#FBBA41]`}>Blogs</NavLink>
           <NavLink to="/news" className={`border-b-2 border-[#FBBA41]`}>News & Updates</NavLink>
           <NavLink to="/contact" className={`border-b-2 border-[#FBBA41]`}>Contact Us</NavLink>
         </div>

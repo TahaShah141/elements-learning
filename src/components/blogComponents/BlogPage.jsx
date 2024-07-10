@@ -1,6 +1,6 @@
 import { FadeIn } from "../FadeIn"
 
-export const Blog = ({title, headerSrc, content, author, date}) => {
+export const BlogPage = ({title, headerSrc, content, author, date}) => {
   return (
     <div className="flex flex-col gap-2">
       {headerSrc &&
