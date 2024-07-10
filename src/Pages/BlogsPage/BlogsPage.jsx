@@ -1,6 +1,7 @@
 import { allBlogs } from "@/constants/Blogs/allBlogs"
 import { BlogCard } from "./BlogCard"
 import { StaggeredHeaders } from "@/components/StaggeredHeaders"
+import { Footer } from "../Footer/Footer"
 
 export const BlogsPage = () => {
   return (
@@ -15,6 +16,7 @@ export const BlogsPage = () => {
         {allBlogs.map(blog => <BlogCard {...blog} />)}
         {allBlogs.map(blog => <BlogCard {...blog} />)}
       </div>
+      <Footer />
     </div>
   )
 }

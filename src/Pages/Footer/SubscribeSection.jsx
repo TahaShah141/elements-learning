@@ -15,7 +15,7 @@ export const SubscribeSection = () => {
           <p className="">Subscribe to our Newsletters and stuff.</p>
           <div className="flex gap-2">
             <input type="text" className="flex-1 text-black px-2 min-w-0"/>
-            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Subscribe"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
+            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Subscribe"} className={"bg-[#FBBA41] font-bold text-sm sm:text-base lg:text-lg text-white p-2 xs:px-4"} />
           </div>
         </div>
       </div>
