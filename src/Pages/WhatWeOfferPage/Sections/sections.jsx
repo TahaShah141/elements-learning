@@ -50,7 +50,7 @@ export const sections =
     ],
   },
   {
-    name: "ECE",
+    name: "Early Childhood Education",
     color: "#DA037F50",
     src: "/landingpage/ece.png",
     content: <ECEContent />

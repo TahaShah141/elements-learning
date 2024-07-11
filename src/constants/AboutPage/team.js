@@ -42,7 +42,7 @@ export const team = [
   },
   {
     name: "Aneeqa Sehar",
-    designation: "IT Officer",
+    designation: "IT Manager",
     corner: "br"
   },
   {
@@ -52,7 +52,7 @@ export const team = [
   },
   {
     name: "Hamza Mehmood",
-    designation: "Researcher",
+    designation: "Knowledge Officer",
     corner: "br"
   },
   {
