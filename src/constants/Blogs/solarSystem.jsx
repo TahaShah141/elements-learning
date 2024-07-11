@@ -5,7 +5,7 @@ import { BlogParagraph } from "@/components/blogComponents/BlogParagraph";
 export const solarSystem = {
   id: "4",
   title: "Our Solar System",
-  author: "Irfan Sarfaraz",
+  author: "EL Knowledge Management Team",
   summary: "",
   date: "2022-01-01",
   headerSrc: "",

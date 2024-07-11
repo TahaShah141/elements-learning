@@ -5,7 +5,7 @@ import { BlogParagraph } from "@/components/blogComponents/BlogParagraph";
 export const dinosaurExtinction = {
   id: "1",
   title: "The story of dinosaur extinction",
-  author: "Irfan Sarfaraz",
+  author: "EL Knowledge Management Team",
   date: "2022-01-01",
   summary: "",
   headerSrc: "",

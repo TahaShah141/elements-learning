@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <>
       <div className="py-10 xs:py-16 sm:py-24 md:max-w-lg flex w-full flex-col gap-4 lg:gap-8">
-        <StaggeredHeaders containerClass="px-10 md:px-0 text-6xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl text-[#353535] font-bold" headers={["Life", "Long", "Learning."]}/>
+        <StaggeredHeaders headers={["Learning.", "Through", "Life"]} containerClass="px-10 md:px-0 text-6xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl text-[#353535] font-bold"/>
         <SlidingDiv className="px-10 md:px-0" direction={"bottom"} px={10} delay={1}>
           <p className="text-xs xs:text-sm lg:text-xl">Welcome to Elements Learning (EL), where we're reshaping K-12 education from the ground up.</p>
         </SlidingDiv>

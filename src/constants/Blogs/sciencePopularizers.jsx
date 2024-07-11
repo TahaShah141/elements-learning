@@ -3,7 +3,7 @@ import { BlogParagraph } from "@/components/blogComponents/BlogParagraph";
 export const sciencePopularizers = {
   id: "2",
   title: "Science Popularizers",
-  author: "Irfan Sarfaraz",
+  author: "EL Knowledge Management Team",
   summary: "",
   date: "2022-01-02",
   headerSrc: "",

@@ -1,12 +1,5 @@
 export const goals = [
   {
-    color: "#A7E4F9",
-    innerBg: "#6DD1F5",
-    title: "Access",
-    src: "/aboutpage/access.png",
-    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students, ensuring seamless learning experiences for all.",
-  },
-  {
     color: "#CAB9DB",
     innerBg: "#A98CC2",
     title: "Quality",
@@ -19,5 +12,12 @@ export const goals = [
     title: "Relevance",
     src: "/aboutpage/relevance.png",
     content: "Our focus is on delivering engaging and relevant educational experiences that prepare students for success in a rapidly evolving world, ensuring their learning experiences are impactful and meaningful."
+  },
+  {
+    color: "#A7E4F9",
+    innerBg: "#6DD1F5",
+    title: "Access",
+    src: "/aboutpage/access.png",
+    content: "We prioritize accessibility by providing easily accessible learning resources for educators, parents, and students, ensuring seamless learning experiences for all.",
   },
 ]

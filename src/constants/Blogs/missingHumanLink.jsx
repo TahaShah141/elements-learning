@@ -3,7 +3,7 @@ import { BlogParagraph } from "@/components/blogComponents/BlogParagraph";
 export const missingHumanLink = {
   id: "3",
   title: "The missing link of humans - it is still missing!",
-  author: "Irfan Sarfaraz",
+  author: "EL Knowledge Management Team",
   summary: "",
   date: "2022-01-03",
   headerSrc: "",
