@@ -2,7 +2,7 @@ import { HexagonPlayButton } from "@/components/HexagonPlayButton"
 import { SlidingDiv } from "@/components/SlidingDiv"
 import { CarouselSingle } from "@/components/custom/CarouselSingle"
 import { useState } from "react"
-import samplePDF2 from '../../../../../../public/sample.pdf'
+import samplePDF2 from '../../../../../../public/sample2.pdf'
 import { BulletList } from "../../BulletList"
 
 export const TextbooksPublications = () => {
