@@ -2,7 +2,7 @@ export const updates = [
   {
     src: "/News&Updates/Updates/MOUSigningSilverOaks.JPG",
     title: "MOU Signing Silver Oaks",
-    content: "Elements Learning and Silver Oaks Schools System Unite: MOU Signing Ceremony Marks the Establishment of 22 Math Labs and Teachers Training. It is a step toward academic excellence!",
+    content: "Elements Learning and Silver Oaks Schools System had an MOU Signing Ceremony that marks the Establishment of 22 Math Labs and Teachers Training. It is a step toward academic excellence!",
   },
   {
     src: "/News&Updates/Updates/APSMathTraining.jpg",
