@@ -27,7 +27,7 @@ export const team = [
   },
   {
     name: "Munazzah Younas",
-    designation: "Business Development Executive & Marketing Manager",
+    designation: "Business Development & Marketing Manager",
     corner: "tr"
   },
   {
@@ -42,7 +42,7 @@ export const team = [
   },
   {
     name: "Aneeqa Sehar",
-    designation: "Information Technology",
+    designation: "IT Officer",
     corner: "br"
   },
   {
