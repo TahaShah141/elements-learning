@@ -16,7 +16,7 @@ const JourneyMarker = ({color, content, header, reverse=false, index}) => {
       <div className={`relative w-full flex justify-center -translate-y-1/2`} >
         <div className={`absolute flex flex-col items-center w-[120%] min-[1400px]:w-full md:text-xs lg:text-sm xl:text-base text-center p-4 lg:py-6 xl:py-8 ${reverse ? "top-0 -translate-y-full" : "bottom-0 translate-y-full"}`}>
           <h4 className='font-semibold md:text-2xl xl:text-3xl'>{header}</h4>
-          <p>{content}</p>
+          {content}
         </div>
         <Bullet color={color} />
       </div>

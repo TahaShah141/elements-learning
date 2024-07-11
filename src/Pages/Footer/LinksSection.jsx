@@ -14,18 +14,18 @@ export const LinksSection = () => {
           <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"/about#team"}>Our Team</HashLink>
         </div>
         <div className="flex-1 flex flex-col gap-2 justify-between">
-          <HashLink  to={"/services"} className="font-bold text-lg sm:pb-6 hover:underline">Services</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}   to={"/services"}>Trainings</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}  to={"/services"}>Curriculum Review</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}  to={"/services"}>Environment Design</HashLink>
+          <HashLink  to={"/services"} className="font-bold text-lg sm:pb-6 hover:underline">What We Offer</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}   to={"/services/maths?tab=publications"}>Maths</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}  to={"/services/science"}>Science</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "}  to={"/services/language"}>Language</HashLink>
           <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight opacity-0"} >-</HashLink>
         </div>
         <div className="flex-1 flex flex-col gap-2 justify-between">
-          <HashLink to={"https://elemaths.shop/products/"} target="_blank" className="font-bold text-lg sm:pb-6 hover:underline">Products</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/products/"} target="_blank">Mathematics</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/product-category/maths-lab/"}>Maths Lab</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/"} target="_blank">Olympiad</HashLink>
-          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/"} target="_blank">E Tutor</HashLink>
+          <HashLink to={"https://elemaths.shop/"} target="_blank" className="font-bold text-lg sm:pb-6 hover:underline">Our Shop</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/product/tangram"} target="_blank">Tangram</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/product/geoboard"}>Geoboard</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/product/base-10-blocks"} target="_blank">Base 10 Blocks</HashLink>
+          <HashLink className={"hover:text-white text-neutral-300 sm:h-10 md:h-auto xl:h-10 leading-tight "} to={"https://elemaths.shop/product/fration-board"} target="_blank">Fraction Board</HashLink>
         </div>
         <div className="flex-1 flex flex-col gap-2 justify-between">
           <HashLink to={"/contact"} className="font-bold text-lg sm:pb-6 hover:underline">Contact Us</HashLink>

@@ -9,16 +9,16 @@ export const WhatWeOffer = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-start gap-8">
+      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
 
-        <div className="rounded-md flex-1 flex flex-col sm:flex-row lg:flex-col xs:gap-2 sm:gap-8 justify-end items-end gap-px">
+        <div className="rounded-md flex-1 flex flex-col sm:flex-row lg:flex-col gap-12 sm:gap-8 justify-end items-end">
           <div className="max-w-[400px]">
             <img src="/landingpage/services.png" alt="" />
           </div>
           
-          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
-            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl">What we offer</h2>
-            <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
+          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[550px] xl:text-right">
+            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">What we offer</h2>
+            <p className="text-base md:text-xl lg:text-xl xl:tet-2xl">Transforming education at every level, Elements Learning System offers holistic solutions for K-12 success. Backed by NUST, we are merging experience with innovation to shape future leaders.</p>
           </SlidingDiv>
         </div>
         <CustomAccordion changeHeaders={true} containerClass={"flex-1"} items={services.map(service => ({
@@ -33,8 +33,8 @@ export const WhatWeOffer = () => {
               <p className="text-xs sm:text-base md:text-lg lg:text-sm xl:text-base">
                 {service.content}
               </p>
-              <Link to={service.link}>
-                <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={"text-[#FBBA41] font-bold text-sm sm:text-lg bg-[#353535] p-2 sm:p-2"} />
+              <Link to={service.disabled ? "" : service.link}>
+                <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={`font-bold text-sm sm:text-lg p-2 sm:p-2 ${service.disabled ? "bg-gray-200 text-gray-600" : "bg-[#353535] text-[#FBBA41]"}`} />
               </Link>
               </div>
             </div>

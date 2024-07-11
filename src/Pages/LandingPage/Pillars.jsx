@@ -45,7 +45,7 @@ export const Pillars = () => {
     <SlidingDiv direction="bottom" px={50}>
     <div className="xl:px-20">
       <p className="sm:text-lg text-center">
-      Quality education, as envisioned by Elements Learning, rides on the sturdy foundation of four crucial components: well-crafted teaching materials that engage and enlighten, continuous teacher training that inspires and empowers, rigorous assessments to measure progress and potential, and dynamic school leadership to steer towards excellence. These elements form the backbone of a holistic educational journey, fostering intellectual, emotional, and spiritual growth in students.</p>
+      Quality education, as <strong>envisioned by Elements Learning</strong>, rides on the sturdy foundation of four crucial components: well-crafted teaching materials that <i>engage and enlighten</i>, continuous teacher training that <i>inspires and empowers</i>, rigorous assessments to measure <i>progress and potential</i>, and dynamic school leadership to <i>steer towards excellence.</i> These elements form the backbone of a <strong>holistic educational journey</strong>, fostering intellectual, emotional, and spiritual growth in students.</p>
     </div>
     </SlidingDiv>
     </>

@@ -1,8 +1,8 @@
 export const puzzles = [
     {
       letter: "P",
-      header: "Playful",
-      meaning: "exploration",
+      header: "Play",
+      meaning: "to explore",
       color: "#FBBA42",
       content: "At Elements Learning, play is essential to our methodology, fostering curiosity and creativity. Engaging in playful activities helps students explore concepts naturally, making learning enjoyable and memorable."
     },
