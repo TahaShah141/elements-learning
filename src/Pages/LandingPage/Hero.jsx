@@ -32,7 +32,7 @@ export const Hero = () => {
         </div>
         <SlidingDiv direction={"bottom"} delay={1} className="flex gap-4 px-10 md:px-0">
           <HashLink to={"/about"} >
-            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"View More"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
+            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={"bg-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl text-white p-2 xs:px-4 lg:p-4"} />
           </HashLink>
           {/* <Link to={"/contact"}>
           <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Contact Us"} className={"text-[#FBBA41] font-bold text-sm py-3 sm:text-lg xs:text-xl lg:text-2xl bg-[#353535] p-2 xs:px-4 lg:p-4"} />

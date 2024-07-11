@@ -49,7 +49,7 @@ export const FAQSection = () => {
             <div className="size-10">
               <HexagonPlayButton outerColor="#FABB41" />
             </div>
-            <p className="flex items-end py-1 w-full border-b border-white">{faq.question}</p>
+            <p className="flex items-end py-1 w-full border-b hover:border-white border-neutral-300">{faq.question}</p>
           </div>
           )}
         </div>

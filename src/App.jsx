@@ -8,6 +8,8 @@ import { sections } from "@/Pages/WhatWeOfferPage/Sections/sections"
 import { WhatWeOfferPage } from "@/Pages/WhatWeOfferPage/WhatWeOfferPage"
 import { Navbar } from "@/components/Navbar"
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
+import { BlogsPage } from "./Pages/BlogsPage/BlogsPage"
+import { Blog } from "./Pages/BlogsPage/Blog"
 
 const RootLayout = () => {
   return (
@@ -26,6 +28,10 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutPage />} />
       <Route path="news" element={<NewsPage />} />
       <Route path="services" element={<WhatWeOfferPage />}/>
+      <Route path="blogs">
+        <Route index element={<BlogsPage />} />
+        <Route path=":blogID" element={<Blog />} />
+      </Route>
       <Route path="services/maths" element={<TabView {...(sections[0])} />} />
       <Route path="services/ece" element={<TabView {...(sections[1])} />} />
       <Route path="services/language" element={<TabView {...(sections[2])} />} />

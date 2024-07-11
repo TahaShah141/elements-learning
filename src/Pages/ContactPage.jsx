@@ -35,7 +35,7 @@ export const ContactPage = () => {
             <input type="text" placeholder="Your Name" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base w-full"/>
             <input type="text" placeholder="Enter Your Email" className="bg-[#F3EEE8] rounded-md p-3 sm:p-4 text-xs sm:text-base  w-full"/>
             <textarea type="text" placeholder="Your Message" className="sm:flex-1 bg-[#F3EEE8] rounded-md p-3 sm:p-4 h-32 text-xs sm:text-base  w-full"/>
-            <button className="bg-[#FBBA41] rounded-md p-2 sm:text-base text-sm sm:p-4 font-bold">Submit</button>
+            <button className="bg-[#FBBA41] hover:bg-light-black hover:text-[#FBBA41] transition-colors rounded-md p-2 sm:text-base text-sm sm:p-4 font-bold">Submit</button>
           </SlidingDiv>
           <SlidingDiv id="info" direction={"right"} className="flex-[1.5_0_0] flex flex-col gap-4">
           <h1 className=" font-bold text-3xl text-center sm:hidden">Our Info</h1>

@@ -1,3 +1,5 @@
+import { IconButton } from "@/components/custom/IconButton"
+import { ArrowRightIcon } from "lucide-react"
 
 export const SubscribeSection = () => {
 
@@ -13,7 +15,7 @@ export const SubscribeSection = () => {
           <p className="">Subscribe to our Newsletters and stuff.</p>
           <div className="flex gap-2">
             <input type="text" className="flex-1 text-black px-2 min-w-0"/>
-            <button className="bg-[#FBBA41] p-1 sm:text-base text-sm sm:p-2 sm:px-4 font-bold">Submit</button>
+            <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Subscribe"} className={"bg-[#FBBA41] font-bold text-sm sm:text-base lg:text-lg text-white p-2 xs:px-4"} />
           </div>
         </div>
       </div>

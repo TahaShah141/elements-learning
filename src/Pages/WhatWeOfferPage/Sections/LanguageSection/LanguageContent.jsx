@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/FadeIn"
+import { useScrollToTop } from "@/lib/useScrollToTop"
 
 export const LanguageContent = () => {
 
