@@ -1,6 +1,33 @@
 import { FadeIn } from "../FadeIn"
+import { BlogBullets } from "./BlogBullets"
+import { BlogHeader } from "./BlogHeader"
+import { BlogImage } from "./BlogImage"
+import { BlogParagraph } from "./BlogParagraph"
+
+const BlogComponent = ({type, ...props}) => {
+  switch (type) {
+    case "paragraph": {
+      return <BlogParagraph {...props} />
+    }
+    case "header": {
+      return <BlogHeader {...props} />
+    }
+    case "bullets": {
+      return <BlogBullets {...props} />
+    }
+    case "image": {
+      return <BlogImage {...props} />
+    }
+    default: {
+      return <p className="font-bold text-3xl text-red-500">Error in BLOG JSON</p>
+    }
+  }
+}
 
 export const BlogPage = ({title, headerSrc, content, author, date}) => {
+
+  console.log(content)
+
   return (
     <div className="flex flex-col gap-2">
       {headerSrc &&
@@ -17,7 +44,7 @@ export const BlogPage = ({title, headerSrc, content, author, date}) => {
           </div>
           <p className="hidden sm:block text-sm italic">{date}</p>
         </div>
-        {content}
+        {content?.map(({type, ...props}) => <BlogComponent type={type} {...props} />)}
       </FadeIn>
     </div>
   )
