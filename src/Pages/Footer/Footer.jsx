@@ -18,7 +18,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-white font-bold flex justify-between py-2 xl:p-4 text-xs sm:text-sm md:text-base xl:text-lg">
-        <p>© Elements Learning 2024</p>
+        <p>© Elements Learning Pvt Ltd.</p>
         <p>Privacy Policy</p>
       </div>
     </footer>
