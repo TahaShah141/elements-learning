@@ -17,7 +17,7 @@ const tailwindClasses = [
 
 export const AboutPage = () => {
 
-  // useScrollToTop()
+  useScrollToTop()
 
   return (
     <div className="flex flex-col w-full">
