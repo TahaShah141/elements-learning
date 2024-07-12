@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { HexagonPlayButton } from "../HexagonPlayButton"
 import { CarouselSingle } from "./CarouselSingle"
+import { ArrowRightCircle, ChevronUp } from "lucide-react"
 
 export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
 
@@ -98,15 +99,32 @@ export const MultiCarousel = ({items, autoScroll=true, delay=3000}) => {
           )}
         </div>} */}
       </div>
-      <div className="relative z-10 h-1/2 w-1 sm:-translate-y-[8%]" style={{width: smallerSize}}>
+      <div className="relative z-10 h-1/2 sm:-translate-y-[8%]" style={{width: smallerSize}}>
         {items.map((item, i) => (
           <div className={`absolute transition-all duration-700 bottom-0 ${i === index ? "h-full w-full" : "h-2/3 w-2/3"}`} 
           style={{backgroundColor: item.innerColor, transform: `${index > i ? `translateX(calc(${100*1/2}% + ${(index-i) * (smallerSize*(2/3) + gapSize)}px))` : `translateX(${(index-i) * (smallerSize*(2/3) + gapSize) }px)`}`}}
           onClick={() => (i === index) ? setOpened(true) : setIndex(i)}
           >
-            <img src={item.src} alt="" className="size-full shadow-lg" />
+            <div src={item.src} alt="" className={`relative overflow-hidden size-full shadow-lg ${i === index ? "group" : ""}`}>
+              <img src={item.src} alt="" className="size-full shadow-lg" />
+              <div className="absolute inset-0 overflow-hidden bg-black/75 translate-y-full group-hover:translate-y-0 transition-all duration-300 flex flex-col justify-end xs:p-1 sm:p-2 md:p-3 lg:p-4 xl:p-6 xs:gap-1 md:gap-2">
+                <div className="text-[#FCBA42] font-bold text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl flex lg:gap-1 items-center">
+                  <p><span className="hidden md:inline-block">Click to</span> View More</p>
+                  <ArrowRightCircle className="size-2 md:size-4" />
+                </div>
+                <div className="flex justify-between gap-2 h-1/5 w-full">
+                  {item.gallery.map(src => 
+                    <img src={src} className="flex-1" />
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
         ))}
+        <div className="absolute right-0 md:hidden bottom-0 translate-y-full flex justify-center items-center gap-1">
+          <ChevronUp className="size-3 md:size-4" />
+          <p style={{color: "#2a2a2a"}} className="drop-shadow-xl text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl">View More</p>
+        </div>
       </div>
     </div>
     </>

@@ -18,8 +18,8 @@ export const PuzzlePiece = ({letter, header, meaning, color, showTab, content, r
       <div className='w-full h-full flipping-card group text-[8px] sm:text-sm md:text-base lg:text-xl xl:text-3xl'>
         <div className='size-full min-[400px]:group-hover:hidden flex flex-col justify-center items-center gap-px md:gap-1 lg:gap-2'>
           <p className="font-bold text-sm xs:text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl">{letter}</p>
-          <div className={`flex ${reverseOrder ? "flex-col-reverse" : "flex-col"}`}>
-            <p className="uppercase text-center sm:tracking-wider md:tracking-widest">{header}</p>
+          <div className={`flex ${reverseOrder ? "flex-col-reverse" : "flex-col"} min-w-[60%]`}>
+            <p className="uppercase text-center sm:tracking-wider md:tracking-widest lg:tracking-[0.2em]">{header}</p>
             <p className="flex justify-center items-center gap-1 w-full text-xs lg:text-sm xl:text-base">
               <span className="flex-1 hidden lg:block h-0 border border-white "/>
                 {meaning}

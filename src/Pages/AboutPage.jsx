@@ -17,7 +17,7 @@ const tailwindClasses = [
 
 export const AboutPage = () => {
 
-  useScrollToTop()
+  // useScrollToTop()
 
   return (
     <div className="flex flex-col w-full">
@@ -47,15 +47,15 @@ export const AboutPage = () => {
           {goals.map((goal, index) => <GoalCard key={goal.title} {...goal} index={index} />)}
         </div>
       </section>
-      <section id="team" className="bg-[#F3EEE8] p-6 lg:p-16 flex flex-col lg:flex-row gap-8 justify-center items-start">
-        <div className="rounded-md flex flex-col md:flex-row lg:flex-col xs:gap-2 md:gap-8 justify-end items-end gap-px">
+      <section id="team" className="bg-[#F3EEE8] px-4 py-6 sm:px-10 lg:py-10 lg:px-20 xl:py-16 xl:px-32 flex flex-col lg:flex-row gap-12 lg:gap-20 justify-center items-start">
+        <div className="rounded-md flex flex-col md:flex-row lg:flex-col gap-12 xs:gap-8 md:gap-8 justify-end items-end">
           <div className="max-w-96">
             <img src="/landingpage/services.png" alt="" />
           </div>
           
-          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-[500px] xl:text-right">
-            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl ">Meet our Team</h2>
-            <p className="text-base md:text-xl lg:text-xl xl:text-2xl">Meet our dedicated team of education experts and innovators, committed to revolutionizing K-12 education through research-based practices and accessible resources.</p>
+          <SlidingDiv direction="bottom" repeat={true} className="flex flex-col xl:gap-2 max-w-96 xl:text-right">
+            <h2 className="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">Meet our Team</h2>
+            <p className="text-base md:text-xl lg:text-xl xl:tet-2xl">Meet our dedicated team of education experts and innovators, committed to revolutionizing K-12 education through research-based practices and accessible resources.</p>
           </SlidingDiv>
         </div>
         <ScrollArea className="sm:flex-1 md:flex-auto h-96 lg:h-[600px] lg:flex-1">
@@ -63,6 +63,13 @@ export const AboutPage = () => {
             {team.map(member => <TeamCard {...member} />)}
           </div>
         </ScrollArea>
+      </section>
+      <section className="flex flex-col gap-4 md:gap-8 px-4 py-6 lg:py-10 lg:px-20">
+        <h3 className="px-4  text-3xl min-[900px]:text-5xl text-center font-bold uppercase">Our Partners</h3>
+        <div className="flex gap-4 sm:gap-8 md:gap-12 xl:gap-20 justify-center">
+          <img src="/partners/nust.jpeg" alt="" className="h-16 sm:h-20 md:h-24 lg:h-32 xl:h-48" />
+          <img src="/partners/cef.png" alt="" className="h-16 sm:h-20 md:h-24 lg:h-32 xl:h-48" />
+        </div>
       </section>
       <Footer />
     </div>

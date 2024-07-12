@@ -24,6 +24,7 @@ export const WhatWeOffer = () => {
         <CustomAccordion changeHeaders={true} containerClass={"flex-1"} items={services.map(service => ({
           title: service.title,
           id: service.title,
+          disabled: service.disabled,
           content: (
             <div className={`flex justify-start gap-2 p-2`}>
               <div className="w-24 sm:p-4 xs:w-32 sm:w-40 md:w-48 lg:w-32 xl:w-64">
@@ -34,7 +35,7 @@ export const WhatWeOffer = () => {
                 {service.content}
               </p>
               <Link to={service.disabled ? "" : service.link}>
-                <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={`font-bold text-sm sm:text-lg p-2 sm:p-2 ${service.disabled ? "bg-gray-200 text-gray-600" : "bg-[#353535] text-[#FBBA41]"}`} />
+                <IconButton icon={<ArrowRightIcon className="size-full"/>} text={"Learn More"} className={`font-bold text-sm sm:text-lg p-2 sm:p-2 ${service.disabled ? "bg-gray-300 text-gray-600" : "bg-[#353535] text-[#FBBA41]"}`} />
               </Link>
               </div>
             </div>
